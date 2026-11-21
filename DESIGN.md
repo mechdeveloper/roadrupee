@@ -18,12 +18,12 @@ Editorial, trustworthy: a data newsroom meets a modern dashboard. A ward officer
 | `--border` | `#E4DED3` | hairlines |
 | `--accent` | `#0F5C5C` | the ONE accent (deep teal): links, buttons, focus |
 | `--accent-soft` | `#DCEBEA` | accent tint backgrounds |
-| `--scale-1..5` | `#B2182B` `#E08A3C` `#F2C75C` `#6FB3A8` `#1F7A7A` | colour-blind-safe data scale, red → amber → teal |
-| `--scale-none` | `#E9E5DC` | no data |
+| `--scale-1..5` | `#B2182B` `#E59A93` `#E3DFD6` `#86C1BA` `#1F7A7A` | diverging data scale around a baseline: red (worse) → neutral grey → teal (better) |
+| `--scale-none` | `#EFECE5` | no data |
 
-Data scale: ordered by lightness as well as hue, so it survives deuteranopia and greyscale. Never encode meaning by colour alone: always add a label, value or icon.
+**Why diverging, not red→amber→teal.** We ran the palette validator on the first draft (red, amber, yellow, light teal, teal). Yellow is the lightest step but sits in the middle, so the ramp is not lightness-monotonic: in greyscale or with colour-vision deficiency, dark red and dark teal look alike and the pale middle reads as "no data". The choropleth compares each ward with a meaningful baseline (the city-wide share of money that didn't hold), which is exactly what a diverging scale is for: two hues plus a neutral midpoint. Red and teal also differ in lightness, so it survives deuteranopia and greyscale.
 
-For the choropleth, **red = more money that didn't hold**; teal = less.
+Choropleth bins (percentage points vs the city average): 8+ above, 3–8 above, within 3, 3–8 below, 8+ below. **Red = more money that didn't hold than the city average; teal = less.** Never encode meaning by colour alone: every colour has a legend label, the tooltip carries the value, and a ranked table sits beside the map.
 
 ## Type
 - Inter (via `next/font`), `font-variant-numeric: tabular-nums` on every number.

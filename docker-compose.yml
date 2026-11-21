@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      CLAUDE_MODEL_LIVE: ${CLAUDE_MODEL_LIVE:-claude-sonnet-5-5}
+      CLAUDE_MODEL_EXTRACT: ${CLAUDE_MODEL_EXTRACT:-claude-opus-5-5}
+    expose:
+      - "8000"   # internal only: the browser never talks to this directly
+
+  frontend:
+    build:
+      context: frontend
+    environment:
+      BACKEND_URL: http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy

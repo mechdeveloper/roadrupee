@@ -1,26 +1,110 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
+/* Design tokens: single source of truth, see DESIGN.md. No hard-coded colours elsewhere. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #faf7f2;
+  --surface: #ffffff;
+  --ink: #1b1f23;
+  --muted: #5f6b76;
+  --border: #e4ded3;
+  --accent: #0f5c5c;
+  --accent-soft: #dceae9;
+  --accent-ink: #ffffff;
+  --danger: #b2182b;
+
+  /* Diverging scale around the city average: red = more money that didn't hold,
+     teal = less, neutral = about average. Ordered, colour-blind-safe (red vs teal
+     differ in hue AND lightness). Always paired with a label/value, never colour alone. */
+  --scale-1: #b2182b;
+  --scale-2: #e59a93;
+  --scale-3: #e3dfd6;
+  --scale-4: #86c1ba;
+  --scale-5: #1f7a7a;
+  --scale-none: #efece5;
+
+  --radius: 0.75rem;
+
+  /* shadcn/ui variables mapped onto the tokens above */
+  --background: var(--bg);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--accent);
+  --primary-foreground: var(--accent-ink);
+  --secondary: var(--accent-soft);
+  --secondary-foreground: var(--accent);
+  --muted-foreground: var(--muted);
+  --accent-foreground: var(--accent);
+  --destructive: var(--danger);
+  --input: var(--border);
+  --ring: var(--accent);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--accent-soft);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent-soft);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-scale-1: var(--scale-1);
+  --color-scale-2: var(--scale-2);
+  --color-scale-3: var(--scale-3);
+  --color-scale-4: var(--scale-4);
+  --color-scale-5: var(--scale-5);
+  --color-scale-none: var(--scale-none);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-inter);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    font-variant-numeric: tabular-nums;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Leaflet adopts the tokens */
+.leaflet-container {
+  background: var(--scale-none);
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
