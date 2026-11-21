@@ -46,7 +46,7 @@ def evidence_numbers(obj: Any) -> list[float]:
 
 
 def _supported(value: float, written: str, scale: float, nums: list[float]) -> bool:
-    tol = 0.5 * 10 ** -_decimals(written) * scale + 1e-6
+    tol = 10 ** -_decimals(written) * scale + 1e-6  # within one unit of the last written digit (allows truncation)
     return any(abs(n - value * scale) <= tol for n in nums)
 
 

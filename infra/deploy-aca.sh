@@ -28,6 +28,13 @@ log() { printf '\n\033[1m==> %s\033[0m\n' "$*"; }
 if [[ -z "${ANTHROPIC_API_KEY:-}" && -f .env ]]; then
   ANTHROPIC_API_KEY="$(grep -E '^ANTHROPIC_API_KEY=' .env | head -1 | cut -d= -f2- | tr -d '"'"'" || true)"
 fi
+# Workspace ID (not a secret). Needed when the API key is not scoped to a workspace; sent as the
+# anthropic-workspace-id header by backend/app/ai/client.py.
+if [[ -z "${ANTHROPIC_WORKSPACE_ID:-}" && -f .env ]]; then
+  ANTHROPIC_WORKSPACE_ID="$(grep -E '^ANTHROPIC_WORKSPACE_ID=' .env | head -1 | cut -d= -f2- | tr -d '"'"'" || true)"
+fi
+WORKSPACE_ENV=()
+[[ -n "${ANTHROPIC_WORKSPACE_ID:-}" ]] && WORKSPACE_ENV=("ANTHROPIC_WORKSPACE_ID=$ANTHROPIC_WORKSPACE_ID")
 if [[ -z "${ANTHROPIC_API_KEY:-}" ]]; then
   echo "ANTHROPIC_API_KEY is not set (export it or put it in .env). Aborting." >&2
   exit 1
@@ -87,6 +94,7 @@ if az containerapp show --name "$BACKEND_APP" --resource-group "$RG" >/dev/null 
     --image "$ACR_SERVER/roadrupee-backend:$TAG" \
     --set-env-vars "ANTHROPIC_API_KEY=secretref:anthropic-api-key" \
       "CLAUDE_MODEL_LIVE=$CLAUDE_MODEL_LIVE" "CLAUDE_MODEL_EXTRACT=$CLAUDE_MODEL_EXTRACT" \
+      ${WORKSPACE_ENV[@]+"${WORKSPACE_ENV[@]}"} \
     --output none
 else
   az containerapp create --name "$BACKEND_APP" --resource-group "$RG" --environment "$ENV_NAME" \
@@ -97,6 +105,7 @@ else
     --secrets "anthropic-api-key=$ANTHROPIC_API_KEY" \
     --env-vars "ANTHROPIC_API_KEY=secretref:anthropic-api-key" \
       "CLAUDE_MODEL_LIVE=$CLAUDE_MODEL_LIVE" "CLAUDE_MODEL_EXTRACT=$CLAUDE_MODEL_EXTRACT" \
+      ${WORKSPACE_ENV[@]+"${WORKSPACE_ENV[@]}"} \
     --output none
 fi
 

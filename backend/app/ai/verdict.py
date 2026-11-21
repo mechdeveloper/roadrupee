@@ -1,6 +1,7 @@
 """Claude's opinion on one flag, from the evidence JSON only. Never changes the rule result or tier."""
 from __future__ import annotations
 
+import re
 from datetime import datetime, timezone
 from typing import Literal
 
@@ -12,6 +13,7 @@ from .structured import Generated, generate_checked
 
 BANNED = ("fraud", "scam", "corrupt", "steal", "stole", "theft", "bribe", "criminal")
 MAX_HEADLINE_WORDS = 20
+SENTENCE_END = re.compile(r"[.।!?](?:\s|$)")  # not the dot in 2.24 or ₹1.2 L
 
 
 class VerdictOut(BaseModel):
@@ -43,7 +45,7 @@ def _problems(v: VerdictOut) -> list[str]:
         out.append(f"headline longer than {MAX_HEADLINE_WORDS} words")
     text = " ".join([v.headline, v.reasoning, *v.context_considered]).lower()
     out += [f"banned word: {b}" for b in BANNED if b in text]
-    if not 2 <= v.reasoning.count(".") + v.reasoning.count("!") + v.reasoning.count("?") <= 5:
+    if not 2 <= len(SENTENCE_END.findall(v.reasoning)) <= 4:
         out.append("reasoning should be 2 to 4 sentences")
     if not v.evidence_refs:
         out.append("evidence_refs is empty")
