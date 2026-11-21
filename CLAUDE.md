@@ -48,8 +48,25 @@ Follow `DESIGN.md`: tokens only, fair wording ("worth checking", never "fraud/sc
 | Student 3 | Trace my complaint (extraction, geocoding, trail UI) |
 | Student 4 | flag explanations (Claude review), Ask the auditor, demo video |
 
-## PR workflow
-Branch per feature, PR into `main`, tech lead merges, `main` always runs. See `CONTRIBUTING.md`.
+## Git workflow (mandatory)
+
+### Tech lead (repo owner, `mechdeveloper`)
+- Commits directly to `main`. After **each** working feature or fix: run the tests (`cd backend && uv run pytest`; `cd frontend && npm run lint && npm run build` if the frontend was touched), commit with a conventional message (`feat:`, `fix:`, `chore:`, `docs:`) and push immediately.
+- `git pull --rebase origin main` before pushing so teammates' merged PRs are never overwritten. **Never force-push `main`.**
+
+### Team members (students)
+- `git pull --rebase origin main` before starting each task.
+- Work on a feature branch: `feat/<area>` (`feat/trace`, `feat/scorecard`, `feat/planner`, `feat/ui-home`).
+- Commit and push the branch after each working step. Open a PR into `main` early with `gh pr create --fill` and keep PRs small.
+- Rebase on `main` if there are conflicts.
+- Data contract changes (backend models **and** frontend types) go in the same PR and are called out in the PR description.
+
+### Everyone
+- `main` must always run: tests pass before pushing or merging.
+- Never commit `.env`, secrets, `node_modules` or large generated files. Check `git status` before every commit.
+- Claude Code sessions: commit and push after every working step, without waiting to be asked.
+
+Full details and ownership: `CONTRIBUTING.md`.
 
 ## Commands
 ```

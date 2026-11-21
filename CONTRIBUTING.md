@@ -11,13 +11,23 @@ Copy `.env.example` to `.env` and add your own `ANTHROPIC_API_KEY`. **Never comm
 cp .env.example .env
 ```
 
-## Workflow
-1. `git pull origin main`
-2. Branch per feature: `git switch -c feat/<short-name>` (e.g. `feat/trace-endpoint`, `fix/map-legend`).
-3. Small commits, clear messages.
-4. Before you push: backend `cd backend && uv run pytest`; frontend `cd frontend && npm run lint && npm run build`.
-5. Open a PR into `main`. Describe what changed and how you checked it. Tech lead reviews and merges.
-6. Rebase or merge `main` into your branch if it moved. Resolve conflicts yourself, then re-test.
+## Git workflow (mandatory)
+
+### Tech lead (repo owner, `mechdeveloper`)
+- Commits directly to `main`. After **each** working feature or fix: run the tests (`cd backend && uv run pytest`; `cd frontend && npm run lint && npm run build` if the frontend was touched), commit with a conventional message (`feat:`, `fix:`, `chore:`, `docs:`) and push immediately.
+- `git pull --rebase origin main` before pushing so teammates' merged PRs are never overwritten. **Never force-push `main`.**
+
+### Team members (students)
+- `git pull --rebase origin main` before starting each task.
+- Work on a feature branch: `feat/<area>` (`feat/trace`, `feat/scorecard`, `feat/planner`, `feat/ui-home`).
+- Commit and push the branch after each working step. Open a PR into `main` early with `gh pr create --fill` and keep PRs small.
+- Rebase on `main` if there are conflicts.
+- Data contract changes (backend models **and** frontend types) go in the same PR and are called out in the PR description.
+
+### Everyone
+- `main` must always run: tests pass before pushing or merging.
+- Never commit `.env`, secrets, `node_modules` or large generated files. Check `git status` before every commit.
+- Claude Code sessions: commit and push after every working step, without waiting to be asked.
 
 ## Ownership (avoid conflicts)
 Stay inside your area unless you talk to the tech lead first. See the roles table in `CLAUDE.md`.
