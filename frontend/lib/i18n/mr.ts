@@ -272,6 +272,7 @@ export const mr: Partial<Record<Key, string>> = {
   "league.col.spend": "खर्च / बजेट",
   "league.col.share": "% टिकले नाहीत",
   "league.col.vs": "अपेक्षेशी तुलना",
+  "league.vs.info": "हे वॉर्डमधील दुरुस्तीच्या पद्धती, पाऊस आणि पाणी साचणे विचारात घेते. “अपेक्षेप्रमाणे” म्हणजे या परिस्थितीत अपयशाचे प्रमाण सामान्य आहे.",
   "league.col.flags": "तपासायला",
   "league.find": "माझा वॉर्ड शोधा",
   "league.officer": "मी वॉर्ड अधिकारी आहे",

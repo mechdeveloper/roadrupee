@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowUp } from "lucide-react";
+import { ArrowDown, ArrowUp, Info } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
@@ -14,11 +14,11 @@ import { wardHref } from "@/lib/wards";
 
 type SortKey = "ward" | "spend" | "share" | "vs" | "flags";
 const VS_ORDER = { worse: 0, "about as expected": 1, better: 2 } as const;
-const COLS: { key: SortKey; label: Key; right?: boolean }[] = [
+const COLS: { key: SortKey; label: Key; right?: boolean; info?: Key }[] = [
   { key: "ward", label: "league.col.ward" },
-  { key: "spend", label: "league.col.spend" },
+  { key: "spend", label: "league.col.spend", right: true },
   { key: "share", label: "league.col.share" },
-  { key: "vs", label: "league.col.vs" },
+  { key: "vs", label: "league.col.vs", info: "league.vs.info" },
   { key: "flags", label: "league.col.flags", right: true },
 ];
 
@@ -49,21 +49,42 @@ export function WardLeague({ wards, bins, tall = false }: { wards: Ward[]; bins:
 
   return (
     <div className={`overflow-auto rounded-2xl border bg-surface ${tall ? "" : "max-h-[540px]"}`}>
-      <table className="w-full min-w-[620px] text-left text-sm">
+      <table className="w-full min-w-[700px] text-left text-sm">
         <caption className="sr-only">{t("league.hint")}</caption>
-        <thead className="sticky top-0 z-10 bg-surface text-[13px] text-muted-foreground shadow-[0_1px_0_var(--border)]">
+        <thead className="sticky top-0 z-20 bg-[var(--accent-soft)] text-[11px] tracking-normal text-muted-foreground uppercase shadow-[0_1px_0_var(--border)]">
           <tr>
-            {COLS.map((c) => (
+            {COLS.map((c, ci) => (
               <th
                 key={c.key}
                 scope="col"
                 aria-sort={sort.key === c.key ? (sort.dir === 1 ? "ascending" : "descending") : "none"}
-                className={`p-0 font-medium ${c.right ? "text-right" : ""}`}
+                className={`p-0 align-middle font-semibold whitespace-nowrap ${c.right ? "text-right" : "text-left"} ${ci === 0 ? "sticky left-0 z-30 bg-[var(--accent-soft)]" : ""}`}
               >
-                <button type="button" onClick={() => toggle(c.key)} className={`flex min-h-11 w-full items-center gap-1 px-3 ${c.right ? "justify-end" : ""}`}>
-                  {t(c.label)}
-                  {sort.key === c.key && (sort.dir === 1 ? <ArrowUp className="size-3.5" aria-hidden /> : <ArrowDown className="size-3.5" aria-hidden />)}
-                </button>
+                <div className={`flex min-h-11 items-center gap-1 px-2.5 ${c.right ? "justify-end" : ""}`}>
+                  <button type="button" onClick={() => toggle(c.key)} className="inline-flex min-h-11 items-center gap-1 whitespace-nowrap uppercase">
+                    {t(c.label)}
+                    {sort.key === c.key && (sort.dir === 1 ? <ArrowUp className="size-3.5" aria-hidden /> : <ArrowDown className="size-3.5" aria-hidden />)}
+                  </button>
+                  {c.info && (
+                    <span className="group relative inline-flex">
+                      <button
+                        type="button"
+                        aria-label={t(c.info)}
+                        aria-describedby={`tip-${c.key}`}
+                        className="inline-flex size-5 items-center justify-center rounded-full text-muted-foreground hover:text-ink focus-visible:text-ink"
+                      >
+                        <Info className="size-3.5" aria-hidden />
+                      </button>
+                      <span
+                        id={`tip-${c.key}`}
+                        role="tooltip"
+                        className="pointer-events-none absolute top-full right-0 z-40 mt-1 hidden w-64 translate-x-0 rounded-lg border bg-surface p-2.5 text-left text-[13px] font-normal tracking-normal text-ink normal-case whitespace-normal shadow-md group-focus-within:block group-hover:block"
+                      >
+                        {t(c.info)}
+                      </span>
+                    </span>
+                  )}
+                </div>
               </th>
             ))}
           </tr>
@@ -78,7 +99,7 @@ export function WardLeague({ wards, bins, tall = false }: { wards: Ward[]; bins:
                 onClick={() => router.push(wardHref(w.slug))}
                 className="cursor-pointer border-t hover:bg-background"
               >
-                <td className="px-3 py-2">
+                <td className="sticky left-0 z-10 bg-surface px-2.5 py-2 whitespace-nowrap">
                   <Link href={wardHref(w.slug)} onClick={(e) => e.stopPropagation()} className="flex min-h-9 items-center gap-2">
                     <span className="inline-block size-3 shrink-0 rounded-sm border" style={{ background: `var(${token})` }} aria-hidden />
                     <span>
@@ -87,22 +108,22 @@ export function WardLeague({ wards, bins, tall = false }: { wards: Ward[]; bins:
                     </span>
                   </Link>
                 </td>
-                <td className="px-3 py-2">
+                <td className="px-2.5 py-2 text-right whitespace-nowrap tabular-nums">
                   <span className={over ? "font-semibold text-scale-1" : "text-ink"}>{inr(w.spend_inr)}</span>
                   <span className="text-muted-foreground"> / {inr(w.budget_inr)}</span>
                 </td>
-                <td className="px-3 py-2">
+                <td className="px-2.5 py-2">
                   <span className="flex items-center gap-2">
-                    <span className="w-12 font-semibold text-ink">{pct(w.failed_pct)}</span>
-                    <span className="h-2 w-24 overflow-hidden rounded-full bg-border" aria-hidden>
+                    <span className="w-11 font-semibold text-ink tabular-nums">{pct(w.failed_pct)}</span>
+                    <span className="h-2 w-10 overflow-hidden rounded-full bg-border" aria-hidden>
                       <span className="block h-full rounded-full" style={{ width: `${(w.failed_pct / maxShare) * 100}%`, background: `var(${token})` }} />
                     </span>
                   </span>
                 </td>
-                <td className="px-3 py-2">
+                <td className="px-2.5 py-2 whitespace-nowrap">
                   <VerdictChip ward={w} compact />
                 </td>
-                <td className="px-3 py-2 text-right font-semibold">{num(w.flags_audit)}</td>
+                <td className="px-2.5 py-2 text-right font-semibold tabular-nums">{num(w.flags_audit)}</td>
               </tr>
             );
           })}
