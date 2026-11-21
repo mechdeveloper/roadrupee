@@ -4,7 +4,9 @@
 
 🌐 **Live app: https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io**
 
-🎬 **Demo video (1 min 46 s): [docs/demo/RoadRupeeDemo.mp4](docs/demo/RoadRupeeDemo.mp4)** · [direct download](https://github.com/mechdeveloper/roadrupee/raw/main/docs/demo/RoadRupeeDemo.mp4)
+🎬 **Demo video (1 min 46 s): https://youtu.be/XPlHn3igGvo**
+
+[![Watch the RoadRupee demo on YouTube](docs/demo/demo-thumbnail.jpg)](https://youtu.be/XPlHn3igGvo)
 
 ![RoadRupee home: ₹3.07 Cr of ₹13.43 Cr didn't hold, ward map and league table](docs/screenshots/home.png)
 
