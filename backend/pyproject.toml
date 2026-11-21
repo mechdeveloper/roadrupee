@@ -1,0 +1,18 @@
+[project]
+name = "roadrupee-backend"
+version = "0.1.0"
+description = "RoadRupee audit engine and API"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pandas>=2.2",
+  "anthropic>=0.40",
+  "python-dotenv>=1.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
