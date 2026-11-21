@@ -304,4 +304,5 @@ export const hi: Partial<Record<Key, string>> = {
   "plan.remainingShort": "{amount} बचे",
   "plan.overspentShort": "बजट से ज़्यादा खर्च",
   "plan.inWard": "वार्ड में",
+  "error.rateLimited": "आप बहुत तेज़ी से पूछ रहे हैं। कृपया एक मिनट रुककर फिर कोशिश करें।",
 };

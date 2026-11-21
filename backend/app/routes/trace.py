@@ -7,6 +7,7 @@ import logging
 
 from fastapi import APIRouter, HTTPException, Request
 
+from .. import ratelimit
 from ..ai import client as ai_client
 from ..ai import trace as ai_trace
 from ..ai.store import trace_store
@@ -120,7 +121,7 @@ async def _run(pre, idx: T.TraceIndex, text: str, use_ai: bool) -> dict:
 
 
 @router.post("/trace", response_model=TraceResponse)
-async def trace(request: Request, req: TraceRequest) -> dict:
+async def trace(request: Request, req: TraceRequest):
     text = (req.complaint_id or req.text or "").strip()
     if not text:
         raise HTTPException(422, "Send `text` or `complaint_id`.")
@@ -130,6 +131,9 @@ async def trace(request: Request, req: TraceRequest) -> dict:
     hit = store.get(key, h)
     if hit:
         return {**hit["response"], "cached": True}
+    ok, wait = ratelimit.live.check(ratelimit.client_ip(request))  # cache hits above are free
+    if not ok:
+        return ratelimit.too_many(wait)
     try:
         res = await asyncio.wait_for(_run(pre, idx, text, use_ai=True), DEADLINE)
     except asyncio.TimeoutError:

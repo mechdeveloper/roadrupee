@@ -17,12 +17,16 @@ const VERDICT: Record<ClaudeReview["verdict"], { key: Key; tone: "check" | "neut
 export function ClaudeCard({ flagId, initial }: { flagId: string; initial: ClaudeReview | null }) {
   const t = useT();
   const [review, setReview] = useState<ClaudeReview | null>(initial);
-  const [phase, setPhase] = useState<"idle" | "loading" | "error">("idle");
+  const [phase, setPhase] = useState<"idle" | "loading" | "error" | "limited">("idle");
 
   async function ask() {
     setPhase("loading");
     try {
       const r = await fetch(`/api/explain/${encodeURIComponent(flagId)}`, { method: "POST" });
+      if (r.status === 429) {
+        setPhase("limited");
+        return;
+      }
       if (!r.ok) throw new Error(String(r.status));
       const data = (await r.json()) as { review: ClaudeReview };
       setReview(data.review);
@@ -70,6 +74,11 @@ export function ClaudeCard({ flagId, initial }: { flagId: string; initial: Claud
             <Sparkles className="size-4" aria-hidden />
             {phase === "loading" ? t("ev.claude.asking") : t("ev.claude.ask")}
           </button>
+          {phase === "limited" && (
+            <p role="status" className="mt-2 text-sm text-muted-foreground">
+              {t("error.rateLimited")}
+            </p>
+          )}
           {phase === "error" && (
             <p role="alert" className="mt-2 text-sm text-destructive">
               {t("ev.claude.error")}

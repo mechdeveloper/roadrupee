@@ -319,6 +319,7 @@ export const en = {
   "plan.remainingShort": "{amount} left",
   "plan.overspentShort": "Over budget",
   "plan.inWard": "in ward",
+  "error.rateLimited": "You're asking quickly. Please wait a minute and try again.",
 } as const;
 
 export type Key = keyof typeof en;

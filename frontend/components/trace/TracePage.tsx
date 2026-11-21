@@ -84,6 +84,7 @@ export function TracePage() {
       signal: ctl.signal,
     })
       .then(async (r) => {
+        if (r.status === 429) throw new Error("RATE_LIMITED");
         if (!r.ok) throw new Error(`Request failed (${r.status})`);
         return (await r.json()) as TraceResponse;
       })
@@ -144,7 +145,7 @@ export function TracePage() {
 
       <div className="mt-8 space-y-6" aria-live="polite">
         {loading && <Loading />}
-        {err && <ErrorBox message={err} onRetry={() => router.refresh()} />}
+        {err && <ErrorBox message={err === "RATE_LIMITED" ? t("error.rateLimited") : err} onRetry={() => router.refresh()} />}
         {d && (
           <>
             <section aria-labelledby="ans-h" className="rounded-2xl border bg-surface p-5 sm:p-6">

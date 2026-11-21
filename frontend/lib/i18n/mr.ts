@@ -304,4 +304,5 @@ export const mr: Partial<Record<Key, string>> = {
   "plan.remainingShort": "{amount} शिल्लक",
   "plan.overspentShort": "बजेटपेक्षा जास्त खर्च",
   "plan.inWard": "वॉर्डमध्ये",
+  "error.rateLimited": "तुम्ही खूप वेगाने विचारत आहात. कृपया एक मिनिट थांबून पुन्हा प्रयत्न करा.",
 };

@@ -18,6 +18,13 @@ async function proxy(req: NextRequest): Promise<Response> {
     if (!HOP_BY_HOP.has(k.toLowerCase())) headers.set(k, v);
   });
 
+  // The backend is internal-only and rate-limits live Claude calls per client. Never trust a client-supplied value:
+  // overwrite x-client-ip with the address the ingress itself appended (the LAST X-Forwarded-For entry).
+  headers.delete("x-client-ip");
+  const xff = req.headers.get("x-forwarded-for");
+  const ip = xff ? xff.split(",").pop()?.trim() : req.headers.get("x-real-ip");
+  if (ip) headers.set("x-client-ip", ip);
+
   const hasBody = !["GET", "HEAD"].includes(req.method);
   let upstream: Response;
   try {

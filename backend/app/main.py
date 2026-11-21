@@ -12,7 +12,7 @@ from fastapi.responses import JSONResponse, Response, StreamingResponse
 
 import anthropic
 
-from . import cache
+from . import cache, ratelimit
 from .ai import client as ai_client
 from .ai.structured import Generated
 from .ai.verdict import make_verdict, template_verdict, to_entry, to_review
@@ -23,6 +23,8 @@ from .routes.plan import router as plan_router
 from .routes.trace import router as trace_router
 
 load_dotenv()
+
+EXPLAIN_TIMEOUT = 30.0  # seconds before falling back to the automatic summary
 
 CSV_COLUMNS = [
     "work_order_id", "rule", "tier", "severity", "reason", "related_work_order_ids",
@@ -140,10 +142,14 @@ async def explain(request: Request, flag_id: str) -> dict:
     if not ai_client.have_key():  # no key: show the deterministic template, do not cache it
         g = Generated(template_verdict(ev), "template", None, 0, [])
         return {"flag_id": f.flag_id, "review": to_review(to_entry(ev, g)), "cached": False}
+    ok, wait = ratelimit.live.check(ratelimit.client_ip(request))  # only a call that reaches Claude counts
+    if not ok:
+        return ratelimit.too_many(wait)
     try:
-        g = await make_verdict(ai_client.get_client(), ai_client.model_live(), ev)
-    except anthropic.APIError as e:
-        raise HTTPException(502, f"Claude is unavailable right now ({type(e).__name__})") from e
+        g = await asyncio.wait_for(make_verdict(ai_client.get_client(), ai_client.model_live(), ev), EXPLAIN_TIMEOUT)
+    except (anthropic.APIError, asyncio.TimeoutError):  # Claude down or slow: show the automatic summary, never an error
+        g = Generated(template_verdict(ev), "template", None, 0, [])
+        return {"flag_id": f.flag_id, "review": to_review(to_entry(ev, g)), "cached": False}
     entry = to_entry(ev, g)
     p.verdicts.put(f.flag_id, entry)
     p.verdicts.save()
