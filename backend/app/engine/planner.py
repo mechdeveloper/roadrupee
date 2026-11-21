@@ -18,8 +18,12 @@ road cave-in 5, open manhole 5, waterlogging 4, choked drain 3, pothole 3, broke
 
 Method: infer the road's main issue, then choose, among the repair methods actually used for that kind of work, the one with the
 LOWEST 30-day reopen rate (not the cheapest). Cost = rate card x typical area for that method in this ward (per sqm) or the flat rate.
+Warranty: a surface defect (pothole, paver blocks, cave-in) on a road still under the original contractor's Defect Liability
+Period, fixed with a surface method, is the contractor's to repair at no cost (same rule as flags.DLP_PAID audit tier). Such an
+item costs the city ₹0 (cost_basis gives the standard cost) and is funded even in an overspent ward.
+Flood detail also says on how many days this monsoon the nearest station's rain crossed the hotspot's flooding level.
 Budget: fund items in rank order against budget - spend; an item that does not fit is skipped so a smaller one below can still be
-funded. Overspent wards (spend above budget) fund nothing.
+funded. Overspent wards (spend above budget) fund only ₹0 warranty repairs.
 """
 from __future__ import annotations
 
@@ -31,7 +35,7 @@ import pandas as pd
 
 from . import trace as T
 from .evidence import HOTSPOT_KM, _km
-from .flags import inr
+from .flags import DLP_AUDIT_METHODS, DLP_AUDIT_WORK_TYPES, inr
 from .views import ward_slug
 
 WEIGHTS = {"complaints": 30.0, "flood": 25.0, "traffic": 15.0, "accidents": 15.0, "facilities": 15.0}
@@ -51,7 +55,8 @@ LABELS = {
     "accidents": ("Accidents", "Pothole, waterlogging and open-chamber accidents on the road add points."),
     "facilities": ("Schools and hospitals", "Roads that are a hospital's ambulance entry or serve a school score higher."),
 }
-NOTE = "Items are funded in rank order; one that does not fit is skipped so a smaller one below can still be funded."
+NOTE = ("Items are funded in rank order; one that does not fit is skipped so a smaller one below can still be funded. "
+        "A surface repair on a road still under the original contractor's warranty costs the city ₹0.")
 
 
 def _xy(lat: float, lon: float, lat0: float) -> tuple[float, float]:
@@ -103,6 +108,15 @@ def _complaint_points(pre, idx: T.TraceIndex) -> pd.DataFrame:
     return c.dropna(subset=["p_lat", "p_lon", "p_ward"])
 
 
+def rain_days_over(data) -> dict[str, int]:
+    """hotspot_id -> days this monsoon when rain at the nearest station reached its flooding level."""
+    out = {}
+    for h in data.hotspots.itertuples():
+        st = data.rain[data.rain.station == ("Colaba" if h.lat < 19.0 else "Santacruz")]
+        out[h.hotspot_id] = int((st.rainfall_mm >= h.flood_threshold_mm_per_day).sum())
+    return out
+
+
 def build_all(pre) -> dict[str, dict]:
     """slug -> PlanResponse dict for every ward. Pure function of the data."""
     data, wo = pre.data, pre.wo
@@ -116,6 +130,7 @@ def build_all(pre) -> dict[str, dict]:
 
     # ---- complaints -> nearest road segment in their own ward
     comp = _complaint_points(pre, idx)
+    rain_days = rain_days_over(data)
     by_ward = {w: g for w, g in roads.groupby("ward_code")}
     road_complaints: dict[str, list] = defaultdict(list)
     for r in comp.itertuples():
@@ -198,7 +213,8 @@ def build_all(pre) -> dict[str, dict]:
             if hs:
                 f, km, h = hs[0]
                 reasons.append(dict(kind="flood_hotspot", label=f"Floods when rain passes {h.flood_threshold_mm_per_day:.0f} mm a day",
-                                    detail=f"{h.name}, {int(round(km * 1000))} m away; flagged in {int(h.years_flagged_last_5)} of the last 5 years", count=None))
+                                    detail=f"{h.name}, {int(round(km * 1000))} m away; rain reached that level on {rain_days[h.hotspot_id]} days "
+                                           f"this monsoon; flagged in {int(h.years_flagged_last_5)} of the last 5 years", count=None))
                 if h.tide_sensitive == "Y":
                     reasons.append(dict(kind="tide", label="Gets worse on big-tide days", detail=h.name, count=None))
             if ag is not None:
@@ -262,6 +278,11 @@ def build_all(pre) -> dict[str, dict]:
                 estimated_cost_inr=round(cost_for(cheap), 2))]
             basis = (f"{inr(best['rate_inr'])} per sqm × {area:g} sqm (typical {issue.lower()} repair here)"
                      if area is not None else f"{inr(best['rate_inr'])} per job (flat rate)")
+            warranty = (rd.under_dlp == "Y" and issue in DLP_AUDIT_WORK_TYPES and best["repair_method"] in DLP_AUDIT_METHODS)
+            if warranty:  # the original contractor owes this repair; the UI sums estimated_cost_inr against the budget
+                basis = f"₹0 to the city: under the original contractor's warranty (standard cost {inr(cost)}: {basis})"
+                why += " The road is still under the original contractor's warranty, so ask them to repair it at no cost."
+                cost = 0.0
             items.append(dict(
                 rank=0, road_id=rd.road_id, road_name=rd.road_name, segment_no=int(rd.segment_no), road_type=rd.road_type,
                 length_m=float(rd.length_m), lat=round(float(rd.mid_lat), 6), lon=round(float(rd.mid_lon), 6),
@@ -272,7 +293,7 @@ def build_all(pre) -> dict[str, dict]:
                                         rate_inr=best["rate_inr"], unit=best["unit"], why=why),
                 alternatives=alts, area_sqm_estimate=None if area is None else round(area, 1),
                 estimated_cost_inr=cost, cost_basis=basis, within_budget=False, evidence=evidence, explanation=None,
-                _issue=issue))
+                _issue=issue, _warranty=warranty))
 
         items.sort(key=lambda i: (-i["risk_score"], i["road_id"]))
         items = [i for i in items if i["risk_score"] > 0][:MAX_ITEMS]
