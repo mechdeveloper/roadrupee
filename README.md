@@ -8,8 +8,6 @@
 
 [![Watch the RoadRupee demo on YouTube](docs/demo/demo-thumbnail.jpg)](https://youtu.be/XPlHn3igGvo)
 
-![RoadRupee home: ₹3.07 Cr of ₹13.43 Cr didn't hold, ward map and league table](docs/screenshots/home.png)
-
 > 🏆 **Built during [Claude Impact Lab Mumbai: Civic Budget & Accountability](https://luma.com/claude-ImpactLab)** (Mumbai, 21 November 2026) by **Team 7**:  
 > Aditya Panigrahi · Tejas Bangera · Pratik Pujari · Aaryan Singh · Ashish Singh Baghel
 
