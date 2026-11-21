@@ -5,6 +5,12 @@
 - **`main` always runs.** If `docker compose up --build` works before your merge, it must work after.
 - Never commit `.env` or any secret. Use `.env.example` for new variables.
 
+## Setup: your own API key
+Copy `.env.example` to `.env` and add your own `ANTHROPIC_API_KEY`. **Never commit `.env`** (it is git-ignored and excluded from Docker images). Students use their own keys. Never paste a key into code, issues, PRs or chat.
+```bash
+cp .env.example .env
+```
+
 ## Workflow
 1. `git pull origin main`
 2. Branch per feature: `git switch -c feat/<short-name>` (e.g. `feat/trace-endpoint`, `fix/map-legend`).

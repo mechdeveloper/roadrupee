@@ -15,9 +15,15 @@ Built for Claude Impact Lab Mumbai ("Follow the Rupee: Mumbai Monsoon Roads"). E
 
 Wording is deliberately fair: flags say "worth checking", never "fraud".
 
+## Setup: your own API key
+Copy `.env.example` to `.env` and add your own `ANTHROPIC_API_KEY`. **Never commit `.env`** (it is git-ignored and excluded from Docker images). Everyone on the team uses their own key; never paste a key into code, issues, PRs or chat.
+```bash
+cp .env.example .env
+```
+
 ## Run it
 ```bash
-cp .env.example .env        # add ANTHROPIC_API_KEY (only needed for Claude features)
+cp .env.example .env        # add your own ANTHROPIC_API_KEY (only needed for Claude features)
 docker compose up --build   # http://localhost:3000
 ```
 Without Docker:
