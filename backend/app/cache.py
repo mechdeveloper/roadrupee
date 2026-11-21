@@ -8,6 +8,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from .ai.store import JsonStore, verdict_store
+from .ai.verdict import to_review
 from .engine import evidence
 from .engine import flags as F
 from .engine import metrics
@@ -24,6 +26,7 @@ class Precomputed:
     wards: list[dict]
     contractors: list[dict]
     evidence_index: evidence.EvidenceIndex | None = None
+    verdicts: JsonStore | None = None
 
 
 def build() -> Precomputed:
@@ -39,9 +42,21 @@ def build() -> Precomputed:
         contractors=contractors,
         evidence_index=evidence.build_index(data, wo, contractors),
     )
+    pre.verdicts = verdict_store()
+    attach_verdicts(pre)
     _dump(pre)
     return pre
 
+
+def attach_verdicts(pre: Precomputed) -> int:
+    """Attach stored Claude verdicts whose evidence hash still matches. Rule fields are never touched."""
+    n = 0
+    for f in pre.flags:
+        e = pre.verdicts.items.get(f.flag_id)
+        if e and e["input_hash"] == evidence.evidence_hash(evidence.build(pre.evidence_index, f)):
+            f.review = to_review(e)
+            n += 1
+    return n
 
 def _dump(pre: Precomputed) -> None:
     """Best-effort JSON snapshot for debugging / the team (not read back)."""

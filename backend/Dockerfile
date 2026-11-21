@@ -11,6 +11,7 @@ RUN useradd --system --uid 10001 --create-home app
 WORKDIR /app
 COPY --from=builder /app/.venv /app/.venv
 COPY backend/app ./app
+COPY backend/data_cache ./data_cache
 COPY data ./data
 ENV PATH="/app/.venv/bin:$PATH" PYTHONUNBUFFERED=1 DATA_DIR=/app/data CACHE_DIR=/tmp/roadrupee-cache
 USER app

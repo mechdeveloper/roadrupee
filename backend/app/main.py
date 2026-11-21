@@ -10,7 +10,13 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 
+import anthropic
+
 from . import cache
+from .ai import client as ai_client
+from .ai.structured import Generated
+from .ai.verdict import make_verdict, template_verdict, to_entry, to_review
+from .engine import evidence
 from .contracts.plan import PlanResponse
 from .routes.pages import router as pages_router
 
@@ -19,6 +25,7 @@ load_dotenv()
 CSV_COLUMNS = [
     "work_order_id", "rule", "tier", "severity", "reason", "related_work_order_ids",
     "ward_code", "road_id", "contractor_id", "cost_inr", "expected_inr", "amount_inr",
+    "claude_verdict", "claude_headline",  # appended; empty when no verdict was computed
 ]
 
 
@@ -99,6 +106,8 @@ def flags_csv(request: Request, rule: str | None = None, tier: str | None = None
             "cost_inr": round(f.cost_inr, 2),
             "expected_inr": "" if f.expected_inr is None else round(f.expected_inr, 2),
             "amount_inr": round(f.amount_inr, 2),
+            "claude_verdict": (f.review or {}).get("verdict", ""),
+            "claude_headline": (f.review or {}).get("headline", ""),
         })
     return Response(buf.getvalue(), media_type="text/csv",
                     headers={"Content-Disposition": 'attachment; filename="roadrupee_flags.csv"'})
@@ -115,9 +124,31 @@ def trace() -> JSONResponse:
     return _stub("trace")
 
 
-@app.post("/api/explain")
-def explain() -> JSONResponse:
-    return _stub("explain")
+@app.post("/api/explain/{flag_id}")
+async def explain(request: Request, flag_id: str) -> dict:
+    """Claude's verdict for one flag (any tier). Cached after the first call; never changes the rule result."""
+    p = pre(request)
+    f = next((x for x in p.flags if x.flag_id == flag_id.upper()), None)
+    if f is None:
+        raise HTTPException(404, f"Unknown flag '{flag_id}'")
+    ev = evidence.build(p.evidence_index, f)
+    h = evidence.evidence_hash(ev)
+    hit = p.verdicts.get(f.flag_id, h)
+    if hit:
+        f.review = to_review(hit)
+        return {"flag_id": f.flag_id, "review": f.review, "cached": True}
+    if not ai_client.have_key():  # no key: show the deterministic template, do not cache it
+        g = Generated(template_verdict(ev), "template", None, 0, [])
+        return {"flag_id": f.flag_id, "review": to_review(to_entry(ev, g)), "cached": False}
+    try:
+        g = await make_verdict(ai_client.get_client(), ai_client.model_live(), ev)
+    except anthropic.APIError as e:
+        raise HTTPException(502, f"Claude is unavailable right now ({type(e).__name__})") from e
+    entry = to_entry(ev, g)
+    p.verdicts.put(f.flag_id, entry)
+    p.verdicts.save()
+    f.review = to_review(entry)
+    return {"flag_id": f.flag_id, "review": f.review, "cached": False}
 
 
 @app.get(

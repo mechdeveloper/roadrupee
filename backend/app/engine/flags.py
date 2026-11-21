@@ -55,7 +55,11 @@ class Flag:
     review: dict | None = field(default=None)  # filled by Claude later
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        d = asdict(self)
+        # flat copies for the table / CSV; empty until a verdict exists. The rule fields are never changed.
+        d["claude_verdict"] = (self.review or {}).get("verdict", "")
+        d["claude_headline"] = (self.review or {}).get("headline", "")
+        return d
 
 
 def inr(x: float) -> str:
