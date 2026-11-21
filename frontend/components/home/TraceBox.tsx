@@ -58,6 +58,7 @@ export function TraceBox({ initial = "", autoFocus = false }: { initial?: string
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
             placeholder={TRACE_EXAMPLES[i]}
+            id="trace-input"
             aria-label={t("hero.trace.aria")}
             autoFocus={autoFocus}
             className="h-14 rounded-xl bg-surface pl-10 pr-12 text-base sm:text-lg"
