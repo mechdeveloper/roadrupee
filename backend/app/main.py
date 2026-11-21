@@ -18,6 +18,7 @@ from .ai.structured import Generated
 from .ai.verdict import make_verdict, template_verdict, to_entry, to_review
 from .engine import evidence
 from .contracts.plan import PlanResponse
+from .routes.home import router as home_router
 from .routes.pages import router as pages_router
 
 load_dotenv()
@@ -37,6 +38,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="RoadRupee API", lifespan=lifespan)
 app.include_router(pages_router)
+app.include_router(home_router)
 
 
 def pre(request: Request) -> cache.Precomputed:

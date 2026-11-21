@@ -66,6 +66,9 @@ export type PlanResponse = {
   items: PlanItem[]; // ranked, rank 1 first
 };
 
+export type CityPlanItem = { ward_slug: string; ward_code: string; ward_name: string; item: PlanItem };
+export type CityPlanResponse = { items: CityPlanItem[] }; // GET /api/plan/city?limit=N, risk descending
+
 // ---------- Ward / contractor / search pages (mirror of backend/app/contracts/pages.py) ----------
 export type Outcome = "held" | "failed";
 export type Alert = "Green" | "Yellow" | "Orange" | "Red";
@@ -325,4 +328,53 @@ export type FlagEvidence = {
   contractor: ContractorSummary;
   data_notes: string[];
   claude_review: ClaudeReview | null;
+};
+
+// ---------- Home dashboard + /audit (backend/app/routes/home.py) ----------
+export type HomeFlag = {
+  flag_id: string;
+  rule: string;
+  tier: "audit" | "review";
+  severity: string;
+  reason: string;
+  work_order_ids: string[];
+  ward_code: string;
+  ward_slug: string;
+  ward_name: string;
+  road_id: string;
+  contractor_id: string;
+  contractor_name: string;
+  repair_method: string;
+  amount_inr: number;
+  cost_inr: number;
+  verdict: ReviewVerdict | null;
+  headline: string | null;
+};
+export type TopFlags = { total_audit: number; items: HomeFlag[] };
+export type HomeContractor = {
+  contractor_id: string;
+  contractor_name: string;
+  work_orders: number;
+  spend_inr: number;
+  wards_active: number;
+  small_sample: boolean;
+  over_rate_count: number;
+  grades: { key: Grade["key"]; band: Band; headline: string }[];
+};
+export type MethodRow = {
+  repair_method: string;
+  spend_inr: number;
+  held_inr: number;
+  failed_inr: number;
+  failed_pct: number;
+  work_orders: number;
+};
+export type AuditList = {
+  total: number;
+  limit: number;
+  offset: number;
+  facets: Record<"rule" | "ward" | "contractor" | "verdict" | "method", Record<string, number>>;
+  items: HomeFlag[];
+  contractors: Record<string, string>;
+  wards: Record<string, string>;
 };

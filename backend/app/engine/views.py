@@ -87,12 +87,13 @@ def ward_flow(data: Data, wo: pd.DataFrame, ward_code: str, ward_name: str, budg
 
 
 # ------------------------------------------------------------------ timeline
-def ward_timeline(data: Data, wo: pd.DataFrame, ward_code: str) -> dict:
+def ward_timeline(data: Data, wo: pd.DataFrame, ward_code: str | None) -> dict:
+    """Daily rain + repairs that failed. ward_code=None means the whole city (code "ALL")."""
     rain = data.rain.copy()
     daily = rain.groupby("date").rainfall_mm.mean()
     alert = rain.assign(o=rain.imd_alert.map(ALERT_ORDER)).groupby("date").o.max()
     inv = {v: k for k, v in ALERT_ORDER.items()}
-    w = wo[(wo.ward_code == ward_code) & wo.reopened]
+    w = wo[wo.reopened] if ward_code is None else wo[(wo.ward_code == ward_code) & wo.reopened]
     start = daily.index.min().normalize()
     end = max(daily.index.max(), w.completed_at.max()).normalize() if len(w) else daily.index.max()
     by_day = {d: g for d, g in w.groupby(w.completed_at.dt.normalize())}
@@ -108,7 +109,7 @@ def ward_timeline(data: Data, wo: pd.DataFrame, ward_code: str) -> dict:
             failed_wo_ids=sorted(g.work_order_id) if g is not None else [],
         ))
     return dict(
-        ward_code=ward_code, ward_slug=ward_slug(ward_code),
+        ward_code=ward_code or "ALL", ward_slug=ward_slug(ward_code) if ward_code else "all",
         start=start.strftime("%Y-%m-%d"), end=end.strftime("%Y-%m-%d"),
         rain_data_ends=daily.index.max().strftime("%Y-%m-%d"),
         red_alert_days=int((alert == ALERT_ORDER["Red"]).sum()),

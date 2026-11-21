@@ -106,6 +106,18 @@ class PlanResponse(BaseModel):
     items: list[PlanItem] = Field(description="Ranked, rank 1 first. Around 5 to 15 items.")
 
 
+class CityPlanItem(BaseModel):
+    ward_slug: str
+    ward_code: str
+    ward_name: str
+    item: PlanItem
+
+
+class CityPlanResponse(BaseModel):
+    """GET /api/plan/city?limit=N: the riskiest road segments across all wards, risk_score descending."""
+    items: list[CityPlanItem]
+
+
 EXAMPLE_PLAN: dict = {
     "ward_slug": "g-s",
     "ward_code": "G/S",
