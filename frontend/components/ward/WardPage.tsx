@@ -12,6 +12,7 @@ import { TopNav } from "@/components/TopNav";
 import { VerdictChip } from "@/components/VerdictChip";
 import { ChecksTab } from "@/components/ward/ChecksTab";
 import { HeldTab } from "@/components/ward/HeldTab";
+import { MoneyTab } from "@/components/ward/MoneyTab";
 import { PlanTab } from "@/components/ward/PlanTab";
 import { TabComingSoon } from "@/components/ward/TabComingSoon";
 import { buttonVariants } from "@/components/ui/button";
@@ -27,8 +28,8 @@ const TABS: { key: TabKey; label: Key; icon: LucideIcon }[] = [
   { key: "check", label: "ward.tab.check", icon: Search },
   { key: "next", label: "ward.tab.next", icon: Route },
 ];
-// Flip to "money" once tab a is built (money is the natural first question).
-const DEFAULT_TAB: TabKey = "check";
+// Money is the natural first question.
+const DEFAULT_TAB: TabKey = "money";
 
 function isTab(v: string | null): v is TabKey {
   return TABS.some((t) => t.key === v);
@@ -196,6 +197,8 @@ export function WardPage({ slug }: { slug: string }) {
             <PlanTab ward={ward} />
           ) : tab === "held" ? (
             <HeldTab ward={ward} />
+          ) : tab === "money" ? (
+            <MoneyTab ward={ward} />
           ) : (
             <TabComingSoon title={t(TABS.find((x) => x.key === tab)!.label)} />
           )}

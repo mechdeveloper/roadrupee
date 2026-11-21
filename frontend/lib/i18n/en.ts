@@ -208,6 +208,19 @@ export const en = {
   "held.tip.none": "no rainfall data",
   "held.tip.failed": "{n} repairs failed",
   "held.tip.alert": "IMD {level} alert",
+  // ward page: money tab
+  "money.sentence": "{spend} was spent here: {held} held up and {failed} didn't.",
+  "money.contractors": "By contractor",
+  "money.methods": "By type of repair",
+  "money.jobs": "{n} jobs",
+  "money.heldAmt": "{amount} held",
+  "money.failedAmt": "{amount} didn't hold ({pct})",
+  "money.report": "Report card",
+  "money.few": "Few jobs: rough guide",
+  "money.note": "A longer bar means more work, not worse work. Compare the red share instead.",
+  "money.next": "See what's worth checking",
+  "money.flow": "How the money flowed",
+  "money.flow.desc": "Ward spend, to contractors, to repair types, to held or didn't hold. Tap a contractor for its report card.",
 } as const;
 
 export type Key = keyof typeof en;
