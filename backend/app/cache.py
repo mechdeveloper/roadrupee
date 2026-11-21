@@ -8,6 +8,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from .engine import evidence
 from .engine import flags as F
 from .engine import metrics
 from .engine.expected import add_expected
@@ -22,6 +23,7 @@ class Precomputed:
     summary: dict
     wards: list[dict]
     contractors: list[dict]
+    evidence_index: evidence.EvidenceIndex | None = None
 
 
 def build() -> Precomputed:
@@ -29,11 +31,13 @@ def build() -> Precomputed:
     wo = F.add_expected_cost(data, data.wo)
     wo = add_expected(data, wo)
     flags = F.run_all(data, wo)
+    contractors = metrics.contractors(data, wo)
     pre = Precomputed(
         data=data, wo=wo, flags=flags,
         summary=metrics.summary(data, wo, flags),
         wards=metrics.wards(data, wo, flags),
-        contractors=metrics.contractors(data, wo),
+        contractors=contractors,
+        evidence_index=evidence.build_index(data, wo, contractors),
     )
     _dump(pre)
     return pre

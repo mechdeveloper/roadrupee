@@ -3,8 +3,9 @@ from __future__ import annotations
 
 from fastapi import APIRouter, HTTPException, Request
 
+from ..contracts.evidence import FlagEvidence
 from ..contracts.pages import ContractorCard, Locality, WardFlow, WardTimeline
-from ..engine import views
+from ..engine import evidence, views
 
 router = APIRouter(prefix="/api")
 
@@ -57,6 +58,23 @@ def localities(request: Request) -> list[dict]:
         out.append(dict(locality=r.locality, ward_code=r.ward_code, ward_slug=w["slug"],
                         ward_name=w["ward_name"], aliases=aliases))
     return out
+
+
+def _flag(request: Request, flag_id: str):
+    for f in request.app.state.pre.flags:
+        if f.flag_id == flag_id.upper():
+            return f
+    raise HTTPException(404, f"Unknown flag '{flag_id}'")
+
+
+@router.get("/flags/{flag_id}/evidence", response_model=FlagEvidence)
+def flag_evidence(request: Request, flag_id: str) -> dict:
+    """Everything a ward officer needs to judge one flag. Deterministic; no LLM."""
+    p = request.app.state.pre
+    f = _flag(request, flag_id)
+    ev = evidence.build(p.evidence_index, f)
+    ev["claude_review"] = f.review
+    return ev
 
 
 @router.get("/flags/{flag_id}")
