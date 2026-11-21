@@ -13,6 +13,8 @@ COPY --from=builder /app/.venv /app/.venv
 COPY backend/app ./app
 COPY backend/data_cache ./data_cache
 COPY data ./data
+# the non-root runtime user must be able to read the committed Claude caches whatever their file mode was
+RUN chmod -R a+rX /app/data_cache /app/data
 ENV PATH="/app/.venv/bin:$PATH" PYTHONUNBUFFERED=1 DATA_DIR=/app/data CACHE_DIR=/tmp/roadrupee-cache
 USER app
 EXPOSE 8000

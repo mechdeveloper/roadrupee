@@ -37,6 +37,7 @@ class JsonStore:
                 with os.fdopen(fd, "w") as fh:
                     json.dump(dict(sorted(self.items.items())), fh, ensure_ascii=False, indent=1)
                 os.replace(tmp, self.path)
+                os.chmod(self.path, 0o644)  # mkstemp makes 0600; the non-root container user must be able to read it
                 return True
             except OSError:
                 return False
