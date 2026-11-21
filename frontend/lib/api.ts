@@ -34,6 +34,21 @@ export type Ward = {
   flags_review: number;
   reopen_observed_pct: number;
   reopen_expected_pct: number;
+  reopen_ci_low_pct: number;
+  reopen_ci_high_pct: number;
+};
+
+export type Flag = {
+  flag_id: string;
+  rule: string;
+  tier: "audit" | "review";
+  severity: "high" | "medium" | "low";
+  work_order_ids: string[];
+  reason: string;
+  ward_code: string;
+  road_id: string;
+  cost_inr: number;
+  amount_inr: number;
 };
 
 export type State<T> =

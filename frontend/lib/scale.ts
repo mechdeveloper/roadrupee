@@ -1,15 +1,31 @@
-/** Diverging bins around the city-wide failed-spend share. Thresholds in percentage points. */
-export const BINS = [
-  { token: "--scale-1", label: "8+ pts above city average", test: (d: number) => d >= 8 },
-  { token: "--scale-2", label: "3–8 pts above", test: (d: number) => d >= 3 },
-  { token: "--scale-3", label: "Within 3 pts of average", test: (d: number) => d > -3 },
-  { token: "--scale-4", label: "3–8 pts below", test: (d: number) => d > -8 },
-  { token: "--scale-5", label: "8+ pts below", test: () => true },
-] as const;
+import type { Ward } from "@/lib/api";
 
-export function binFor(wardPct: number, cityPct: number) {
-  const d = wardPct - cityPct;
-  return BINS.find((b) => b.test(d)) ?? BINS[2];
+/** Map/table colour bins: rank-based quintiles of the SHARE of a ward's repair spend that didn't hold.
+ *  Index 0 = highest share (deep red) … 4 = lowest share (teal). Never absolute ₹ (unfair to big spenders). */
+export const BIN_TOKENS = ["--scale-1", "--scale-2", "--scale-3", "--scale-4", "--scale-5"] as const;
+
+export type Bin = { index: number; token: (typeof BIN_TOKENS)[number] };
+
+export type Bins = {
+  byCode: Map<string, Bin>;
+  /** share range (percent) covered by each bin, for the legend */
+  ranges: { token: Bin["token"]; min: number; max: number }[];
+  /** top 3 wards by share, in order */
+  top3: string[];
+};
+
+export function rankBins(wards: Ward[]): Bins {
+  const sorted = [...wards].sort((a, b) => b.failed_pct - a.failed_pct);
+  const n = sorted.length;
+  const byCode = new Map<string, Bin>();
+  const ranges = BIN_TOKENS.map((token) => ({ token, min: Infinity, max: -Infinity }));
+  sorted.forEach((w, rank) => {
+    const index = Math.min(4, Math.floor((rank * 5) / n));
+    byCode.set(w.ward_code, { index, token: BIN_TOKENS[index] });
+    ranges[index].min = Math.min(ranges[index].min, w.failed_pct);
+    ranges[index].max = Math.max(ranges[index].max, w.failed_pct);
+  });
+  return { byCode, ranges: ranges.filter((r) => r.min <= r.max), top3: sorted.slice(0, 3).map((w) => w.ward_code) };
 }
 
 export function cssVar(name: string): string {

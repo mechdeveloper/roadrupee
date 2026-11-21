@@ -84,6 +84,23 @@ def test_repeat_failure(pre):
         assert f.reason.startswith("Same fix by same contractor failed again within 60 days")
 
 
+def test_inr_uses_indian_grouping():
+    from app.engine.flags import inr
+
+    assert inr(999) == "₹999"
+    assert inr(1234) == "₹1,234"
+    assert inr(235386) == "₹2,35,386"
+    assert inr(13432818) == "₹1,34,32,818"
+
+
+def test_flag_reasons_use_indian_grouping(pre):
+    f = by_rule(pre, "OVER_RATE")[0]
+    import re
+
+    # any rupee amount of 6+ digits must be grouped the Indian way (no 3-digit groups like 235,386)
+    assert not re.search(r"₹\d{1,3},\d{3},\d{3}", f.reason)
+
+
 def test_every_flag_has_evidence_and_fair_wording(pre):
     banned = ("fraud", "scam", "corrupt", "steal")
     for f in pre.flags:

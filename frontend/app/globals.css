@@ -14,15 +14,21 @@
   --accent-ink: #ffffff;
   --danger: #b2182b;
 
-  /* Diverging scale around the city average: red = more money that didn't hold,
-     teal = less, neutral = about average. Ordered, colour-blind-safe (red vs teal
-     differ in hue AND lightness). Always paired with a label/value, never colour alone. */
+  /* Map / table scale: rank-based quintiles of the SHARE of repair spend that didn't hold.
+     Warm red/amber = higher share didn't hold, teal = held better. Lightness-symmetric (dark ends,
+     light middle). Always paired with a label or value, never colour alone. See DESIGN.md. */
   --scale-1: #b2182b;
-  --scale-2: #e59a93;
-  --scale-3: #e3dfd6;
+  --scale-2: #e39a4e;
+  --scale-3: #d8d3c7;
   --scale-4: #86c1ba;
   --scale-5: #1f7a7a;
   --scale-none: #efece5;
+
+  /* Hero: soft monsoon sky that fades into the page */
+  --hero-sky-top: #e3ebf2;
+  --hero-sky-bottom: #faf7f2;
+  --hero-muted: #4e5a66;
+  --rain: rgba(60, 80, 105, 0.08);
 
   --radius: 0.75rem;
 
@@ -71,6 +77,7 @@
   --color-scale-4: var(--scale-4);
   --color-scale-5: var(--scale-5);
   --color-scale-none: var(--scale-none);
+  --color-hero-muted: var(--hero-muted);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-inter);
   --radius-sm: calc(var(--radius) * 0.6);
@@ -102,9 +109,128 @@
   font-family: inherit;
 }
 
+/* ---- Hero motion (all disabled under prefers-reduced-motion, see the media block below) ---- */
+.hero-sky {
+  background: linear-gradient(180deg, var(--hero-sky-top) 0%, var(--hero-sky-bottom) 100%);
+}
+
+/* ₹100 bar: failed tiles crack, then drop away once */
+@keyframes tile-crack-drop {
+  0% { transform: translateY(0) rotate(0); opacity: 1; }
+  25% { transform: translateY(0) rotate(-2deg); opacity: 1; }
+  40% { transform: translateY(2px) rotate(3deg); opacity: 1; }
+  100% { transform: translateY(46px) rotate(12deg); opacity: 0; }
+}
+.tile-fail {
+  background: var(--scale-1);
+  position: relative;
+}
+.tile-fail::after {
+  /* the crack */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 46%, var(--hero-sky-bottom) 47%, var(--hero-sky-bottom) 53%, transparent 54%);
+  opacity: 0;
+}
+.tile-fail[data-drop="true"] {
+  animation: tile-crack-drop 0.55s cubic-bezier(0.5, 0, 0.9, 0.6) forwards;
+  animation-delay: var(--delay, 0ms);
+}
+.tile-fail[data-drop="true"]::after {
+  animation: tile-crack-show 0.2s linear forwards;
+  animation-delay: var(--delay, 0ms);
+}
+@keyframes tile-crack-show {
+  to { opacity: 1; }
+}
+/* the slot a failed tile leaves behind */
+.tile-ghost {
+  border: 1px dashed var(--scale-1);
+  background: transparent;
+}
+
+/* gentle pulse on the top-3 wards (leaflet path elements) */
+@keyframes ward-pulse {
+  0%, 100% { stroke-opacity: 1; fill-opacity: 0.8; }
+  50% { stroke-opacity: 0.35; fill-opacity: 0.55; }
+}
+.ward-pulse {
+  animation: ward-pulse 3s ease-in-out infinite;
+  stroke: var(--scale-1);
+  stroke-width: 3px;
+}
+
+/* cards fade and slide in on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition-delay: var(--delay, 0ms);
+}
+.reveal[data-shown="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* leaflet attribution stays readable on the light basemap */
+.leaflet-container .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  color: var(--ink);
+  font-size: 11px;
+}
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--accent);
+}
+.leaflet-tooltip {
+  color: var(--ink);
+  border-color: var(--border);
+  font-family: inherit;
+}
+
+/* Hero grid. Mobile order: headline -> bar -> map -> search. Desktop: text column left, map right. */
+.hero-grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "head" "bar" "map" "search";
+  align-content: start;
+}
+.area-head { grid-area: head; }
+.area-bar { grid-area: bar; }
+.area-map { grid-area: map; min-width: 0; }
+.area-search { grid-area: search; }
+@media (min-width: 1024px) {
+  .hero-grid {
+    gap: 1.75rem 3rem;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    /* spacer rows (1fr) above and below centre the text column against the taller map */
+    grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-areas:
+      ". map"
+      "head map"
+      "bar map"
+      "search map"
+      ". map";
+    align-content: stretch;
+    align-items: start;
+  }
+  .area-map { align-self: center; }
+}
+
+/* Must stay LAST so it overrides the hero motion rules above */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
     transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+  .ward-pulse {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }

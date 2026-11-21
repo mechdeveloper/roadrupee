@@ -59,7 +59,20 @@ class Flag:
 
 
 def inr(x: float) -> str:
-    return f"₹{x:,.0f}"
+    """Indian digit grouping: ₹2,35,386 (not ₹235,386)."""
+    n = int(round(x))
+    sign = "-" if n < 0 else ""
+    s = str(abs(n))
+    if len(s) > 3:
+        head, tail = s[:-3], s[-3:]
+        parts: list[str] = []
+        while len(head) > 2:
+            parts.insert(0, head[-2:])
+            head = head[:-2]
+        if head:
+            parts.insert(0, head)
+        s = ",".join(parts) + "," + tail
+    return f"{sign}₹{s}"
 
 
 def add_expected_cost(data: Data, wo: pd.DataFrame) -> pd.DataFrame:

@@ -4,7 +4,9 @@ const LAKH = 1e5;
 const grouped = new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 });
 
 function trim(n: number, digits: number): string {
-  return n.toFixed(digits).replace(/\.?0+$/, "");
+  const s = n.toFixed(digits);
+  // only strip zeros after a decimal point ("20" must stay "20", "3.10" -> "3.1")
+  return s.includes(".") ? s.replace(/\.?0+$/, "") : s;
 }
 
 /** Indian ₹ formatting: ₹3.07 Cr, ₹45 L, ₹12,345. */
