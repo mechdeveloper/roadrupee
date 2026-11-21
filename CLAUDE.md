@@ -216,6 +216,15 @@ Models via env: `CLAUDE_MODEL_LIVE=claude-sonnet-5-5`, `CLAUDE_MODEL_EXTRACT=cla
 ## Design
 Follow `DESIGN.md`: tokens only, fair wording ("worth checking", never "fraud/scam"), ₹ Indian formatting, loading/empty/error states.
 
+## UI structure and rules
+The app is ward-first and mobile-first. Full rules, site map and owners are in `DESIGN.md` ("App structure"); the short version:
+- Routes: `/`, `/ward/[slug]` (tabs money / held / check / next, `?mode=officer`), `/flag/[id]`, `/contractor/[id]`, `/trace` (**Student B owns the backend and the page; placeholder until then**), plus placeholders `/audit /scorecards /plan /ask`.
+- Headings are questions; answers are plain sentences with one big number. One idea per card. Colour always means the same: red/amber = didn't hold / worth checking, teal = held / fine, grey = no data or context.
+- Every number links to evidence; every screen ends with an action. Fair wording ("worth checking"), no internal rule names in the UI (`frontend/lib/plain.ts` maps them).
+- UI strings come from `frontend/lib/i18n/` (EN / हिं / मरा, English fallback), never inline.
+- Placeholder data only when an endpoint returns 501, clearly labelled, behind the same TypeScript type (`frontend/lib/types.ts`).
+- The ward page shows a "Claude's summary of this ward" card from `ward.ai_summary` `{en, hi, mr}` when present and hides it otherwise.
+
 ## Roles
 | Who | Area |
 |---|---|

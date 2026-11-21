@@ -92,3 +92,41 @@ Opened from a map click or a ranking row: a side sheet on desktop, a bottom shee
 | REPEAT_FAILURE | Same fix by the same contractor failed again |
 | DLP / warranty | "still under the contractor's warranty" |
 | observed vs expected reopen | "compared to what we'd expect for this ward's rain and flooding" |
+
+## App structure: answer the questions people actually ask
+
+The app is **ward-first and mobile-first**. A citizen or ward officer arrives with a question; each screen answers one.
+
+### Site map and owners
+| Route | Question it answers | Owner |
+|---|---|---|
+| `/` | Where did Mumbai's repair money go? Pick a question, a ward, or trace a complaint | tech lead |
+| `/ward/[slug]` | One ward, four tabs (below). `?tab=money\|held\|check\|next`, `?mode=officer` | tech lead |
+| `/flag/[id]` | Why was this flagged, and how do you know? (evidence page) | tech lead (evidence endpoint: another session) |
+| `/contractor/[id]` | How is this contractor doing, fairly? | tech lead |
+| `/trace` | What happened to my complaint? | **Student B** (backend and page; the route is a placeholder until then) |
+| `/audit` `/scorecards` `/plan` `/ask` | placeholders, replaced by the owner's `page.tsx` | per CLAUDE.md roles |
+
+Ward page tabs, titled as questions: **a) Where did the money go?** (money) · **b) Did the fixes hold?** (held) · **c) What's worth checking?** (check) · **d) Where should the next rupee go?** (next). A "Claude's summary of this ward" card sits above the tabs and renders `ward.ai_summary` (`{en, hi, mr}`) only when present; otherwise it is hidden.
+
+`slug` = ward code lower-cased, `/` → `-` (`G/S` → `g-s`). It is a field on every ward in `/api/wards`.
+
+### Rules every screen follows
+1. **Headings are questions. Answers are plain sentences with one big number.** No internal rule names (DLP_PAID, OVER_RATE…) in the UI; use `lib/plain.ts`.
+2. **One idea per card.** Generous spacing, 44 px minimum tap targets, every icon has a text label (lucide).
+3. **Colour always means the same.** Red/amber = didn't hold / worth checking. Teal = held / fine. Grey = no data or neutral context (rain, volume, chart scaffolding). Never use red/amber or teal for decoration, and never rely on colour alone.
+4. **Every number links to its evidence; every screen ends with an action** (download, print, draft an RTI, open the work order).
+5. **Fair wording** everywhere: "worth checking", "compared with what we'd expect", never "fraud" or blame.
+6. **Languages:** EN / हिं / मरा toggle in the nav. UI strings come from the dictionary in `frontend/lib/i18n/` and never inline. English is complete; a missing Hindi or Marathi key falls back to English. Data-driven text (flag reasons, Claude explanations) is translated later. Hindi and Marathi copy needs a native-speaker review.
+7. **States:** skeleton loading that keeps the final layout, friendly empty states that say what to try, error states with a retry. Never a stack trace.
+8. **Motion:** smooth but subtle; everything must respect `prefers-reduced-motion`.
+9. **Charts:** Recharts, styled only with tokens, ₹ in Indian formatting (`lib/format.ts`), no chart junk (no 3D, no gradients, no dual axes), and a text or table alternative for every chart.
+10. **Placeholders are labelled.** When a backend is not ready (`501`), show clearly marked example data behind the same TypeScript type. Never present placeholder data as real.
+
+### Ward page details
+- **Header:** ward name and areas, budget-vs-spent bar, "₹X didn't hold (Y%)", and a better / about as expected / worse chip (`verdict()` in `lib/plain.ts`).
+- **Money tab:** contractor bars on every screen width (spend with a held/failed split), each tapping through to `/contractor/[id]`. A flow chart (budget → contractors → repair types → held/failed) is a desktop-only extra.
+- **Held tab:** one big sentence with actual vs expected, then a monsoon timeline: daily rain bars (grey), red-alert days highlighted, repair-failure dots on top. Each dot means "repair completed this day, failed within 30 days" (the data has no failure date). Rain data ends 30 Sep, so October shows "no rainfall data".
+- **Check tab:** flag cards (plain title, ₹, work order id, Claude verdict chip when present), filter by type, each card opens `/flag/[id]`.
+- **Next tab:** ranked road cards from `/api/plan` (see CLAUDE.md "Planner contract"), a budget bar that fills as items are selected, Print and Share.
+- **Officer mode** (`?mode=officer`): same page, with Print plan and Download CSV as the primary buttons in a sticky action bar.
