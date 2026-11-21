@@ -12,6 +12,7 @@ from fastapi.responses import JSONResponse, Response, StreamingResponse
 
 from . import cache
 from .contracts.plan import PlanResponse
+from .routes.pages import router as pages_router
 
 load_dotenv()
 
@@ -28,6 +29,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="RoadRupee API", lifespan=lifespan)
+app.include_router(pages_router)
 
 
 def pre(request: Request) -> cache.Precomputed:

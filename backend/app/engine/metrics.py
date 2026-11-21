@@ -6,6 +6,7 @@ import pandas as pd
 from ..loader import Data
 from .expected import wilson
 from .flags import Flag
+from .views import ward_slug
 
 ROAD_DEFECT_CAUSES = ["Pothole", "Waterlogged road", "Uneven road / open chamber"]
 
@@ -81,7 +82,9 @@ def wards(data: Data, wo: pd.DataFrame, flags: list[Flag]) -> list[dict]:
         spend = card.get("spend_inr", 0.0)
         out.append({
             "ward_code": w.ward_code,
+            "slug": ward_slug(w.ward_code),
             "ward_name": w.ward_name,
+            "localities": [x.strip() for x in str(w.localities).split(";") if x.strip()],
             "zone": w.zone,
             "low_lying_index": float(w.low_lying_index),
             "budget_inr": budget,
