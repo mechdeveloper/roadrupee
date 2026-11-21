@@ -39,6 +39,9 @@
   --tone-neutral-bg: var(--scale-none);
   --tone-neutral-ink: var(--hero-muted);
 
+  /* Charts: grey-blue = neutral context (rain). Red/teal keep their meanings. */
+  --chart-rain: #7e93a8;
+
   --radius: 0.75rem;
 
   /* shadcn/ui variables mapped onto the tokens above */

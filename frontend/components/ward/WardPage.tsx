@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ChevronLeft, CloudRain, Download, Printer, Route, Search, Sparkles, Wallet, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -10,6 +11,7 @@ import { ErrorBox } from "@/components/ErrorBox";
 import { TopNav } from "@/components/TopNav";
 import { VerdictChip } from "@/components/VerdictChip";
 import { ChecksTab } from "@/components/ward/ChecksTab";
+import { HeldTab } from "@/components/ward/HeldTab";
 import { PlanTab } from "@/components/ward/PlanTab";
 import { TabComingSoon } from "@/components/ward/TabComingSoon";
 import { buttonVariants } from "@/components/ui/button";
@@ -34,6 +36,7 @@ function isTab(v: string | null): v is TabKey {
 
 function AiSummary({ ward }: { ward: Ward }) {
   const { lang, t } = useI18n();
+  const [open, setOpen] = useState(false);
   const s = ward.ai_summary;
   if (!s) return null; // hidden until the summary has been precomputed
   const text = s[lang] || s.en;
@@ -44,9 +47,17 @@ function AiSummary({ ward }: { ward: Ward }) {
         <Sparkles className="size-4" aria-hidden />
         {t("ward.summary.title")}
       </p>
-      <p lang={lang} className="mt-2 max-w-3xl text-[17px] leading-relaxed text-ink">
+      <p lang={lang} className={`mt-2 max-w-3xl text-[17px] leading-relaxed text-ink sm:line-clamp-none ${open ? "" : "line-clamp-4"}`}>
         {text}
       </p>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        className="min-h-11 font-medium text-primary underline underline-offset-4 sm:hidden"
+      >
+        {open ? t("common.less") : t("common.more")}
+      </button>
     </section>
   );
 }
@@ -183,6 +194,8 @@ export function WardPage({ slug }: { slug: string }) {
             <ChecksTab ward={ward} />
           ) : tab === "next" ? (
             <PlanTab ward={ward} />
+          ) : tab === "held" ? (
+            <HeldTab ward={ward} />
           ) : (
             <TabComingSoon title={t(TABS.find((x) => x.key === tab)!.label)} />
           )}
