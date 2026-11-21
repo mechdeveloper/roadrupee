@@ -55,8 +55,8 @@ export type Flag = {
   road_id: string;
   cost_inr: number;
   amount_inr: number;
-  /** Claude's review of the flag. Shape finalised by the review session; render only if present. */
-  review?: { verdict?: string; explanation?: string } | null;
+  /** Claude's review of the flag (verdict, headline, reasoning, source). Render only if present. */
+  review?: Partial<import("@/lib/types").ClaudeReview> | null;
 };
 
 export type State<T> =

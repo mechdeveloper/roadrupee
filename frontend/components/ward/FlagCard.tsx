@@ -15,13 +15,14 @@ const ICON: Record<string, LucideIcon> = {
   REPEAT_FAILURE: RotateCcw,
 };
 
-/** Claude's review chip, shown only when a review exists. "Likely justified" is grey (context), anything else is "worth checking". */
+/** Claude's review chip, shown only when a review exists. Likely justified / needs more info are grey (context); worth checking is red. */
 function ClaudeChip({ review }: { review: NonNullable<Flag["review"]> }) {
   const t = useT();
-  const justified = /justified/i.test(review.verdict ?? "");
+  const v = review.verdict ?? "worth_checking";
+  const key: Key = v === "likely_justified" ? "claude.justified" : v === "needs_more_info" ? "claude.more" : "claude.worth";
   return (
-    <Chip tone={justified ? "neutral" : "check"} icon={Sparkles}>
-      {t(justified ? "claude.justified" : "claude.worth")}
+    <Chip tone={v === "worth_checking" ? "check" : "neutral"} icon={Sparkles}>
+      {t(key)}
     </Chip>
   );
 }

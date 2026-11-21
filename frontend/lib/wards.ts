@@ -41,3 +41,17 @@ export function searchWards(query: string, wards: Ward[], localities: Locality[]
     .sort((a, b) => b.score - a.score || a.ward.ward_code.localeCompare(b.ward.ward_code))
     .slice(0, limit);
 }
+
+/** Ward code -> URL slug (G/S -> g-s). Same rule as the backend. */
+export function wardSlug(code: string): string {
+  return code.toLowerCase().replace("/", "-");
+}
+
+/** "2025-07-08 14:30" -> "8 Jul 2025" */
+export function fmtDate(s: string | null | undefined): string {
+  if (!s) return "—";
+  const d = new Date(`${s.slice(0, 10)}T00:00:00Z`);
+  return Number.isNaN(d.getTime())
+    ? s
+    : d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+}
