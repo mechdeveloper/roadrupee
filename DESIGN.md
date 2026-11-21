@@ -121,7 +121,8 @@ Ward page tabs, titled as questions: **a) Where did the money go?** (money) · *
 7. **States:** skeleton loading that keeps the final layout, friendly empty states that say what to try, error states with a retry. Never a stack trace.
 8. **Motion:** smooth but subtle; everything must respect `prefers-reduced-motion`.
 9. **Charts:** Recharts, styled only with tokens, ₹ in Indian formatting (`lib/format.ts`), no chart junk (no 3D, no gradients, no dual axes), and a text or table alternative for every chart.
-10. **Placeholders are labelled.** When a backend is not ready (`501`), show clearly marked example data behind the same TypeScript type. Never present placeholder data as real.
+10. **Small samples are labelled.** Any share or rate built from fewer than 10 jobs (per contractor in a ward, per repair type) shows a neutral "Few jobs: rough guide" chip, and a verdict word ("better" / "worse") is only used when the confidence interval excludes what's expected. Bars compare shares, never raw totals: a longer bar means more work, not worse work.
+11. **Placeholders are labelled.** When a backend is not ready (`501`), show clearly marked example data behind the same TypeScript type. Never present placeholder data as real.
 
 ### Ward page details
 - **Header:** ward name and areas, budget-vs-spent bar, "₹X didn't hold (Y%)", and a better / about as expected / worse chip (`verdict()` in `lib/plain.ts`).

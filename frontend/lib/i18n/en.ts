@@ -221,6 +221,25 @@ export const en = {
   "money.next": "See what's worth checking",
   "money.flow": "How the money flowed",
   "money.flow.desc": "Ward spend, to contractors, to repair types, to held or didn't hold. Tap a contractor for its report card.",
+  // contractor report card
+  "contractor.eyebrow": "CONTRACTOR REPORT CARD",
+  "contractor.facts": "{wards} wards · {jobs} jobs · {spend} spent",
+  "contractor.summary.title": "In plain words",
+  "contractor.summary.auto": "Written automatically from the numbers below. It points at the evidence and doesn't blame anyone.",
+  "grade.speed.title": "Did it finish on time?",
+  "grade.durability.title": "Did the repairs last?",
+  "grade.cost.title": "Did it bill fairly against the rate card?",
+  "grade.volume.title": "How much work did it do?",
+  "band.better": "Better than expected",
+  "band.as_expected": "About as expected",
+  "band.worse": "Worth checking",
+  "band.neutral": "Context",
+  "contractor.few": "Few jobs: treat this as a first look",
+  "contractor.wards.title": "Where it worked",
+  "contractor.ward.line": "{failed} didn't hold · about {expected} expected · {n} jobs",
+  "contractor.print": "Print this report card",
+  "contractor.notFound": "We couldn't find that contractor.",
+  "contractor.footer": "Compared with what's expected for the repair methods, rain and flooding in the wards this contractor works in.",
 } as const;
 
 export type Key = keyof typeof en;
