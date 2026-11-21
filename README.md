@@ -36,9 +36,13 @@ The interface is in English, हिन्दी and मराठी (toggle in t
 |---|---|
 | Audit accuracy | [`/audit`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/audit) and `/api/flags.csv` (below, 391 audit findings); each flag's evidence page, e.g. `/flag/F0001` |
 | Fair accountability | A ward page → "Did the fixes hold?"; `/contractors` and `/contractor/CT04` |
-| Budget smarts | A ward page → "Where should the next rupee go?"; `/plan` |
-| Connects the trail | [`/trace`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/trace) |
+| Budget smarts | A ward page → "Where should the next rupee go?"; `/plan`; full ranking: `GET /api/plan.csv` (267 rows, one per ward × ranked road segment, with each score part, method, cost and `within_budget`) |
+| Connects the trail | [`/trace`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/trace); the funnel below, live at `GET /api/trail-summary` and on the home page |
 | Usable + demo | Home, the language toggle, officer mode (`/ward/t?mode=officer`), print and share |
+
+### Connects the trail (complaint funnel)
+Computed from the data by `backend/app/engine/trail.py`, never hard-coded (`GET /api/trail-summary`, pinned by tests):
+**6,501 complaints → 1,014 marked duplicates → 5,487 unique issues → 3,934 linked to a work order (2,972 held, 962 failed within 30 days) · 896 open or in progress · 326 forwarded (MMRDA/PWD, SWM) · 331 rejected.** A complaint counts as failed if any work order linked to it was reopened within 30 days.
 
 ### Check our audit
 - **Download:** `GET /api/flags.csv` (**our audit findings: the 391 audit-tier flags**, one row per flag, `work_order_id` first) or `GET /api/flags_all.csv` (everything, including the lower-priority review items; the `tier` column says which), or the filterable list at `/audit`. Its CSV button (`/api/audit.csv`) respects the filters.

@@ -58,6 +58,14 @@ def top_flags(request: Request, limit: int = Query(6, ge=1, le=24)) -> dict:
     return {"total_audit": total, "items": out}
 
 
+@router.get("/trail-summary")
+def trail_summary(request: Request) -> dict:
+    """The complaint trail funnel, from the data."""
+    from ..engine import trail
+    p = request.app.state.pre
+    return trail.funnel(p.data.complaints, p.wo)
+
+
 @router.get("/home/audit-strip")
 def audit_strip(request: Request) -> dict:
     """The 'How we audited' numbers: repairs checked, audit-tier flags, Claude's verdict split, and one likely-justified example."""

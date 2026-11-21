@@ -82,6 +82,18 @@ export type AuditStrip = {
   example: HomeFlag | null;
 };
 
+export type TrailSummary = {
+  total: number;
+  duplicates: number;
+  unique: number;
+  linked: number;
+  held: number;
+  failed: number;
+  open_or_in_progress: number;
+  forwarded: number;
+  rejected: number;
+};
+
 export type Band = "better" | "as_expected" | "watch" | "worse" | "neutral";
 
 export type Locality = {

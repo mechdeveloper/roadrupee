@@ -6,6 +6,7 @@ import { Landmark, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { ErrorBox } from "@/components/ErrorBox";
+import { TrailFunnel } from "@/components/home/TrailFunnel";
 import { AuditStrip } from "@/components/home/AuditStrip";
 import { ContractorCards } from "@/components/home/ContractorCards";
 import { HookBand } from "@/components/home/HookBand";
@@ -64,6 +65,7 @@ export function Home() {
       />
 
       <AuditStrip />
+      <TrailFunnel />
 
       <main className="mx-auto w-full max-w-[1280px] flex-1 space-y-12 px-4 pt-8 pb-16 sm:px-6">
         <Section id="wards" title={t("home.q.wards")} seeAll="/wards">

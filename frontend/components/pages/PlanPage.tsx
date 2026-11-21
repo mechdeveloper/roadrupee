@@ -1,5 +1,6 @@
 "use client";
 
+import { Download } from "lucide-react";
 import Link from "next/link";
 import { useMemo } from "react";
 import { Chip } from "@/components/Chip";
@@ -7,6 +8,7 @@ import { ErrorBox } from "@/components/ErrorBox";
 import { PageShell } from "@/components/PageShell";
 import { NextRupeeTop5 } from "@/components/home/NextRupeeTop5";
 import { Section } from "@/components/home/Section";
+import { buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { type Ward, useApi } from "@/lib/api";
 import { inr } from "@/lib/format";
@@ -26,6 +28,10 @@ export function PlanPage() {
       <div className="space-y-12">
         <Section id="top" title={t("plan.page.top")}>
           <NextRupeeTop5 limit={10} />
+          <a href="/api/plan.csv" download className={`${buttonVariants({ variant: "outline" })} mt-4 h-11 gap-2 px-4`}>
+            <Download className="size-4" aria-hidden />
+            {t("plan.csv")}
+          </a>
         </Section>
         <Section id="pick" title={t("plan.page.pick")}>
           {state.status === "error" ? (
