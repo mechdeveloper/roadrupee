@@ -4,6 +4,8 @@
 
 🌐 **Live app: https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io**
 
+🎬 **Demo video (1 min 46 s): [docs/demo/RoadRupeeDemo.mp4](docs/demo/RoadRupeeDemo.mp4)** · [direct download](https://github.com/mechdeveloper/roadrupee/raw/main/docs/demo/RoadRupeeDemo.mp4)
+
 ![RoadRupee home: ₹3.07 Cr of ₹13.43 Cr didn't hold, ward map and league table](docs/screenshots/home.png)
 
 Built for Claude Impact Lab Mumbai ("Follow the Rupee: Mumbai Monsoon Roads"). Every monsoon Mumbai spends crores fixing the same roads, and the potholes come back. RoadRupee shows, for each ward, where the road repair money went, whether the work held up, who is responsible, and where the next rupee should go.
