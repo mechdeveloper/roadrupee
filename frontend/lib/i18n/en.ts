@@ -69,6 +69,9 @@ export const en = {
   "verdict.better": "better than expected",
   "verdict.expected": "about as expected",
   "verdict.worse": "worse than expected",
+  "verdict.better.short": "Better",
+  "verdict.expected.short": "As expected",
+  "verdict.worse.short": "Worse",
 
   // ward page
   "ward.tab.money": "Where did the money go?",

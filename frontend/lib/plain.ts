@@ -31,3 +31,9 @@ export const VERDICT_KEY = {
   "about as expected": "verdict.expected",
   worse: "verdict.worse",
 } as const;
+
+export const VERDICT_SHORT_KEY = {
+  better: "verdict.better.short",
+  "about as expected": "verdict.expected.short",
+  worse: "verdict.worse.short",
+} as const;

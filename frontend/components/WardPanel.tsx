@@ -1,12 +1,15 @@
 "use client";
 
 import { ErrorBox } from "@/components/ErrorBox";
+import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import { type Flag, type Ward, useApi } from "@/lib/api";
 import { inr, num, pct } from "@/lib/format";
+import { useT } from "@/lib/i18n";
 import { ruleTitle, verdict } from "@/lib/plain";
+import { wardHref } from "@/lib/wards";
 import { useMediaQuery } from "@/lib/useMediaQuery";
 
 const VERDICT_STYLE = {
@@ -25,6 +28,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 function Body({ ward }: { ward: Ward }) {
+  const t = useT();
   const code = encodeURIComponent(ward.ward_code);
   const { state, retry } = useApi<{ total: number; items: Flag[] }>(`/api/flags?ward=${code}&tier=audit&limit=200`);
 
@@ -119,7 +123,10 @@ function Body({ ward }: { ward: Ward }) {
         )}
       </Section>
 
-      <div className="mt-auto px-4 pb-6">
+      <div className="mt-auto space-y-2 px-4 pb-6">
+        <Link href={wardHref(ward.slug)} className={`${buttonVariants()} h-12 w-full text-base`}>
+          {t("common.openWard")}
+        </Link>
         <a
           href={`/api/flags.csv?ward=${code}`}
           download

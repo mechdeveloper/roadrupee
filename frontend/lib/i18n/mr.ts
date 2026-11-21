@@ -64,6 +64,9 @@ export const mr: Partial<Record<Key, string>> = {
   "verdict.better": "अपेक्षेपेक्षा चांगले",
   "verdict.expected": "जवळपास अपेक्षेप्रमाणे",
   "verdict.worse": "अपेक्षेपेक्षा कमकुवत",
+  "verdict.better.short": "चांगले",
+  "verdict.expected.short": "अपेक्षित",
+  "verdict.worse.short": "कमकुवत",
 
   "ward.tab.money": "पैसा कुठे गेला?",
   "ward.tab.held": "दुरुस्ती टिकली का?",
