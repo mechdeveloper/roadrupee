@@ -31,6 +31,7 @@ export const en = {
   "hero.trace.aria": "Complaint text or complaint ID",
   "hero.trace.soon": "Complaint tracing is being built today. Check back soon.",
   "hero.trace.error": "Something went wrong. Please try again.",
+  "map.title": "Share of repair money that didn't hold",
   "map.higher": "Higher share didn't hold",
   "map.better": "Held better",
   "map.note":
@@ -51,7 +52,7 @@ export const en = {
     "{n} surface repairs the original contractor may owe at no cost. Another {m} on warranty roads is worth reviewing.",
   "stat.rate.label": "Billed above the standard rate",
   "stat.rate.note":
-    "Extra charged on {n} jobs billed over 1.5× the standard rate. Normal ±30% variation is not counted.",
+    "Extra charged on {n} jobs billed over 1.5× the standard rate. Normal ±20–30% variation is not counted.",
   "stat.fatal.label": "Fatal accidents linked to potholes, waterlogging and open chambers",
   "stat.fatal.note": "Plus {n} accidents with grievous injuries.",
   "home.glance.title": "Wards at a glance",
@@ -232,6 +233,7 @@ export const en = {
   "grade.volume.title": "How much work did it do?",
   "band.better": "Better than expected",
   "band.as_expected": "About as expected",
+  "band.watch": "Slightly high",
   "band.worse": "Worth checking",
   "band.neutral": "Context",
   "contractor.few": "Few jobs: treat this as a first look",
@@ -287,6 +289,8 @@ export const en = {
   "audit.reset": "Clear filters",
   "audit.prev": "Previous",
   "audit.next": "Next",
+  "audit.csvAudit": "Our audit findings ({n})",
+  "audit.csvAll": "Everything incl. lower-priority items",
   "audit.csv": "Download these (CSV)",
   "audit.reviewTier": "Lower priority",
   "audit.empty": "Nothing matches these filters.",

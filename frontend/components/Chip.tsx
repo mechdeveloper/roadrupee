@@ -2,10 +2,11 @@ import type { LucideIcon } from "lucide-react";
 
 /** Tone = meaning. check = red/amber (didn't hold / worth checking), held = teal (held / fine),
  *  neutral = grey (no data / context). Never decoration. */
-export type Tone = "check" | "held" | "neutral";
+export type Tone = "check" | "watch" | "held" | "neutral";
 
 const TONE: Record<Tone, string> = {
   check: "bg-[var(--tone-check-bg)] text-[var(--tone-check-ink)]",
+  watch: "bg-[var(--tone-watch-bg)] text-[var(--tone-watch-ink)]",
   held: "bg-[var(--tone-held-bg)] text-[var(--tone-held-ink)]",
   neutral: "bg-[var(--tone-neutral-bg)] text-[var(--tone-neutral-ink)]",
 };

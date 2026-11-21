@@ -3,6 +3,7 @@ import type { Band } from "@/lib/types";
 const FILL: Record<Band, string> = {
   better: "var(--scale-5)", // teal: fine
   as_expected: "var(--hero-muted)", // grey: neutral
+  watch: "var(--scale-2)", // amber: a little high
   worse: "var(--scale-1)", // red: worth checking
   neutral: "var(--hero-muted)",
 };

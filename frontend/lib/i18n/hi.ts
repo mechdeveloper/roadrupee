@@ -30,6 +30,7 @@ export const hi: Partial<Record<Key, string>> = {
   "hero.trace.aria": "शिकायत का पाठ या शिकायत नंबर",
   "hero.trace.soon": "शिकायत ट्रेसिंग आज बन रही है। जल्द ही देखें।",
   "hero.trace.error": "कुछ गड़बड़ हो गई। कृपया फिर कोशिश करें।",
+  "map.title": "मरम्मत के पैसे का वह हिस्सा जो नहीं टिका",
   "map.higher": "ज़्यादा हिस्सा नहीं टिका",
   "map.better": "बेहतर टिका",
   "map.note":
@@ -49,7 +50,7 @@ export const hi: Partial<Record<Key, string>> = {
     "{n} सतही मरम्मत जो मूल ठेकेदार को मुफ़्त करनी चाहिए थी। वारंटी वाली सड़कों पर {m} और जाँचने लायक है।",
   "stat.rate.label": "मानक दर से ऊपर बिल",
   "stat.rate.note":
-    "{n} कामों में मानक दर के 1.5 गुना से ज़्यादा बिल बना; यह अतिरिक्त रकम है। सामान्य ±30% अंतर नहीं गिना गया।",
+    "{n} कामों में मानक दर के 1.5 गुना से ज़्यादा बिल बना; यह अतिरिक्त रकम है। सामान्य ±20–30% अंतर नहीं गिना गया।",
   "stat.fatal.label": "गड्ढों, जलभराव और खुले चैंबर से जुड़ी जानलेवा दुर्घटनाएँ",
   "stat.fatal.note": "इसके अलावा {n} दुर्घटनाओं में गंभीर चोटें।",
   "home.glance.title": "वार्ड एक नज़र में",
@@ -219,6 +220,7 @@ export const hi: Partial<Record<Key, string>> = {
   "grade.volume.title": "कितना काम किया?",
   "band.better": "उम्मीद से बेहतर",
   "band.as_expected": "लगभग उम्मीद के अनुसार",
+  "band.watch": "थोड़ा ज़्यादा",
   "band.worse": "जाँचने लायक",
   "band.neutral": "संदर्भ",
   "contractor.few": "कम काम: इसे शुरुआती झलक मानें",
@@ -273,6 +275,8 @@ export const hi: Partial<Record<Key, string>> = {
   "audit.reset": "फ़िल्टर हटाएँ",
   "audit.prev": "पिछला",
   "audit.next": "अगला",
+  "audit.csvAudit": "हमारे ऑडिट निष्कर्ष ({n})",
+  "audit.csvAll": "कम प्राथमिकता वाली सब चीज़ें सहित",
   "audit.csv": "ये डाउनलोड करें (CSV)",
   "audit.reviewTier": "कम प्राथमिकता",
   "audit.empty": "इन फ़िल्टरों से कुछ नहीं मिला।",

@@ -10,7 +10,7 @@ import { inr } from "@/lib/format";
 import { type Key, useT } from "@/lib/i18n";
 import type { Band, HomeContractor } from "@/lib/types";
 
-const TONE: Record<Band, "held" | "neutral" | "check"> = { better: "held", as_expected: "neutral", worse: "check", neutral: "neutral" };
+const TONE: Record<Band, "held" | "neutral" | "watch" | "check"> = { better: "held", as_expected: "neutral", watch: "watch", worse: "check", neutral: "neutral" };
 const ROWS: { key: "speed" | "durability" | "cost"; label: Key }[] = [
   { key: "speed", label: "card.onTime" },
   { key: "durability", label: "card.lasted" },

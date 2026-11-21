@@ -14,9 +14,10 @@ import { type Key, useT } from "@/lib/i18n";
 import type { Band, ContractorCard, Grade } from "@/lib/types";
 import { wardHref } from "@/lib/wards";
 
-const BAND_TONE: Record<Band, "held" | "neutral" | "check"> = {
+const BAND_TONE: Record<Band, "held" | "neutral" | "watch" | "check"> = {
   better: "held",
   as_expected: "neutral",
+  watch: "watch",
   worse: "check",
   neutral: "neutral",
 };

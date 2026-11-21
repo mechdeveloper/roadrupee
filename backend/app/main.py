@@ -99,8 +99,20 @@ def flags(request: Request, rule: str | None = None, tier: str | None = None,
 
 
 @app.get("/api/flags.csv")
-def flags_csv(request: Request, rule: str | None = None, tier: str | None = None,
+def flags_csv(request: Request, rule: str | None = None, tier: str = "audit",
               ward: str | None = None, severity: str | None = None) -> Response:
+    """Our audit findings: the audit tier only by default (pass tier=review for the lower-priority ones)."""
+    return _flags_csv(request, rule, tier, ward, severity, "roadrupee_audit_findings.csv")
+
+
+@app.get("/api/flags_all.csv")
+def flags_all_csv(request: Request, rule: str | None = None, tier: str | None = None,
+                  ward: str | None = None, severity: str | None = None) -> Response:
+    """Every flag, all tiers; the tier column says which is which."""
+    return _flags_csv(request, rule, tier, ward, severity, "roadrupee_all_flags.csv")
+
+
+def _flags_csv(request: Request, rule, tier, ward, severity, filename: str) -> Response:
     buf = io.StringIO()
     w = csv.DictWriter(buf, fieldnames=CSV_COLUMNS)
     w.writeheader()
@@ -117,7 +129,7 @@ def flags_csv(request: Request, rule: str | None = None, tier: str | None = None
             "claude_headline": (f.review or {}).get("headline", ""),
         })
     return Response(buf.getvalue(), media_type="text/csv",
-                    headers={"Content-Disposition": 'attachment; filename="roadrupee_flags.csv"'})
+                    headers={"Content-Disposition": f'attachment; filename="{filename}"'})
 
 
 # --- Claude-powered endpoints: stubs for later milestones -------------------

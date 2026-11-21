@@ -29,6 +29,7 @@ export function AuditPage() {
   const params = useSearchParams();
   const qs = params.toString();
   const { state, retry } = useApi<AuditList>(`/api/audit?${qs}${qs ? "&" : ""}limit=${LIMIT}`);
+  const totals = useApi<{ total_audit: number }>("/api/home/top-flags?limit=1");
   const offset = Number(params.get("offset") ?? 0) || 0;
 
   const set = (patch: Record<string, string | null>) => {
@@ -96,6 +97,17 @@ export function AuditPage() {
         <a href={csv} download className={`${buttonVariants({ variant: "outline" })} ml-auto h-11 gap-2 px-4`}>
           <Download className="size-4" aria-hidden />
           {t("audit.csv")}
+        </a>
+      </div>
+
+      <div className="mt-3 flex flex-wrap gap-3">
+        <a href="/api/flags.csv" download className={`${buttonVariants({ variant: "outline" })} h-11 gap-2 px-4`}>
+          <Download className="size-4" aria-hidden />
+          {t("audit.csvAudit", { n: totals.state.status === "ready" ? totals.state.data.total_audit : "" })}
+        </a>
+        <a href="/api/flags_all.csv" download className={`${buttonVariants({ variant: "outline" })} h-11 gap-2 px-4`}>
+          <Download className="size-4" aria-hidden />
+          {t("audit.csvAll")}
         </a>
       </div>
 

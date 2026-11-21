@@ -146,8 +146,9 @@ def contractor_card(data: Data, wo: pd.DataFrame, flags: list[Flag], metrics: li
     # durability vs expected (CI rule, same as wards)
     dur_band = _band_from_ci(c)
     # cost: share of jobs billed over 1.5x the rate card vs the city share
-    cost_band = ("worse" if over >= 5 and over_share >= 2 * city_over_share
-                 else "better" if over_share <= 0.5 * city_over_share else "as_expected")
+    # headline ratio drives the colour: <=1.30x normal, 1.30-1.50x amber "watch", >1.50x red
+    ratio = float(c["median_cost_vs_rate"])
+    cost_band = "worse" if ratio > 1.5 else "watch" if ratio > 1.3 else "as_expected"
 
     grades = [
         dict(key="speed", title="Did it finish on time?", band=speed_band,
@@ -162,7 +163,7 @@ def contractor_card(data: Data, wo: pd.DataFrame, flags: list[Flag], metrics: li
              unit="% reopened within 30 days"),
         dict(key="cost", title="Did it bill fairly against the rate card?", band=cost_band,
              headline=f"{c['median_cost_vs_rate']:.2f}× the rate card",
-             detail=(f"{over} of {n} jobs were billed over {OVER_RATE_X}× the rate card "
+             detail=("Within the normal range (about ±20–30%). " if ratio <= 1.3 else "") + (f"{over} of {n} jobs were billed over {OVER_RATE_X}× the rate card "
                      f"(across the city: {city_over_share * 100:.0f}% of jobs)."),
              value=c["median_cost_vs_rate"], benchmark=1.0, scale_min=0.5, scale_max=2.0, unit="× rate card (typical job)"),
         dict(key="volume", title="How much work did it do?", band="neutral",

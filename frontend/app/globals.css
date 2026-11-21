@@ -32,6 +32,8 @@
 
   /* Chip tones. Colour always means the same: check = red/amber (didn't hold / worth checking),
      held = teal (held / fine), neutral = grey (no data / context). */
+  --tone-watch-bg: color-mix(in srgb, var(--scale-2) 16%, var(--surface));
+  --tone-watch-ink: color-mix(in srgb, var(--scale-2) 55%, #000);
   --tone-check-bg: color-mix(in srgb, var(--scale-1) 10%, var(--surface));
   --tone-check-ink: var(--scale-1);
   --tone-held-bg: var(--accent-soft);

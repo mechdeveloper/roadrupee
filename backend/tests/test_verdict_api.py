@@ -79,3 +79,11 @@ def test_committed_verdicts_are_valid_and_fair():
     for k, e in verdict_store().items.items():
         v = VerdictOut(**{f: e[f] for f in VerdictOut.model_fields})
         assert not any(b in (v.headline + v.reasoning).lower() for b in BANNED), k
+
+
+def test_flags_csv_is_audit_tier_only_and_flags_all_has_every_tier(client):
+    rows = list(csv.DictReader(io.StringIO(client.get("/api/flags.csv").text)))
+    assert len(rows) == 391 and {r["tier"] for r in rows} == {"audit"}
+    allrows = list(csv.DictReader(io.StringIO(client.get("/api/flags_all.csv").text)))
+    assert len(allrows) > 1000 and {"audit", "review"} <= {r["tier"] for r in allrows}
+

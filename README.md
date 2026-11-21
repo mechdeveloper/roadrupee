@@ -29,14 +29,14 @@ The interface is in English, हिन्दी and मराठी (toggle in t
 ### Where to look
 | Judging criterion | Where in the app |
 |---|---|
-| Audit accuracy | [`/audit`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/audit) and `/api/flags.csv` (below); each flag's evidence page, e.g. `/flag/F0001` |
+| Audit accuracy | [`/audit`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/audit) and `/api/flags.csv` (below, 391 audit findings); each flag's evidence page, e.g. `/flag/F0001` |
 | Fair accountability | A ward page → "Did the fixes hold?"; `/contractors` and `/contractor/CT04` |
 | Budget smarts | A ward page → "Where should the next rupee go?"; `/plan` |
 | Connects the trail | [`/trace`](https://roadrupee-frontend.graygrass-b61bee71.centralindia.azurecontainerapps.io/trace) |
 | Usable + demo | Home, the language toggle, officer mode (`/ward/t?mode=officer`), print and share |
 
 ### Check our audit
-- **Download:** `GET /api/flags.csv` (every flag, one row per flag, `work_order_id` first), or the filterable list at `/audit`. Its CSV button (`/api/audit.csv`) respects the filters.
+- **Download:** `GET /api/flags.csv` (**our audit findings: the 391 audit-tier flags**, one row per flag, `work_order_id` first) or `GET /api/flags_all.csv` (everything, including the lower-priority review items; the `tier` column says which), or the filterable list at `/audit`. Its CSV button (`/api/audit.csv`) respects the filters.
 - **Columns:** `work_order_id, rule, tier, severity, reason, related_work_order_ids, ward_code, road_id, contractor_id, cost_inr, expected_inr, amount_inr, claude_verdict, claude_headline`. For a flag spanning several jobs (double bills, repeat failures) the primary job comes first and the others are in `related_work_order_ids`, pipe-separated.
 - **Two tiers.** **audit** = confident enough to put in front of a judge. **review** = a real signal that also has ordinary explanations, so it is shown separately and not counted as a finding.
 

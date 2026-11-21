@@ -139,8 +139,8 @@ function Body({ flag, ev }: { flag: Flag; ev: FlagEvidence }) {
   const ctx = ev.context;
   const rain = ctx.rain;
   const mailto = () => {
-    const subject = `Worth checking: ${ev.claim}`;
-    const body = `${ev.claim}\n\nWork order(s): ${ev.work_order_ids.join(", ")}\nEvidence: ${window.location.href}\n\n${t("common.fairNote")}`;
+    const subject = `Worth checking: ${plainClaim(ev.claim)}`;
+    const body = `${plainClaim(ev.claim)}\n\nWork order(s): ${ev.work_order_ids.join(", ")}\nEvidence: ${window.location.href}\n\n${t("common.fairNote")}`;
     window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
@@ -357,7 +357,7 @@ export function EvidencePage({ id }: { id: string }) {
               <Chip tone="check" icon={Icon}>
                 {t(`rule.${f.rule}.title` as Key)}
               </Chip>
-              <h1 className="mt-3 max-w-4xl text-2xl leading-snug font-semibold tracking-tight text-ink sm:text-4xl sm:leading-tight">{e.claim}</h1>
+              <h1 className="mt-3 max-w-4xl text-2xl leading-snug font-semibold tracking-tight text-ink sm:text-4xl sm:leading-tight">{plainClaim(e.claim)}</h1>
               <div className="mt-4 flex flex-wrap items-end gap-x-6 gap-y-2">
                 {f.amount_inr > 0 && (
                   <p>
@@ -391,4 +391,9 @@ export function EvidencePage({ id }: { id: string }) {
       </main>
     </>
   );
+}
+
+/** One wording for normal variation everywhere (the stored claim says ±30%; changing it would invalidate cached verdicts). */
+function plainClaim(c: string): string {
+  return c.replace("Normal variation is ±30%", "Normal variation is about ±20–30%");
 }

@@ -34,7 +34,7 @@ check "home"            "/"                      "HTML containing RoadRupee"    
 check "ward page"       "/ward/k-e"              "HTML containing RoadRupee"                 'grep -q "RoadRupee" "$TMP"'
 check "trace page"      "/trace"                 "HTML containing RoadRupee"                 'grep -q "RoadRupee" "$TMP"'
 check "api health"      "/api/health"            '{"status":"ok",...}'                        'grep -q "\"status\":\"ok\"" "$TMP"'
-check "flags.csv"       "/api/flags.csv"         "CSV with work_order_id first, 1000+ rows"  'head -1 "$TMP" | grep -q "^work_order_id," && [ "$(wc -l < "$TMP")" -gt 1000 ]'
+check "flags.csv"       "/api/flags.csv"         "audit-tier CSV, work_order_id first, ~391 rows"  'head -1 "$TMP" | grep -q "^work_order_id," && [ "$(wc -l < "$TMP")" -gt 300 ] && [ "$(wc -l < "$TMP")" -lt 600 ]'
 check "next-rupee city" "/api/plan/city?limit=3" "3 items with a risk_score"                 '[ "$(grep -o "\"risk_score\"" "$TMP" | wc -l)" -ge 3 ]'
 
 echo

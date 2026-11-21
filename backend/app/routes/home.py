@@ -44,7 +44,10 @@ def top_flags(request: Request, limit: int = Query(6, ge=1, le=24)) -> dict:
     p, wards, names, methods = _lookups(request)
     seen: set[str] = set()
     out = []
-    for f in sorted((f for f in p.flags if f.tier == "audit"), key=lambda f: -f.amount_inr):
+    def worth(f) -> bool:
+        return f.review is not None and f.review.get("verdict") == "worth_checking"
+
+    for f in sorted((f for f in p.flags if f.tier == "audit" and worth(f)), key=lambda f: -f.amount_inr):
         if f.ward_code in seen:
             continue
         seen.add(f.ward_code)
