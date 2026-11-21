@@ -41,8 +41,20 @@ export function RupeeBar({ failedPct }: { failedPct: number }) {
           );
         })}
       </div>
-      <figcaption className="mt-3 text-[15px] text-hero-muted">
-        {t("hero.bar.caption", { n: failed })}
+      <figcaption className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-[15px] text-ink">
+        <span className="inline-flex items-center gap-2">
+          <span className="size-3.5 rounded-[3px] bg-scale-5" aria-hidden />
+          <span>
+            <b className="text-scale-5">₹{held}</b> {t("hero.legend.held")}
+          </span>
+        </span>
+        <span className="inline-flex items-center gap-2">
+          <span className="tile-ghost size-3.5 rounded-[3px]" aria-hidden />
+          <span>
+            <b className="text-scale-1">₹{failed}</b> {t("hero.legend.failed")}
+          </span>
+        </span>
+        <span className="text-[13px] text-hero-muted">{t("hero.legend.of")}</span>
       </figcaption>
     </figure>
   );
