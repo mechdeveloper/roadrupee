@@ -1,12 +1,6 @@
-import { ComingSoon } from "@/components/ComingSoon";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Scorecards · RoadRupee" };
-
+// Contractor scorecards live at /contractors (report cards). Keep the old URL working.
 export default function Page() {
-  return (
-    <ComingSoon
-      title="Scorecards"
-      description="A fair, plain-language report for every contractor and ward: speed, how long repairs lasted, and cost against the rate card."
-    />
-  );
+  redirect("/contractors");
 }

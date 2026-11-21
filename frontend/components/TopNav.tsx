@@ -9,7 +9,8 @@ const LINKS: { href: string; key: Key }[] = [
   { href: "/contractors", key: "nav.contractors" },
   { href: "/audit", key: "nav.check" },
   { href: "/plan", key: "nav.next" },
-  { href: "/ask", key: "nav.ask" },
+  // "Ask the auditor" is not built yet: /ask redirects to /trace, so link there directly.
+  { href: "/trace", key: "nav.ask" },
 ];
 
 export function TopNav() {

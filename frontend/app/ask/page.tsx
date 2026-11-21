@@ -1,12 +1,7 @@
-import { ComingSoon } from "@/components/ComingSoon";
+import { redirect } from "next/navigation";
 
-export const metadata = { title: "Ask · RoadRupee" };
-
+// "Ask the auditor" is not built yet. Until it is, send anyone who lands here to Trace my complaint,
+// the closest working feature, so nobody meets an unfinished page.
 export default function Page() {
-  return (
-    <ComingSoon
-      title="Ask the auditor"
-      description="Ask a question about the repair money in plain words and get an answer backed by the data."
-    />
-  );
+  redirect("/trace");
 }
