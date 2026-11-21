@@ -1,8 +1,9 @@
 "use client";
 
-import { ArrowRight, Clock, Copy, Receipt, RotateCcw, ShieldAlert, Sparkles, type LucideIcon } from "lucide-react";
+import { ArrowRight, Clock, Copy, Receipt, RotateCcw, ShieldAlert, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { Chip } from "@/components/Chip";
+import { ClaudeVerdictChip } from "@/components/ClaudeVerdictChip";
 import type { Flag } from "@/lib/api";
 import { inr } from "@/lib/format";
 import { type Key, useT } from "@/lib/i18n";
@@ -14,18 +15,6 @@ const ICON: Record<string, LucideIcon> = {
   SLA_BREACH: Clock,
   REPEAT_FAILURE: RotateCcw,
 };
-
-/** Claude's review chip, shown only when a review exists. Likely justified / needs more info are grey (context); worth checking is red. */
-function ClaudeChip({ review }: { review: NonNullable<Flag["review"]> }) {
-  const t = useT();
-  const v = review.verdict ?? "worth_checking";
-  const key: Key = v === "likely_justified" ? "claude.justified" : v === "needs_more_info" ? "claude.more" : "claude.worth";
-  return (
-    <Chip tone={v === "worth_checking" ? "check" : "neutral"} icon={Sparkles}>
-      {t(key)}
-    </Chip>
-  );
-}
 
 export function FlagCard({ flag }: { flag: Flag }) {
   const t = useT();
@@ -55,7 +44,7 @@ export function FlagCard({ flag }: { flag: Flag }) {
 
       <span className="mt-auto flex flex-wrap items-center gap-2 pt-4">
         <Chip tone="neutral">{t("check.evidence", { id: flag.work_order_ids[0] })}</Chip>
-        {flag.review && <ClaudeChip review={flag.review} />}
+        {flag.review?.verdict && <ClaudeVerdictChip verdict={flag.review.verdict} />}
       </span>
       <span className="mt-3 inline-flex min-h-11 items-center gap-1.5 font-semibold text-primary">
         {t("check.see")}

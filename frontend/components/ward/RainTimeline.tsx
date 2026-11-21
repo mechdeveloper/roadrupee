@@ -48,6 +48,56 @@ function Tip({ active, payload }: { active?: boolean; payload?: { payload: Row }
   );
 }
 
+/** City-wide variant: too many failures per day for dots, so two aligned single-axis charts (rain above, failures below). */
+function CityCharts({ rows, redDays, monthTicks, noDataFrom, last, mobile, reduced }: {
+  rows: Row[]; redDays: string[]; monthTicks: string[]; noDataFrom: string | null; last?: string; mobile: boolean; reduced: boolean;
+}) {
+  const areas = (
+    <>
+      {noDataFrom && last && <ReferenceArea yAxisId="y" x1={noDataFrom} x2={last} fill="var(--scale-none)" fillOpacity={1} />}
+      {redDays.map((d) => (
+        <ReferenceArea key={d} yAxisId="y" x1={d} x2={d} fill="var(--scale-1)" fillOpacity={0.16} />
+      ))}
+    </>
+  );
+  const axisX = (show: boolean) => (
+    <XAxis
+      dataKey="date"
+      ticks={monthTicks}
+      tickFormatter={(d: string) => MONTH.format(new Date(`${d}T00:00:00Z`))}
+      tick={show ? TICK : false}
+      height={show ? 24 : 4}
+      tickLine={false}
+      axisLine={{ stroke: "var(--border)" }}
+      interval={0}
+    />
+  );
+  return (
+    <>
+      <ResponsiveContainer width="100%" height={mobile ? 130 : 150}>
+        <ComposedChart data={rows} syncId="city" margin={{ top: 6, right: 4, left: -12, bottom: 0 }}>
+          <CartesianGrid vertical={false} stroke="var(--border)" />
+          {axisX(false)}
+          <YAxis yAxisId="y" tick={TICK} tickLine={false} axisLine={false} width={44} />
+          {areas}
+          <Bar yAxisId="y" dataKey="rain" fill="var(--chart-rain)" isAnimationActive={!reduced} />
+          <Tooltip content={<Tip />} cursor={{ fill: "var(--border)", fillOpacity: 0.5 }} />
+        </ComposedChart>
+      </ResponsiveContainer>
+      <ResponsiveContainer width="100%" height={mobile ? 120 : 140}>
+        <ComposedChart data={rows} syncId="city" margin={{ top: 6, right: 4, left: -12, bottom: 0 }}>
+          <CartesianGrid vertical={false} stroke="var(--border)" />
+          {axisX(true)}
+          <YAxis yAxisId="y" tick={TICK} tickLine={false} axisLine={false} width={44} allowDecimals={false} />
+          {areas}
+          <Bar yAxisId="y" dataKey="failed" fill="var(--scale-1)" isAnimationActive={!reduced} />
+          <Tooltip content={<Tip />} cursor={{ fill: "var(--border)", fillOpacity: 0.5 }} />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </>
+  );
+}
+
 /** Daily rain bars, red-alert days highlighted, repair-failure dots on top. Tokens only. */
 export function RainTimeline({ timeline }: { timeline: WardTimeline }) {
   const t = useT();
@@ -77,6 +127,9 @@ export function RainTimeline({ timeline }: { timeline: WardTimeline }) {
   return (
     <div>
       <div role="img" aria-label={`${t("held.timeline.title")}. ${summary}`}>
+        {timeline.ward_code === "ALL" ? (
+          <CityCharts rows={rows} redDays={redDays} monthTicks={monthTicks} noDataFrom={noDataFrom} last={last} mobile={mobile} reduced={reduced} />
+        ) : (
         <ResponsiveContainer width="100%" height={mobile ? 250 : 330}>
           <ComposedChart data={rows} margin={{ top: 8, right: 4, left: -12, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke="var(--border)" />
@@ -102,6 +155,7 @@ export function RainTimeline({ timeline }: { timeline: WardTimeline }) {
             <Tooltip content={<Tip />} cursor={{ fill: "var(--border)", fillOpacity: 0.5 }} />
           </ComposedChart>
         </ResponsiveContainer>
+        )}
       </div>
 
       <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-ink">
@@ -110,7 +164,7 @@ export function RainTimeline({ timeline }: { timeline: WardTimeline }) {
           {t("held.legend.rain")}
         </li>
         <li className="flex items-center gap-2">
-          <span className="inline-block size-3 rounded-full" style={{ background: "var(--scale-1)" }} aria-hidden />
+          <span className={`inline-block size-3 ${timeline.ward_code === "ALL" ? "rounded-sm" : "rounded-full"}`} style={{ background: "var(--scale-1)" }} aria-hidden />
           {t("held.legend.fail")}
         </li>
         <li className="flex items-center gap-2">
@@ -125,7 +179,7 @@ export function RainTimeline({ timeline }: { timeline: WardTimeline }) {
         )}
       </ul>
       <p className="mt-2 text-[13px] text-muted-foreground">{summary}</p>
-      <p className="mt-1 text-[13px] text-muted-foreground">{t("held.dotNote")}</p>
+      <p className="mt-1 text-[13px] text-muted-foreground">{t(timeline.ward_code === "ALL" ? "held.barNote" : "held.dotNote")}</p>
     </div>
   );
 }

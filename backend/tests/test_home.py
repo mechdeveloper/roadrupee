@@ -68,3 +68,10 @@ def test_audit_combined_filters(client):
 def test_plan_city_stub_documented(client):
     assert client.get("/api/plan/city").status_code == 501
     assert "CityPlanResponse" in client.get("/openapi.json").json()["components"]["schemas"]
+
+
+def test_audit_csv_matches_filters(client):
+    r = client.get("/api/audit.csv?rule=OVER_RATE")
+    lines = r.text.strip().splitlines()
+    assert lines[0].startswith("work_order_id,rule,tier")
+    assert len(lines) - 1 == 109 and all(",OVER_RATE," in l for l in lines[1:])

@@ -3,7 +3,7 @@
 import type { Feature, FeatureCollection } from "geojson";
 import L, { type Layer, type PathOptions } from "leaflet";
 import { useEffect, useMemo, useRef } from "react";
-import { GeoJSON, MapContainer, TileLayer } from "react-leaflet";
+import { GeoJSON, MapContainer, Marker, TileLayer } from "react-leaflet";
 import type { Ward } from "@/lib/api";
 import { inr, pct } from "@/lib/format";
 import { BASEMAP } from "@/lib/basemap";
@@ -19,6 +19,15 @@ type Props = {
 export default function HeroMap({ geo, wards, bins, onSelect }: Props) {
   const byCode = useMemo(() => new Map(wards.map((w) => [w.ward_code, w])), [wards]);
   const bounds = useMemo(() => L.geoJSON(geo).getBounds(), [geo]);
+  const labels = useMemo(
+    () =>
+      geo.features.map((f) => ({
+        code: f.properties?.ward_code as string,
+        pos: L.geoJSON(f).getBounds().getCenter(),
+        icon: L.divIcon({ className: "ward-label", html: String(f.properties?.ward_code ?? ""), iconSize: [40, 16], iconAnchor: [20, 8] }),
+      })),
+    [geo],
+  );
   const selectRef = useRef(onSelect);
   useEffect(() => {
     selectRef.current = onSelect;
@@ -56,10 +65,13 @@ export default function HeroMap({ geo, wards, bins, onSelect }: Props) {
       boundsOptions={{ padding: [16, 16] }}
       scrollWheelZoom={false}
       zoomSnap={0.25}
-      className="h-[360px] w-full rounded-2xl border shadow-sm sm:h-[460px] lg:h-[min(72vh,680px)]"
+      className="h-[360px] w-full rounded-2xl border shadow-sm sm:h-[440px] lg:h-[540px]"
     >
       <TileLayer url={BASEMAP.url} attribution={BASEMAP.attribution} maxZoom={BASEMAP.maxZoom} />
       <GeoJSON data={geo} style={style} onEachFeature={onEach} />
+      {labels.map((l) => (
+        <Marker key={l.code} position={l.pos} icon={l.icon} interactive={false} keyboard={false} />
+      ))}
     </MapContainer>
   );
 }

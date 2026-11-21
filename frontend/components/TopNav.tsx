@@ -5,8 +5,9 @@ import { LangToggle } from "@/components/LangToggle";
 import { type Key, useT } from "@/lib/i18n";
 
 const LINKS: { href: string; key: Key }[] = [
-  { href: "/audit", key: "nav.audit" },
-  { href: "/scorecards", key: "nav.scorecards" },
+  { href: "/wards", key: "nav.wards" },
+  { href: "/contractors", key: "nav.contractors" },
+  { href: "/audit", key: "nav.check" },
   { href: "/plan", key: "nav.next" },
   { href: "/ask", key: "nav.ask" },
 ];
@@ -27,12 +28,12 @@ export function TopNav() {
       <div className="order-2 sm:order-3">
         <LangToggle />
       </div>
-      <ul className="order-3 flex w-full items-center justify-between sm:order-2 sm:ml-auto sm:w-auto sm:gap-1">
+      <ul className="order-3 flex w-full flex-wrap items-center justify-between sm:order-2 sm:ml-auto sm:w-auto sm:flex-nowrap sm:gap-1">
         {LINKS.map((l) => (
           <li key={l.href}>
             <Link
               href={l.href}
-              className="flex min-h-11 items-center rounded-lg px-2 text-[15px] font-medium whitespace-nowrap text-ink hover:bg-surface/70 sm:px-3"
+              className="flex min-h-11 items-center rounded-lg px-1.5 text-[13px] font-medium whitespace-nowrap text-ink hover:bg-surface/70 sm:px-3 sm:text-[15px]"
             >
               {t(l.key)}
             </Link>

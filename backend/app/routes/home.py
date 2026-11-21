@@ -1,8 +1,11 @@
 """Aggregates behind the home dashboard and the /audit list. Additive; kept out of main.py on purpose."""
 from __future__ import annotations
 
+import csv
+import io
+
 from fastapi import APIRouter, Query, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 
 from ..contracts.pages import WardTimeline
 from ..contracts.plan import CityPlanResponse
@@ -89,19 +92,11 @@ def home_methods(request: Request) -> list[dict]:
     return sorted(out, key=lambda r: -r["spend_inr"])
 
 
-@router.get("/audit")
-def audit(
-    request: Request,
-    rule: str | None = None, tier: str = "audit", ward: str | None = None,
-    contractor: str | None = None, verdict: str | None = None, method: str | None = None,
-    limit: int = Query(25, ge=1, le=200), offset: int = Query(0, ge=0),
-) -> dict:
-    """Filterable list of flags with facet counts (each facet is counted with the OTHER filters applied)."""
+def _audit_rows(request: Request, rule, tier, ward, contractor, verdict, method):
     p, wards, names, methods = _lookups(request)
     rows = [_flag_row(f, wards, names, methods) for f in p.flags]
     for r in rows:
         r["_verdict"] = r["verdict"] or "none"
-
     flt = {
         "rule": rule.upper() if rule else None,
         "tier": None if tier == "all" else tier,
@@ -117,16 +112,48 @@ def audit(
         return [r for r in rows if all(v is None or k == skip or r[field[k]] == v for k, v in flt.items())]
 
     matched = apply()
+    matched.sort(key=lambda r: (r["tier"] != "audit", -r["amount_inr"]))
+    return p, names, matched, apply, field
+
+
+@router.get("/audit")
+def audit(
+    request: Request,
+    rule: str | None = None, tier: str = "audit", ward: str | None = None,
+    contractor: str | None = None, verdict: str | None = None, method: str | None = None,
+    limit: int = Query(25, ge=1, le=200), offset: int = Query(0, ge=0),
+) -> dict:
+    """Filterable list of flags with facet counts (each facet is counted with the OTHER filters applied)."""
+    p, names, matched, apply, field = _audit_rows(request, rule, tier, ward, contractor, verdict, method)
     facets = {}
     for k in ("rule", "ward", "contractor", "verdict", "method"):
         counts: dict[str, int] = {}
         for r in apply(skip=k):
             counts[r[field[k]]] = counts.get(r[field[k]], 0) + 1
         facets[k] = counts
-    matched.sort(key=lambda r: (r["tier"] != "audit", -r["amount_inr"]))
     items = [{k: v for k, v in r.items() if k not in ("_verdict", "review")} for r in matched[offset:offset + limit]]
     return {"total": len(matched), "limit": limit, "offset": offset, "facets": facets, "items": items,
             "contractors": names, "wards": {w["slug"]: w["ward_name"] for w in p.wards}}
+
+
+@router.get("/audit.csv")
+def audit_csv(
+    request: Request,
+    rule: str | None = None, tier: str = "audit", ward: str | None = None,
+    contractor: str | None = None, verdict: str | None = None, method: str | None = None,
+) -> Response:
+    """The same filters as /api/audit, as a CSV (work_order_id first)."""
+    _, _, matched, _, _ = _audit_rows(request, rule, tier, ward, contractor, verdict, method)
+    cols = ["work_order_id", "rule", "tier", "severity", "reason", "ward_code", "road_id", "contractor_id",
+            "contractor_name", "repair_method", "amount_inr", "claude_verdict", "claude_headline"]
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=cols)
+    w.writeheader()
+    for r in matched:
+        w.writerow({"work_order_id": r["work_order_ids"][0], **{c: r.get(c) for c in cols[1:10]},
+                    "claude_verdict": r["verdict"] or "", "claude_headline": r["headline"] or ""})
+    return Response(buf.getvalue(), media_type="text/csv",
+                    headers={"Content-Disposition": 'attachment; filename="roadrupee_audit.csv"'})
 
 
 @router.get("/plan/city", response_model=CityPlanResponse, responses={501: {"description": "Engine not built yet"}})

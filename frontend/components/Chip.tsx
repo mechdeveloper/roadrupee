@@ -23,7 +23,7 @@ export function Chip({
 }) {
   return (
     <span
-      className={`inline-flex min-h-7 items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[13px] font-medium ${TONE[tone]} ${className}`}
+      className={`inline-flex min-h-7 items-center gap-1.5 rounded-full whitespace-nowrap px-2.5 py-0.5 text-[13px] font-medium ${TONE[tone]} ${className}`}
     >
       {Icon && <Icon className="size-3.5 shrink-0" aria-hidden />}
       {children}
