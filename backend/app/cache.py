@@ -8,7 +8,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from .ai.store import JsonStore, verdict_store
+from .ai import ward_summary
+from .ai.store import JsonStore, verdict_store, ward_summary_store
 from .ai.verdict import to_review
 from .engine import evidence
 from .engine import flags as F
@@ -27,6 +28,7 @@ class Precomputed:
     contractors: list[dict]
     evidence_index: evidence.EvidenceIndex | None = None
     verdicts: JsonStore | None = None
+    ward_summaries: JsonStore | None = None
 
 
 def build() -> Precomputed:
@@ -44,6 +46,8 @@ def build() -> Precomputed:
     )
     pre.verdicts = verdict_store()
     attach_verdicts(pre)
+    pre.ward_summaries = ward_summary_store()
+    attach_ward_summaries(pre)
     _dump(pre)
     return pre
 
@@ -69,3 +73,15 @@ def _dump(pre: Precomputed) -> None:
         (d / "contractors.json").write_text(json.dumps(pre.contractors, indent=2))
     except OSError:
         pass
+
+
+def attach_ward_summaries(pre: Precomputed) -> int:
+    """Expose Claude's ward summary as ward.ai_summary {en, hi, mr}. Template fallbacks are not shown
+    (they are English-only), so the UI card stays hidden for those wards."""
+    n = 0
+    for w in pre.wards:
+        e = pre.ward_summaries.items.get(w["slug"])
+        if e and e["source"] == "claude" and e["input_hash"] == ward_summary.input_hash(ward_summary.facts(pre, w, pre.flags)):
+            w["ai_summary"] = {k: e[k] for k in ("en", "hi", "mr")}
+            n += 1
+    return n
