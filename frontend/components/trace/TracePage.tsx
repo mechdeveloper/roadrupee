@@ -8,6 +8,7 @@ import { Chip } from "@/components/Chip";
 import { ErrorBox } from "@/components/ErrorBox";
 import { PageShell } from "@/components/PageShell";
 import { TRACE_EXAMPLES } from "@/components/home/TraceBox";
+import { MicButton } from "@/components/trace/MicButton";
 import { RtiCard } from "@/components/trace/RtiCard";
 import { TraceStepper } from "@/components/trace/TraceStepper";
 import { Button } from "@/components/ui/button";
@@ -120,14 +121,15 @@ export function TracePage() {
               onChange={(e) => setText(e.target.value)}
               aria-label={t("hero.trace.aria")}
               placeholder={TRACE_EXAMPLES[0]}
-              className="h-14 rounded-xl bg-surface pl-10 text-base"
+              className="h-14 rounded-xl bg-surface pl-10 pr-12 text-base"
             />
+            <MicButton onText={setText} />
           </div>
           <Button type="submit" className="h-14 rounded-xl px-7 text-base">
             {t("hero.trace.button")}
           </Button>
         </div>
-        <div className="mt-3 flex flex-wrap items-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
           <Chip tone="held">{t("trace.chip")}</Chip>
           <span className="ml-2 text-sm text-muted-foreground">{t("trace.try")}</span>
           {EXAMPLES.map((e) => (

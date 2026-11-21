@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Chip } from "@/components/Chip";
 import { Button } from "@/components/ui/button";
+import { MicButton } from "@/components/trace/MicButton";
 import { Input } from "@/components/ui/input";
 import { type Key, useT } from "@/lib/i18n";
 import { useReducedMotion } from "@/lib/useReducedMotion";
@@ -59,14 +60,15 @@ export function TraceBox({ initial = "", autoFocus = false }: { initial?: string
             placeholder={TRACE_EXAMPLES[i]}
             aria-label={t("hero.trace.aria")}
             autoFocus={autoFocus}
-            className="h-14 rounded-xl bg-surface pl-10 text-base sm:text-lg"
+            className="h-14 rounded-xl bg-surface pl-10 pr-12 text-base sm:text-lg"
           />
+          <MicButton onText={setText} />
         </div>
         <Button type="submit" className="h-14 rounded-xl px-6 text-base sm:px-8 sm:text-lg">
           {t("hero.trace.button")}
         </Button>
       </div>
-      <div className="mt-3 flex flex-wrap items-center gap-2">
+      <div className="mt-6 flex flex-wrap items-center gap-2">
         <Chip tone="held">{t("trace.chip")}</Chip>
         {EXAMPLE_CHIPS.map((e) => (
           <button
