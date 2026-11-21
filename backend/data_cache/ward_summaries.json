@@ -1,0 +1,242 @@
+{
+ "a": {
+  "input_hash": "3e68a44639785494",
+  "generated_at": "2026-11-21T07:01:06+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Colaba, Fort, Churchgate spent ₹16.6 L on 29 monsoon road repair work orders, with the most going to Mithi Infra Projects (synthetic) at ₹5.9 L and to the method of excavation, pipeline repair and PQC patch at ₹6.1 L. About 38% of fixes reopened against the 26% we would expect, but with so few jobs this is about as expected and too early to tell. Worth checking first is work order WO25-02424, a repair paid for by the city while the road is still under its original contractor's warranty, for ₹85,277.",
+  "hi": "कोलाबा, फोर्ट, चर्चगेट वार्ड ने मानसून सड़क मरम्मत के 29 कार्य आदेशों पर ₹16.6 L खर्च किए, जिसमें सबसे ज़्यादा ₹5.9 L मिठी इन्फ्रा प्रोजेक्ट्स (synthetic) को और ₹6.1 L खुदाई, पाइपलाइन मरम्मत व PQC पैच वाली विधि पर गए। लगभग 38% मरम्मतें दोबारा खुलीं, जबकि अपेक्षा 26% की थी, पर काम कम होने से यह लगभग अपेक्षा के अनुसार है और अभी कुछ कहना जल्दबाज़ी होगी। सबसे पहले कार्य आदेश WO25-02424 देखना ठीक रहेगा, जिसमें सड़क अपने मूल ठेकेदार की वारंटी में होते हुए भी शहर ने ₹85,277 की मरम्मत का भुगतान किया।",
+  "mr": "कुलाबा, फोर्ट, चर्चगेट वॉर्डने पावसाळी रस्ते दुरुस्तीच्या 29 कामांवर ₹16.6 L खर्च केले, त्यातील सर्वाधिक ₹5.9 L मिठी इन्फ्रा प्रोजेक्ट्स (synthetic) कडे आणि ₹6.1 L खोदकाम, पाइपलाइन दुरुस्ती व PQC पॅच या पद्धतीवर गेले. सुमारे 38% दुरुस्त्या पुन्हा उघडल्या, तर अपेक्षा 26% ची होती; पण कामे कमी असल्याने हे साधारण अपेक्षेप्रमाणे आहे आणि अजून काही सांगणे लवकर होईल. सर्वप्रथम वर्क ऑर्डर WO25-02424 तपासण्यासारखी आहे, ज्यात रस्ता मूळ कंत्राटदाराच्या वॉरंटीत असतानाही शहराने ₹85,277 ची दुरुस्ती केली."
+ },
+ "b": {
+  "input_hash": "cacf4a2bf5e4c6cb",
+  "generated_at": "2026-11-21T07:01:05+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Dongri, Masjid Bunder spent ₹35.1 L across 44 work orders, with the most going to Konkan Roadcon Pvt Ltd (synthetic) at ₹7.8 L and to drain desilting at ₹9.7 L. Fixes are holding about as expected, with 20% reopening against 23% expected given the methods, rain and flooding. One thing worth checking is work order WO25-00611, a job billed well above the standard rate, at ₹2.3 L.",
+  "hi": "डोंगरी, मस्जिद बंदर वार्ड ने 44 वर्क ऑर्डर पर ₹35.1 L खर्च किए, जिनमें सबसे ज़्यादा Konkan Roadcon Pvt Ltd (synthetic) को ₹7.8 L और ड्रेन डीसिल्टिंग पर ₹9.7 L गए। मरम्मत लगभग उम्मीद के मुताबिक टिक रही है: तरीकों, बारिश और जलभराव को देखते हुए 23% दोबारा खुलने की उम्मीद थी और 20% खुले। एक बात जाँचने लायक है: वर्क ऑर्डर WO25-00611, जो तय दर से काफ़ी ज़्यादा बिल वाला काम है, राशि ₹2.3 L।",
+  "mr": "डोंगरी, मस्जिद बंदर वॉर्डने 44 वर्क ऑर्डरवर ₹35.1 L खर्च केले, त्यातील सर्वाधिक Konkan Roadcon Pvt Ltd (synthetic) ला ₹7.8 L आणि ड्रेन डीसिल्टिंगवर ₹9.7 L गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे: पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता 23% पुन्हा उघडण्याची अपेक्षा होती आणि 20% उघडले. एक गोष्ट तपासण्यासारखी आहे: वर्क ऑर्डर WO25-00611, म्हणजे ठरलेल्या दरापेक्षा खूपच जास्त बिल असलेले काम, रक्कम ₹2.3 L."
+ },
+ "c": {
+  "input_hash": "daece8354af65841",
+  "generated_at": "2026-11-21T07:01:06+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In this ward, ₹8 L was spent across 20 work orders, with Sahyadri Infra Works (synthetic) receiving the most at ₹2.4 L and excavation, pipeline repair, PQC patch taking the largest share of spend at ₹3.8 L. Fixes are holding about as expected, since 40% of roads reopened against about 27% expected, but with only 20 jobs it is too early to tell. The top thing worth checking is work order WO25-00743, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "इस वार्ड में 20 कार्य आदेशों पर ₹8 L खर्च हुए, जिनमें सबसे ज़्यादा ₹2.4 L Sahyadri Infra Works (synthetic) को मिले और खुदाई, पाइपलाइन मरम्मत, PQC पैच पर सबसे बड़ा हिस्सा ₹3.8 L गया। मरम्मत लगभग उम्मीद के अनुसार टिक रही है, क्योंकि 40% सड़कें दोबारा खुलीं जबकि करीब 27% की उम्मीद थी, पर सिर्फ़ 20 कामों के साथ अभी कुछ कहना जल्दी है। सबसे पहले कार्य आदेश WO25-00743 देखना चाहिए, जिसमें सड़क मूल ठेकेदार की वारंटी में होते हुए भी मरम्मत का भुगतान शहर ने किया।",
+  "mr": "या वॉर्डमध्ये 20 कामांच्या आदेशांवर ₹8 L खर्च झाले, त्यात सर्वाधिक ₹2.4 L Sahyadri Infra Works (synthetic) यांना मिळाले आणि खोदाई, पाइपलाइन दुरुस्ती, PQC पॅच यावर सर्वात मोठा वाटा ₹3.8 L गेला. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे, कारण 40% रस्ते पुन्हा उघडले तर सुमारे 27% अपेक्षित होते, पण फक्त 20 कामांमुळे अजून काही सांगणे लवकर आहे. सर्वप्रथम काम आदेश WO25-00743 तपासण्यासारखा आहे, ज्यात रस्ता मूळ कंत्राटदाराच्या वॉरंटीत असतानाही दुरुस्तीचे पैसे शहराने दिले."
+ },
+ "d": {
+  "input_hash": "26b05d5ea53ac158",
+  "generated_at": "2026-11-21T07:01:05+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "This ward spent ₹12.7 L on monsoon road repairs, with the most going to Sahyadri Infra Works (synthetic) at ₹3.9 L and to desilting and garbage removal at ₹3.1 L. Fixes are holding about as expected: 20% of repaired roads reopened for repair, against about 25% we would expect given the methods, rain and flooding. Worth checking first is work order WO25-00106, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "इस वार्ड ने मानसून में सड़क मरम्मत पर ₹12.7 L खर्च किए, जिसमें सबसे ज़्यादा Sahyadri Infra Works (synthetic) को ₹3.9 L और नाले की सफ़ाई व कचरा हटाने पर ₹3.1 L गए। मरम्मत लगभग उम्मीद के मुताबिक टिकी है: 20% सड़कें दोबारा मरम्मत के लिए खुलीं, जबकि तरीकों, बारिश और जलभराव को देखते हुए करीब 25% की उम्मीद थी। सबसे पहले वर्क ऑर्डर WO25-00106 देखना ठीक रहेगा, जिसमें सड़क अभी मूल ठेकेदार की वारंटी में थी, फिर भी मरम्मत का भुगतान शहर ने किया।",
+  "mr": "या वॉर्डने पावसाळ्यातील रस्ते दुरुस्तीवर ₹12.7 L खर्च केले, त्यातील सर्वाधिक रक्कम Sahyadri Infra Works (synthetic) ला ₹3.9 L आणि गाळ व कचरा काढण्याच्या कामाला ₹3.1 L गेली. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकली आहे: 20% रस्ते पुन्हा दुरुस्तीसाठी उघडले, तर पद्धती, पाऊस आणि पूर पाहता सुमारे 25% अपेक्षित होते. सर्वप्रथम वर्क ऑर्डर WO25-00106 तपासण्यासारखे आहे, कारण रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना त्याच्या दुरुस्तीचे पैसे शहराने दिले."
+ },
+ "e": {
+  "input_hash": "0462ee9824009b1c",
+  "generated_at": "2026-11-21T07:01:06+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Byculla, Agripada and Mumbai Central spent ₹63.2 L on monsoon road repairs across 118 work orders, with the most going to Western Coast Asphalt Co (synthetic) at ₹12.1 L and to drain desilting at ₹15.5 L. About 31% of fixes had to be reopened, which is about as expected at 26% given the methods, rain and flooding, so the picture looks normal. The top thing worth checking is work order WO25-01942, a job billed well above the standard rate, at ₹1.5 L.",
+  "hi": "बायकुला, अग्रीपाड़ा और मुंबई सेंट्रल में मानसून की सड़क मरम्मत पर 118 कार्य आदेशों में ₹63.2 L खर्च हुए, जिनमें सबसे ज़्यादा Western Coast Asphalt Co (synthetic) को ₹12.1 L और ड्रेन की सफाई पर ₹15.5 L गए। करीब 31% मरम्मतें दोबारा खोलनी पड़ीं, जो तरीकों, बारिश और जलभराव को देखते हुए अपेक्षित 26% के लगभग बराबर है, यानी तस्वीर सामान्य दिखती है। सबसे पहले कार्य आदेश WO25-01942 को देखना ठीक रहेगा, यह एक ऐसा काम है जिसका बिल तय दर से काफ़ी ज़्यादा है, राशि ₹1.5 L।",
+  "mr": "भायखळा, आग्रीपाडा आणि मुंबई सेंट्रलमध्ये पावसाळ्यातील रस्ते दुरुस्तीवर 118 कामाच्या आदेशांमध्ये ₹63.2 L खर्च झाले, त्यातील सर्वाधिक Western Coast Asphalt Co (synthetic) कडे ₹12.1 L आणि नाल्यातील गाळ काढण्यावर ₹15.5 L गेले. सुमारे 31% दुरुस्त्या पुन्हा उघडाव्या लागल्या, जे पद्धती, पाऊस आणि पूर पाहता अपेक्षित 26% च्या जवळपास आहे, म्हणजे चित्र सामान्य दिसते. सर्वात आधी कामाचा आदेश WO25-01942 तपासून पाहण्यासारखा आहे, हे एक काम ठरलेल्या दरापेक्षा खूपच जास्त बिल केलेले आहे, रक्कम ₹1.5 L."
+ },
+ "f-n": {
+  "input_hash": "638889d9bf37598e",
+  "generated_at": "2026-11-21T07:01:11+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In Matunga, Sion, Wadala, ₹94.1 L was spent on 150 work orders, with the most going to Mithi Infra Projects (synthetic) at ₹20.1 L and to pump + debris removal at ₹24.7 L. Fixes reopened 25% of the time against about 22% we would expect, so the results are about as expected given the methods, rain and flooding. One thing worth checking is work order WO25-00491 for ₹2.3 L, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "मटुंगा, सायन, वडाला में 150 कार्य आदेशों पर ₹94.1 L खर्च हुए, जिनमें सबसे ज़्यादा Mithi Infra Projects (synthetic) को ₹20.1 L और पंप + मलबा हटाने के काम पर ₹24.7 L गए। मरम्मत 25% बार दोबारा खुली, जबकि अपेक्षा लगभग 22% की थी, यानी तरीकों, बारिश और जलभराव को देखते हुए नतीजे लगभग उम्मीद के अनुसार हैं। एक बात जाँचने लायक है: कार्य आदेश WO25-00491, ₹2.3 L, जिसमें सड़क अब भी मूल ठेकेदार की वारंटी में थी, फिर भी मरम्मत का पैसा शहर ने दिया।",
+  "mr": "माटुंगा, सायन, वडाळा येथे 150 कामांच्या आदेशांवर ₹94.1 L खर्च झाले, त्यातील सर्वाधिक Mithi Infra Projects (synthetic) ला ₹20.1 L आणि पंप + कचरा काढण्याच्या कामाला ₹24.7 L गेले. दुरुस्ती 25% वेळा पुन्हा उघडली, तर अपेक्षा सुमारे 22% होती, म्हणजे पद्धती, पाऊस आणि पाणी साचणे पाहता निकाल साधारण अपेक्षेप्रमाणे आहेत. एक गोष्ट तपासण्यासारखी आहे: कामाचा आदेश WO25-00491, ₹2.3 L, जिथे रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असूनही दुरुस्तीचे पैसे शहराने दिले."
+ },
+ "f-s": {
+  "input_hash": "b7346d5245e28846",
+  "generated_at": "2026-11-21T07:01:05+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In Parel, Lalbaug, Sewri, ₹80.3 L was spent across 135 work orders, with the most going to Arabian Sea Engineering (synthetic) at ₹13.7 L and to Pump + debris removal at ₹21 L. Fixes held about as expected, with 16% reopening against 22% expected given the methods, rain and flooding. Worth checking first is work order WO25-02380, a repair paid for by the city while the road is still under its original contractor's warranty, at ₹1.5 L.",
+  "hi": "परेल, लालबाग, शिवड़ी में 135 कार्य आदेशों पर ₹80.3 L खर्च हुए, जिनमें सबसे अधिक Arabian Sea Engineering (synthetic) को ₹13.7 L और Pump + debris removal पद्धति पर ₹21 L गए। मरम्मत लगभग अपेक्षा के अनुसार टिकी है: तरीकों, बारिश और जलभराव को देखते हुए 22% दोबारा खुलने की उम्मीद थी, जबकि 16% खुली। सबसे पहले देखने लायक कार्य आदेश WO25-02380 है, जिसमें सड़क अपने मूल ठेकेदार की वारंटी में होने पर भी शहर ने मरम्मत का भुगतान किया, राशि ₹1.5 L।",
+  "mr": "परेल, लालबाग, शिवडी येथे 135 कामाच्या आदेशांवर ₹80.3 L खर्च झाले, त्यातील सर्वाधिक Arabian Sea Engineering (synthetic) ला ₹13.7 L आणि Pump + debris removal पद्धतीवर ₹21 L गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकली आहे: पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता 22% पुन्हा उघडण्याची अपेक्षा होती, प्रत्यक्षात 16% उघडले. सर्वात आधी तपासण्यासारखा कामाचा आदेश WO25-02380 आहे, ज्यात रस्ता मूळ कंत्राटदाराच्या वॉरंटीत असतानाही शहराने दुरुस्तीचे पैसे दिले, रक्कम ₹1.5 L."
+ },
+ "g-n": {
+  "input_hash": "ffadfe59acd0815a",
+  "generated_at": "2026-11-21T07:01:12+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Dadar West, Mahim, Dharavi spent ₹67.6 L on monsoon road repairs, with the most going to Arabian Sea Engineering (synthetic) at ₹15.4 L and to Drain desilting at ₹15.3 L. Fixes are holding about as expected: 29% reopened against 23% expected for these methods, rain and flooding, and the range of 23% to 38% includes the expected rate. The top thing worth checking is work order WO25-02465 for ₹1.1 L, where the same repair was billed twice within a week with no complaint linked.",
+  "hi": "दादर पश्चिम, माहिम, धारावी में मानसून सड़क मरम्मत पर ₹67.6 L खर्च हुए, जिनमें सबसे ज़्यादा Arabian Sea Engineering (synthetic) को ₹15.4 L और ड्रेन डिसिल्टिंग पर ₹15.3 L गए। मरम्मत लगभग अपेक्षा के अनुसार टिक रही है: इन तरीकों, बारिश और जलभराव को देखते हुए 23% दोबारा खुलने की उम्मीद थी, जबकि 29% खुले, और 23% से 38% की सीमा में अपेक्षित दर शामिल है। सबसे पहले जाँचने लायक कार्य आदेश WO25-02465 है, ₹1.1 L का, जिसमें एक ही मरम्मत का बिल एक हफ़्ते के भीतर दो बार बना और कोई शिकायत जुड़ी नहीं है।",
+  "mr": "दादर पश्चिम, माहीम, धारावी येथे पावसाळी रस्ते दुरुस्तीवर ₹67.6 L खर्च झाले, त्यातील सर्वाधिक Arabian Sea Engineering (synthetic) ला ₹15.4 L आणि ड्रेन डिसिल्टिंगवर ₹15.3 L गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे: या पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता 23% पुन्हा उघडण्याची अपेक्षा होती, प्रत्यक्षात 29% उघडले, आणि 23% ते 38% या श्रेणीत अपेक्षित दर येतो. सर्वात आधी तपासण्यासारखे काम म्हणजे कार्य आदेश WO25-02465, ₹1.1 L चे, ज्यात एकाच दुरुस्तीचे बिल आठवडाभरात दोनदा लावले गेले आणि कोणतीही तक्रार जोडलेली नाही."
+ },
+ "g-s": {
+  "input_hash": "7d46638aa0b42aa1",
+  "generated_at": "2026-11-21T07:01:11+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Worli, Lower Parel, Prabhadevi spent ₹28.2 L on monsoon road repairs, with the most going to Sahyadri Infra Works (synthetic) at ₹5 L and to pump + debris removal at ₹10.1 L. About 33% of fixes reopened against the 26% we would expect, but that is about as expected given the methods, rain and flooding. The top thing worth checking is work order WO25-00410, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "Worli, Lower Parel, Prabhadevi में मानसून की सड़क मरम्मत पर ₹28.2 L खर्च हुए, जिसमें सबसे ज़्यादा Sahyadri Infra Works (synthetic) को ₹5 L और पंप + मलबा हटाने के काम पर ₹10.1 L गए। लगभग 33% मरम्मत दोबारा खुली, जबकि अपेक्षा 26% की थी, पर तरीकों, बारिश और जलभराव को देखते हुए यह लगभग अपेक्षा के अनुरूप है। सबसे पहले जाँचने लायक कार्य आदेश WO25-00410 है, जिसमें शहर ने ऐसी मरम्मत का भुगतान किया जबकि सड़क अभी मूल ठेकेदार की वारंटी में है।",
+  "mr": "Worli, Lower Parel, Prabhadevi मध्ये पावसाळ्यातील रस्ते दुरुस्तीवर ₹28.2 L खर्च झाले, त्यातील सर्वाधिक Sahyadri Infra Works (synthetic) कडे ₹5 L आणि पंप + कचरा काढण्याच्या कामावर ₹10.1 L गेले. सुमारे 33% दुरुस्त्या पुन्हा उघडल्या, अपेक्षा 26% होती, पण पद्धती, पाऊस आणि पाणी साचणे पाहता हे साधारण अपेक्षेप्रमाणेच आहे. सर्वात आधी तपासण्यासारखे काम WO25-00410 आहे, ज्यात रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना शहराने दुरुस्तीचे पैसे दिले."
+ },
+ "h-e": {
+  "input_hash": "cb2aeb8f4b56864a",
+  "generated_at": "2026-11-21T07:01:12+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Across 111 work orders, ₹61.5 L was spent in this ward, with the most going to Sahyadri Infra Works (synthetic) at ₹11.7 L and to pump and debris removal at ₹13.2 L. About 26% of repairs reopened, which is about as expected at 24% given the methods, rain and flooding, so the fixes are holding as we would expect. The top thing worth checking is work order WO25-01576, a job billed well above the standard rate, at ₹1.5 L.",
+  "hi": "इस वार्ड में 111 कार्य आदेशों पर ₹61.5 L खर्च हुए, जिनमें सबसे ज़्यादा Sahyadri Infra Works (synthetic) को ₹11.7 L और पंप व मलबा हटाने के काम पर ₹13.2 L गए। लगभग 26% मरम्मत दोबारा खुली, जो तरीकों, बारिश और जलभराव को देखते हुए अपेक्षित 24% के करीब है, यानी मरम्मत उम्मीद के मुताबिक टिक रही है। सबसे पहले कार्य आदेश WO25-01576 को देखना ठीक रहेगा, जो मानक दर से काफ़ी ज़्यादा बिल वाला काम है, ₹1.5 L का।",
+  "mr": "या वॉर्डमध्ये 111 कामाच्या आदेशांवर ₹61.5 L खर्च झाले, त्यात सर्वाधिक Sahyadri Infra Works (synthetic) ला ₹11.7 L आणि पंप व कचरा काढण्याच्या कामावर ₹13.2 L गेले. सुमारे 26% दुरुस्त्या पुन्हा उघडल्या, जे पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता अपेक्षित 24% च्या जवळपास आहे, म्हणजे दुरुस्त्या अपेक्षेप्रमाणे टिकत आहेत. सर्वप्रथम तपासून पाहण्यासारखा कार्य आदेश WO25-01576 आहे, जे मानक दरापेक्षा खूपच जास्त बिल केलेले काम आहे, ₹1.5 L चे."
+ },
+ "h-w": {
+  "input_hash": "6dcc16a895aeacd4",
+  "generated_at": "2026-11-21T07:01:13+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "The ward spent ₹42.5 L on monsoon road repairs across 62 work orders, with Western Coast Asphalt Co (synthetic) receiving the most at ₹8.1 L and drain desilting taking the biggest share of spend at ₹11.5 L. About 26% of repaired spots reopened, which is about as expected at 23% given the methods, rain and flooding, so the fixes are holding as we would expect. The top thing worth checking is work order WO25-02266, a job billed well above the standard rate, at ₹1.7 L.",
+  "hi": "वार्ड ने 62 कार्य आदेशों में मानसून सड़क मरम्मत पर ₹42.5 L खर्च किए, जिनमें सबसे ज़्यादा ₹8.1 L Western Coast Asphalt Co (synthetic) को मिले और नालों की सफ़ाई पर सबसे बड़ा हिस्सा, ₹11.5 L, गया। लगभग 26% मरम्मत की जगहें दोबारा खुलीं, जो तरीकों, बारिश और जलभराव को देखते हुए अपेक्षित 23% के लगभग बराबर है, यानी मरम्मत उम्मीद के मुताबिक टिक रही है। सबसे पहले WO25-02266 कार्य आदेश देखना ठीक रहेगा, जिसका बिल तय दर से काफ़ी ज़्यादा है, राशि ₹1.7 L।",
+  "mr": "वॉर्डने 62 कामाच्या आदेशांमध्ये पावसाळी रस्ते दुरुस्तीवर ₹42.5 L खर्च केले, त्यातील सर्वाधिक ₹8.1 L Western Coast Asphalt Co (synthetic) ला मिळाले आणि नाल्यांच्या गाळ काढण्यावर सर्वात मोठा वाटा, ₹11.5 L, गेला. सुमारे 26% दुरुस्त जागा पुन्हा उघडल्या, जे पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता अपेक्षित 23% च्या जवळपास आहे, म्हणजे दुरुस्ती अपेक्षेप्रमाणे टिकत आहे. सर्वात आधी WO25-02266 हा कामाचा आदेश तपासून पाहण्यासारखा आहे, ज्याचे बिल ठरलेल्या दरापेक्षा खूप जास्त आहे, रक्कम ₹1.7 L."
+ },
+ "k-e": {
+  "input_hash": "e09e6d5d43483b34",
+  "generated_at": "2026-11-21T07:01:12+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Across 165 work orders, this ward spent ₹82.6 L, with the most going to Konkan Roadcon Pvt Ltd (synthetic) at ₹16.8 L and to drain desilting at ₹17.8 L. Fixes are holding about as expected: 24% reopened, against 27% we would expect given the methods, rain and flooding. The top thing worth checking is work order WO25-00600, a job billed well above the standard rate, at ₹58,257.",
+  "hi": "इस वार्ड में 165 कार्य आदेशों पर ₹82.6 L खर्च हुए, जिनमें सबसे ज़्यादा Konkan Roadcon Pvt Ltd (synthetic) को ₹16.8 L और नाली की गाद सफ़ाई पर ₹17.8 L गए। मरम्मत लगभग उम्मीद के मुताबिक टिकी है: 24% दोबारा खुलीं, जबकि तरीकों, बारिश और जलभराव को देखते हुए करीब 27% की उम्मीद थी। सबसे पहले देखने लायक कार्य आदेश WO25-00600 है, जो तय दर से काफ़ी ज़्यादा बिल वाला काम है, ₹58,257 का।",
+  "mr": "या वॉर्डमध्ये 165 कार्य आदेशांवर ₹82.6 L खर्च झाले, त्यातील सर्वाधिक Konkan Roadcon Pvt Ltd (synthetic) ला ₹16.8 L आणि नाल्यातील गाळ काढण्यावर ₹17.8 L गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकली आहे: 24% पुन्हा उघडल्या, तर पद्धती, पाऊस आणि पाणी साचणे पाहता सुमारे 27% अपेक्षित होते. सर्वात आधी तपासण्यासारखा कार्य आदेश WO25-00600 आहे, जे ठरलेल्या दरापेक्षा खूपच जास्त बिल केलेले काम आहे, ₹58,257 चे."
+ },
+ "k-w": {
+  "input_hash": "12e06d1b0488e62d",
+  "generated_at": "2026-11-21T07:01:18+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In Andheri West, Juhu and Vile Parle West, ₹78.5 L was spent across 143 work orders, with the most going to Western Coast Asphalt Co (synthetic) at ₹16.4 L and to Pump + debris removal at ₹15.3 L. About 26% of repairs reopened, which is about as expected at 26% given the methods, rain and flooding, so the fixes are holding as we would expect. One thing worth checking is work order WO25-00326, a repair paid for by the city (₹2 L) while the road is still under its original contractor's warranty.",
+  "hi": "अंधेरी वेस्ट, जुहू और विले पार्ले वेस्ट में 143 कार्य आदेशों पर ₹78.5 L खर्च हुए, जिनमें सबसे ज़्यादा Western Coast Asphalt Co (synthetic) को ₹16.4 L और Pump + debris removal पद्धति पर ₹15.3 L गए। लगभग 26% मरम्मत दोबारा खुली, जो तरीकों, बारिश और जलभराव को देखते हुए अपेक्षित 26% के बराबर है, यानी मरम्मत उम्मीद के मुताबिक टिक रही है। एक बात जाँचने लायक है: कार्य आदेश WO25-00326, जिसमें सड़क अभी मूल ठेकेदार की वारंटी में है, फिर भी शहर ने मरम्मत के लिए ₹2 L चुकाए।",
+  "mr": "अंधेरी पश्चिम, जुहू आणि विले पार्ले पश्चिम येथे 143 कामाच्या आदेशांवर ₹78.5 L खर्च झाले, त्यात सर्वाधिक Western Coast Asphalt Co (synthetic) ला ₹16.4 L आणि Pump + debris removal पद्धतीवर ₹15.3 L गेले. सुमारे 26% दुरुस्त्या पुन्हा उघडल्या, जे पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता अपेक्षित 26% इतकेच आहे, म्हणजे दुरुस्ती अपेक्षेप्रमाणे टिकत आहे. एक गोष्ट तपासण्यासारखी आहे: कामाचा आदेश WO25-00326, ज्यात रस्ता अजून मूळ कंत्राटदाराच्या हमी कालावधीत असूनही शहराने दुरुस्तीसाठी ₹2 L दिले."
+ },
+ "l": {
+  "input_hash": "6cd816fb0cdf2a5a",
+  "generated_at": "2026-11-21T07:01:25+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Kurla spent ₹1.3 Cr on monsoon road repairs, with the most going to Sahyadri Infra Works (synthetic) at ₹21.6 L and to pump + debris removal at ₹27.5 L. Fixes are holding about as expected: 18% of repaired roads reopened as problems, compared with the 23% we would expect given the methods, rain and flooding. One thing worth checking is work order WO25-02068, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "कुर्ला ने मानसून में सड़क मरम्मत पर ₹1.3 Cr खर्च किए, जिसमें सबसे ज़्यादा ₹21.6 L सह्याद्री इन्फ्रा वर्क्स (synthetic) को और ₹27.5 L पंप और मलबा हटाने के काम पर गए। मरम्मत लगभग उम्मीद के मुताबिक टिक रही है: 18% मरम्मत की गई सड़कें फिर से खराब हुईं, जबकि तरीकों, बारिश और जलभराव को देखते हुए हम 23% की उम्मीद करते हैं। एक बात जाँचने लायक है: वर्क ऑर्डर WO25-02068, जिसकी मरम्मत का भुगतान शहर ने किया जबकि सड़क अभी मूल ठेकेदार की वारंटी में है।",
+  "mr": "कुर्ल्याने पावसाळ्यातील रस्ते दुरुस्तीवर ₹1.3 Cr खर्च केले, त्यातील सर्वाधिक ₹21.6 L सह्याद्री इन्फ्रा वर्क्स (synthetic) यांना आणि ₹27.5 L पंप व कचरा काढण्याच्या कामावर गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे: 18% दुरुस्त रस्ते पुन्हा बिघडले, तर पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता आम्ही 23% अपेक्षित धरतो. एक गोष्ट तपासण्यासारखी आहे: वर्क ऑर्डर WO25-02068, ज्यात रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना शहराने दुरुस्तीचे पैसे दिले."
+ },
+ "m-e": {
+  "input_hash": "20ef61bd4c0b8e62",
+  "generated_at": "2026-11-21T07:01:24+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In Govandi, Mankhurd, Deonar, 148 work orders cost ₹72.4 L, with the most going to Mithi Infra Projects (synthetic) at ₹13.4 L and to Excavation, pipeline repair, PQC patch at ₹12.7 L. About 26% of fixes reopened against the 24% we would expect, so the fixes are holding about as expected. Worth checking first is work order WO25-01065, a repair paid for by the city while the road is still under its original contractor's warranty (₹91,013).",
+  "hi": "गोवंडी, मानखुर्द, देवनार में 148 कार्य आदेशों पर ₹72.4 L खर्च हुए, जिनमें सबसे ज़्यादा Mithi Infra Projects (synthetic) को ₹13.4 L और Excavation, pipeline repair, PQC patch तरीके पर ₹12.7 L गए। करीब 26% मरम्मत दोबारा खुली, जबकि अपेक्षा 24% की थी, यानी मरम्मत लगभग उम्मीद के मुताबिक टिक रही है। सबसे पहले कार्य आदेश WO25-01065 देखना ठीक रहेगा, जिसमें सड़क अभी मूल ठेकेदार की वारंटी में है, फिर भी शहर ने मरम्मत का भुगतान किया (₹91,013)।",
+  "mr": "गोवंडी, मानखुर्द, देवनार येथे 148 कामाच्या आदेशांवर ₹72.4 L खर्च झाले, त्यातील सर्वाधिक Mithi Infra Projects (synthetic) ला ₹13.4 L आणि Excavation, pipeline repair, PQC patch पद्धतीवर ₹12.7 L गेले. सुमारे 26% दुरुस्त्या पुन्हा उघडल्या, तर अपेक्षा 24% ची होती, म्हणजे दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे. सर्वात आधी काम आदेश WO25-01065 तपासणे योग्य ठरेल, कारण रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असतानाही शहराने दुरुस्तीचे पैसे दिले (₹91,013)."
+ },
+ "m-w": {
+  "input_hash": "288db42353c3a91d",
+  "generated_at": "2026-11-21T07:01:26+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Chembur spent ₹46.9 L on monsoon road repairs across 87 work orders, with the most going to Konkan Roadcon Pvt Ltd (synthetic) at ₹9.3 L and to desilting and garbage removal at ₹10.6 L. Fixes held about as expected: 28% of repairs reopened against an expected 25%, which is within the normal range given the methods, rain and flooding. The top thing worth checking is work order WO25-02034, a repair paid for by the city while the road is still under its original contractor's warranty (₹1.6 L).",
+  "hi": "चेंबूर ने 87 वर्क ऑर्डर में मानसून सड़क मरम्मत पर ₹46.9 L खर्च किए, जिसमें सबसे ज़्यादा Konkan Roadcon Pvt Ltd (synthetic) को ₹9.3 L और गाद व कचरा हटाने के काम पर ₹10.6 L गए। मरम्मत लगभग उम्मीद के मुताबिक टिकी: 28% मरम्मत दोबारा खुली, जबकि तरीकों, बारिश और जलभराव को देखते हुए 25% की उम्मीद थी। सबसे पहले देखने लायक वर्क ऑर्डर WO25-02034 है, जिसमें शहर ने ऐसी सड़क की मरम्मत का पैसा दिया जो अभी मूल ठेकेदार की वारंटी में है (₹1.6 L)।",
+  "mr": "चेंबूरने 87 वर्क ऑर्डरमध्ये पावसाळ्यातील रस्ते दुरुस्तीवर ₹46.9 L खर्च केले, त्यातील सर्वाधिक Konkan Roadcon Pvt Ltd (synthetic) ला ₹9.3 L आणि गाळ व कचरा काढण्याच्या कामाला ₹10.6 L गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकली: 28% दुरुस्ती पुन्हा उघडली, तर पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता 25% अपेक्षित होती. सर्वात आधी तपासण्यासारखे वर्क ऑर्डर WO25-02034 आहे, ज्यात रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना शहराने दुरुस्तीचे पैसे दिले (₹1.6 L)."
+ },
+ "n": {
+  "input_hash": "67b5b8d50011f724",
+  "generated_at": "2026-11-21T07:01:29+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "This ward spent ₹60 L on 112 monsoon road repairs, with the most going to Arabian Sea Engineering (synthetic) at ₹16.4 L and to Excavation, pipeline repair, PQC patch at ₹14.9 L. About 20% of fixes reopened against 24% we would expect given the methods, rain and flooding, so the fixes are holding about as expected. The top thing worth checking is work order WO25-02499 for ₹98,614, where the same repair was billed twice within a week with no complaint linked.",
+  "hi": "इस वार्ड ने मानसून की 112 सड़क मरम्मतों पर ₹60 L खर्च किए, जिनमें सबसे ज़्यादा Arabian Sea Engineering (synthetic) को ₹16.4 L और Excavation, pipeline repair, PQC patch पद्धति पर ₹14.9 L गए। करीब 20% मरम्मतें दोबारा खुलीं, जबकि तरीकों, बारिश और जलभराव को देखते हुए हम 24% की उम्मीद करते थे, यानी मरम्मत लगभग उम्मीद के मुताबिक टिक रही है। सबसे पहले देखने लायक वर्क ऑर्डर WO25-02499 है, ₹98,614 का, जिसमें एक ही मरम्मत एक हफ़्ते के भीतर दो बार बिल हुई और कोई शिकायत जुड़ी नहीं है।",
+  "mr": "या वॉर्डने पावसाळ्यातील 112 रस्ते दुरुस्त्यांवर ₹60 L खर्च केले, त्यातील सर्वाधिक Arabian Sea Engineering (synthetic) ला ₹16.4 L आणि Excavation, pipeline repair, PQC patch या पद्धतीवर ₹14.9 L गेले. सुमारे 20% दुरुस्त्या पुन्हा उघडल्या, तर पद्धती, पाऊस आणि पाणी साचणे पाहता आम्हाला 24% अपेक्षित होते, म्हणजे दुरुस्त्या साधारण अपेक्षेप्रमाणे टिकत आहेत. सर्वात आधी तपासण्यासारखे काम WO25-02499 आहे, ₹98,614 चे, ज्यात एकच दुरुस्ती आठवड्याच्या आत दोनदा बिल झाली आणि कोणतीही तक्रार जोडलेली नाही."
+ },
+ "p-n": {
+  "input_hash": "2d9127424e42aba3",
+  "generated_at": "2026-11-21T07:01:19+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Malad spent ₹70.1 L on monsoon road repairs across 141 work orders, with the most going to Western Coast Asphalt Co (synthetic) at ₹13.8 L and to the method Excavation, pipeline repair, PQC patch at ₹13 L. Fixes are holding about as expected, with 25% reopened against an expected 26%. The top thing worth checking is work order WO25-01005, a job billed well above the standard rate, worth ₹1.9 L.",
+  "hi": "मालाड ने 141 वर्क ऑर्डर पर मानसून सड़क मरम्मत में ₹70.1 L खर्च किए, जिनमें सबसे ज़्यादा ₹13.8 L वेस्टर्न कोस्ट एस्फाल्ट कंपनी (synthetic) को और ₹13 L खुदाई, पाइपलाइन मरम्मत, PQC पैच वाली विधि पर गए। मरम्मत लगभग उम्मीद के अनुसार टिक रही है, क्योंकि 25% दोबारा खुलीं जबकि अपेक्षा 26% की थी। सबसे पहले देखने लायक वर्क ऑर्डर WO25-01005 है, जो मानक दर से काफ़ी ज़्यादा बिल किया गया काम है और ₹1.9 L का है।",
+  "mr": "मालाडमध्ये 141 वर्क ऑर्डरवर पावसाळी रस्ते दुरुस्तीसाठी ₹70.1 L खर्च झाले, त्यातील सर्वाधिक ₹13.8 L वेस्टर्न कोस्ट अॅस्फाल्ट कंपनी (synthetic) ला आणि ₹13 L खोदकाम, पाइपलाइन दुरुस्ती, PQC पॅच या पद्धतीवर गेले. दुरुस्ती साधारण अपेक्षेप्रमाणे टिकत आहे, कारण 25% पुन्हा उघडले तर अपेक्षा 26% होती. सर्वात आधी तपासण्यासारखे काम WO25-01005 हे वर्क ऑर्डर आहे, जे प्रमाणित दरापेक्षा खूप जास्त बिल केलेले काम आहे आणि ₹1.9 L चे आहे."
+ },
+ "p-s": {
+  "input_hash": "a869f0b55e165d01",
+  "generated_at": "2026-11-21T07:01:18+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Goregaon spent ₹43.5 L on monsoon road repairs across 82 work orders, with the most going to Konkan Roadcon Pvt Ltd (synthetic) at ₹9.2 L and to pump + debris removal at ₹14.3 L. About 21% of repairs reopened, which is about as expected at 24% given the methods, rain and flooding, so the fixes look to be holding as expected. The top thing worth checking is work order WO25-01626, a job billed well above the standard rate, with ₹2.2 L in question.",
+  "hi": "गोरेगांव ने 82 वर्क ऑर्डर पर मानसून सड़क मरम्मत में ₹43.5 L खर्च किए, जिसमें सबसे ज़्यादा Konkan Roadcon Pvt Ltd (synthetic) को ₹9.2 L और पंप व मलबा हटाने के काम पर ₹14.3 L गए। लगभग 21% मरम्मत दोबारा खुली, जो तरीकों, बारिश और जलभराव को देखते हुए अपेक्षित 24% के करीब है, यानी मरम्मत उम्मीद के अनुसार टिक रही है। सबसे पहले वर्क ऑर्डर WO25-01626 की जांच करना ठीक रहेगा, यह एक ऐसा काम है जिसका बिल मानक दर से काफ़ी ज़्यादा है और इसमें ₹2.2 L शामिल हैं।",
+  "mr": "गोरेगावने 82 वर्क ऑर्डरवर पावसाळी रस्ते दुरुस्तीसाठी ₹43.5 L खर्च केले, त्यातील सर्वाधिक Konkan Roadcon Pvt Ltd (synthetic) ला ₹9.2 L आणि पंप व कचरा काढण्याच्या कामावर ₹14.3 L गेले. सुमारे 21% दुरुस्त्या पुन्हा उघडल्या, जे पद्धती, पाऊस आणि पूर पाहता अपेक्षित 24% च्या जवळपास आहे, म्हणजे दुरुस्ती अपेक्षेप्रमाणे टिकत आहे. सर्वात आधी वर्क ऑर्डर WO25-01626 तपासण्यासारखे आहे, हे काम प्रमाण दरापेक्षा खूपच जास्त बिल केलेले आहे आणि त्यात ₹2.2 L आहेत."
+ },
+ "r-c": {
+  "input_hash": "a89f36ae608bbae9",
+  "generated_at": "2026-11-21T07:01:20+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Borivali spent ₹33.1 L on monsoon road repairs across 86 work orders, with the most going to Mithi Infra Projects (synthetic) at ₹7.9 L and to manhole cover replacement with grating at ₹6.3 L. Fixes are holding better than expected, with 14% of repaired roads reopening against about 25% we would expect given the methods, rain and flooding. One thing worth checking is work order WO25-00691, a repair paid for by the city while the road is still under its original contractor's warranty, worth ₹1 L.",
+  "hi": "बोरीवली ने 86 वर्क ऑर्डर पर मानसून सड़क मरम्मत में ₹33.1 L खर्च किए, जिनमें सबसे ज़्यादा Mithi Infra Projects (synthetic) को ₹7.9 L और मैनहोल कवर बदलने व ग्रेटिंग के काम पर ₹6.3 L गए। मरम्मत उम्मीद से बेहतर टिक रही है, क्योंकि 14% सड़कें दोबारा खुलीं, जबकि तरीकों, बारिश और जलभराव को देखते हुए करीब 25% की उम्मीद थी। एक बात जाँचने लायक है: वर्क ऑर्डर WO25-00691, यानी शहर के पैसे से हुई ऐसी मरम्मत जब सड़क अभी मूल ठेकेदार की वारंटी में थी, जिसकी राशि ₹1 L है।",
+  "mr": "बोरीवलीने 86 वर्क ऑर्डरवर पावसाळी रस्ते दुरुस्तीसाठी ₹33.1 L खर्च केले, त्यात सर्वाधिक रक्कम Mithi Infra Projects (synthetic) ला ₹7.9 L आणि मॅनहोल कव्हर बदलणे व ग्रेटिंगच्या कामाला ₹6.3 L गेली. दुरुस्ती अपेक्षेपेक्षा चांगली टिकत आहे, कारण 14% रस्ते पुन्हा उघडले, तर पद्धती, पाऊस आणि पाणी साचणे पाहता सुमारे 25% अपेक्षित होते. एक गोष्ट तपासण्यासारखी आहे: वर्क ऑर्डर WO25-00691, म्हणजे रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना शहराच्या पैशातून झालेली दुरुस्ती, ज्याची रक्कम ₹1 L आहे."
+ },
+ "r-n": {
+  "input_hash": "7b86769621b72a6a",
+  "generated_at": "2026-11-21T07:01:25+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 1,
+  "en": "Dahisar spent ₹35.3 L on monsoon road repairs across 82 work orders, with the most going to Shivneri Construction (synthetic) at ₹9.7 L and to Drain desilting at ₹8.1 L. About 27% of fixes reopened against roughly 26% we would expect, so the repairs are holding about as expected. One thing worth checking is work order WO25-02144, a repair paid for by the city while the road is still under its original contractor's warranty.",
+  "hi": "दहिसर में मानसून की सड़क मरम्मत पर 82 वर्क ऑर्डर में ₹35.3 L खर्च हुए, जिनमें सबसे ज़्यादा Shivneri Construction (synthetic) को ₹9.7 L और Drain desilting पर ₹8.1 L गए। लगभग 27% मरम्मतें दोबारा खुलीं, जबकि अपेक्षा करीब 26% की थी, यानी मरम्मत की टिकाऊपन उम्मीद के मुताबिक है। एक बात देखने लायक है: वर्क ऑर्डर WO25-02144, जिसमें शहर ने ऐसी सड़क की मरम्मत का भुगतान किया जो अब भी मूल ठेकेदार की वारंटी में है।",
+  "mr": "दहिसरमध्ये पावसाळ्यातील रस्ते दुरुस्तीवर 82 वर्क ऑर्डरमध्ये ₹35.3 L खर्च झाले, त्यातील सर्वाधिक Shivneri Construction (synthetic) ला ₹9.7 L आणि Drain desilting ला ₹8.1 L गेले. सुमारे 27% दुरुस्त्या पुन्हा उघडल्या, तर अपेक्षा साधारण 26% होती, म्हणजे दुरुस्त्या अपेक्षेप्रमाणेच टिकत आहेत. एक गोष्ट तपासण्यासारखी आहे: वर्क ऑर्डर WO25-02144, ज्यात शहराने अजूनही मूळ कंत्राटदाराच्या वॉरंटीत असलेल्या रस्त्याच्या दुरुस्तीचे पैसे दिले."
+ },
+ "r-s": {
+  "input_hash": "3c537773f5d9112e",
+  "generated_at": "2026-11-21T07:01:25+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 1,
+  "en": "Kandivali spent ₹66.4 L on 121 monsoon road repairs, with Western Coast Asphalt Co (synthetic) receiving the most at ₹11.9 L and Excavation, pipeline repair, PQC patch the top method at ₹17.9 L. About 21% of fixes reopened against the 25% we would expect, so the repairs held about as expected. The top item worth checking is work order WO25-00197, a job billed well above the standard rate, at ₹1.9 L.",
+  "hi": "कांदिवली में 121 मानसून सड़क मरम्मत पर ₹66.4 L खर्च हुए, जिनमें सबसे ज़्यादा ₹11.9 L Western Coast Asphalt Co (synthetic) को मिले और सबसे ज़्यादा खर्च वाली विधि Excavation, pipeline repair, PQC patch रही, ₹17.9 L के साथ। लगभग 21% मरम्मतें दोबारा खुलीं, जबकि अपेक्षा 25% की थी, यानी मरम्मत उम्मीद के मुताबिक ही टिकी। सबसे पहले जाँचने लायक कार्य आदेश WO25-00197 है, जो मानक दर से काफ़ी ज़्यादा बिल वाला काम है, ₹1.9 L का।",
+  "mr": "कांदिवलीत 121 पावसाळी रस्ते दुरुस्त्यांवर ₹66.4 L खर्च झाले, त्यात सर्वाधिक ₹11.9 L Western Coast Asphalt Co (synthetic) ला मिळाले आणि सर्वाधिक खर्चाची पद्धत Excavation, pipeline repair, PQC patch होती, ₹17.9 L सह. सुमारे 21% दुरुस्त्या पुन्हा उघडल्या, तर अपेक्षा 25% ची होती, म्हणजे दुरुस्त्या अपेक्षेप्रमाणेच टिकल्या. सर्वात आधी तपासण्यासारखे काम आदेश WO25-00197 आहे, जे मानक दरापेक्षा खूप जास्त बिल केलेले काम आहे, ₹1.9 L चे."
+ },
+ "s": {
+  "input_hash": "311151223c2f925a",
+  "generated_at": "2026-11-21T07:01:31+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "In Bhandup, Powai, Kanjurmarg, ₹74.9 L was spent across 123 work orders, with the most going to Sahyadri Infra Works (synthetic) at ₹13.2 L and to the method Excavation, pipeline repair, PQC patch at ₹20.4 L. Fixes have held less well than expected, as 33% of repaired roads reopened against about 24% expected for these methods, rain and flooding. The top thing worth checking is work order WO25-01723, a repair paid for by the city while the road is still under its original contractor's warranty, worth ₹3.2 L.",
+  "hi": "भांडुप, पवई, कांजुरमार्ग में 123 वर्क ऑर्डर पर ₹74.9 L खर्च हुए, जिनमें सबसे ज़्यादा Sahyadri Infra Works (synthetic) को ₹13.2 L और Excavation, pipeline repair, PQC patch तरीके पर ₹20.4 L गए। मरम्मत उम्मीद से कम टिकी है, क्योंकि 33% सड़कें दोबारा खुलीं, जबकि इन तरीकों, बारिश और जलभराव को देखते हुए करीब 24% की उम्मीद थी। सबसे पहले जाँचने लायक वर्क ऑर्डर WO25-01723 है, जिसमें शहर ने ₹3.2 L की ऐसी मरम्मत का भुगतान किया जबकि सड़क अभी मूल ठेकेदार की वारंटी में है।",
+  "mr": "भांडुप, पवई, कांजुरमार्ग मध्ये 123 वर्क ऑर्डरवर ₹74.9 L खर्च झाले, त्यातील सर्वाधिक Sahyadri Infra Works (synthetic) ला ₹13.2 L आणि Excavation, pipeline repair, PQC patch या पद्धतीवर ₹20.4 L गेले. दुरुस्त्या अपेक्षेपेक्षा कमी टिकल्या आहेत, कारण 33% रस्ते पुन्हा उघडावे लागले, तर या पद्धती, पाऊस आणि पाणी साचणे लक्षात घेता सुमारे 24% अपेक्षित होते. सर्वात आधी तपासण्यासारखे वर्क ऑर्डर WO25-01723 आहे, ज्यात रस्ता अजून मूळ कंत्राटदाराच्या वॉरंटीत असताना शहराने ₹3.2 L ची दुरुस्ती स्वतः भरली आहे."
+ },
+ "t": {
+  "input_hash": "c6f680c0f3bf4a32",
+  "generated_at": "2026-11-21T07:01:31+00:00",
+  "source": "claude",
+  "model": "claude-sonnet-5-5",
+  "guardrail_retries": 0,
+  "en": "Mulund spent ₹39.5 L across 65 work orders, with the most going to Arabian Sea Engineering (synthetic) at ₹8.9 L and to drain desilting at ₹9.7 L. About 32% of repairs reopened, and since the expected rate is 24% and the range of 22% to 44% includes it, the fixes are holding about as expected. The top thing worth checking is work order WO25-01496, a job billed well above the standard rate, at ₹1.5 L.",
+  "hi": "मुलुंड में 65 कार्य आदेशों पर ₹39.5 L खर्च हुए, जिनमें सबसे ज़्यादा Arabian Sea Engineering (synthetic) को ₹8.9 L और नाले की सफ़ाई पर ₹9.7 L गए। लगभग 32% मरम्मतें दोबारा खुलीं, और अपेक्षित दर 24% है तथा 22% से 44% की सीमा में यह आती है, इसलिए मरम्मत लगभग अपेक्षा के अनुसार टिक रही है। सबसे पहले देखने लायक कार्य आदेश WO25-01496 है, जो मानक दर से काफ़ी ज़्यादा बिल किया गया काम है, राशि ₹1.5 L।",
+  "mr": "मुलुंडमध्ये 65 कामाच्या आदेशांवर ₹39.5 L खर्च झाले, त्यातील सर्वाधिक Arabian Sea Engineering (synthetic) ला ₹8.9 L आणि नाल्यांतील गाळ काढण्यावर ₹9.7 L गेले. सुमारे 32% दुरुस्त्या पुन्हा उघडल्या, अपेक्षित दर 24% आहे आणि 22% ते 44% या श्रेणीत तो येतो, म्हणजे दुरुस्त्या साधारण अपेक्षेप्रमाणे टिकत आहेत. सर्वात आधी तपासण्यासारखा आदेश WO25-01496 आहे, हे काम प्रमाण दरापेक्षा खूपच जास्त बिल केलेले आहे, रक्कम ₹1.5 L."
+ }
+}
