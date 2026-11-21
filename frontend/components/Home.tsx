@@ -2,6 +2,7 @@
 
 import type { FeatureCollection } from "geojson";
 import dynamic from "next/dynamic";
+import { Landmark, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { ErrorBox } from "@/components/ErrorBox";
@@ -15,6 +16,7 @@ import { WardLeague } from "@/components/home/WardLeague";
 import { WorthChecking } from "@/components/home/WorthChecking";
 import { MapLegend } from "@/components/hero/MapLegend";
 import { WardPicker } from "@/components/WardPicker";
+import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { type Summary, type Ward, useApi } from "@/lib/api";
 import { useT } from "@/lib/i18n";
@@ -62,14 +64,25 @@ export function Home() {
 
       <main className="mx-auto w-full max-w-[1280px] flex-1 space-y-12 px-4 pt-8 pb-16 sm:px-6">
         <Section id="wards" title={t("home.q.wards")} seeAll="/wards">
-          <div className="mb-3 flex flex-wrap items-center gap-x-5 gap-y-1">
-            <button type="button" onClick={() => wardData && setPicker("explore")} className="inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4">
+          <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+            <Button
+              type="button"
+              onClick={() => wardData && setPicker("explore")}
+              className="h-12 w-full gap-2 px-6 text-base sm:w-auto"
+            >
+              <MapPin className="size-5" aria-hidden />
               {t("league.find")}
-            </button>
-            <button type="button" onClick={() => wardData && setPicker("officer")} className="inline-flex min-h-11 items-center font-semibold text-primary underline underline-offset-4">
+            </Button>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => wardData && setPicker("officer")}
+              className="h-12 w-full gap-2 px-6 text-base sm:w-auto"
+            >
+              <Landmark className="size-5" aria-hidden />
               {t("league.officer")}
-            </button>
-            <span className="text-[13px] text-muted-foreground">{t("league.hint")}</span>
+            </Button>
+            <span className="text-[13px] text-muted-foreground sm:ml-2">{t("league.hint")}</span>
           </div>
           <div className="grid gap-5 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
             <div className="min-w-0">{mapNode}</div>

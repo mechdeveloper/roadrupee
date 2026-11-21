@@ -119,6 +119,11 @@
 .leaflet-container {
   background: var(--scale-none);
   font-family: inherit;
+  /* Leaflet's panes and controls use z-index 400-1000. Contain them inside the map so dialogs and sheets
+     (z-50) always sit above any map on the page. */
+  position: relative;
+  z-index: 0;
+  isolation: isolate;
 }
 
 /* ---- Hero motion (all disabled under prefers-reduced-motion, see the media block below) ---- */
