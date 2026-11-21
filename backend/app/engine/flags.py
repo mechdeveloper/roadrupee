@@ -53,6 +53,7 @@ class Flag:
     amount_inr: float = 0.0  # money at stake (excess, or amount paid)
     flag_id: str = ""
     review: dict | None = field(default=None)  # filled by Claude later
+    extra: dict | None = None  # rule-specific evidence (SILENT_FAILURE: the social posts)
 
     def to_dict(self) -> dict:
         d = asdict(self)

@@ -309,6 +309,17 @@ export type ContractorSummary = {
   small_sample: boolean;
 };
 
+export type SocialPost = {
+  post_id: string;
+  posted_at: string;
+  source: string;
+  text: string;
+  language: string;
+  locality: string;
+  likes_or_forwards: number;
+  days_after_repair: number;
+};
+
 export type FlagEvidence = {
   flag_id: string;
   rule: string;
@@ -326,6 +337,7 @@ export type FlagEvidence = {
   context: EvidenceContext;
   related_work_orders: RelatedWO[];
   contractor: ContractorSummary;
+  social_posts: SocialPost[]; // only SILENT_FAILURE flags have any
   data_notes: string[];
   claude_review: ClaudeReview | null;
 };

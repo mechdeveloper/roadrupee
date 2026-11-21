@@ -37,6 +37,12 @@ RULE_STEPS = {
         "Compared with the target hours for this job.",
         "Flagged only when it took more than twice the target; plain misses are a scorecard metric.",
     ],
+    "SILENT_FAILURE": [
+        "Read the social-media posts with Claude: is it about a road or drain problem, and does it say the problem is back?",
+        "Placed each post in a ward from the locality it names.",
+        "Looked for a repair in that ward, of the same kind, finished in the 45 days before the post and not recorded as reopened.",
+        "Flagged it for review only: same ward and issue type is not proof of the same road, and posts can be wrong or forwarded.",
+    ],
     "REPEAT_FAILURE": [
         "Grouped reopened jobs by road, contractor and repair method.",
         "Linked jobs whose completion dates chain within 60 days of each other.",
@@ -290,6 +296,7 @@ def build(ix: EvidenceIndex, f: Flag) -> dict:
         ),
         related_work_orders=_related(ix, f, p),
         contractor=_contractor(ix, p.contractor_id),
+        social_posts=list((f.extra or {}).get("posts", [])),
         data_notes=[SYNTHETIC, f"Rainfall data covers 1 Jun to {ix.rain_end:%d %b %Y} only."] + rain_notes,
     )
     ev["rate_check"] = ev["rate_checks"][0]
@@ -298,5 +305,6 @@ def build(ix: EvidenceIndex, f: Flag) -> dict:
 
 
 def evidence_hash(ev: dict) -> str:
-    body = {k: v for k, v in ev.items() if k != "claude_review"}
+    # social_posts is left out when empty so adding the field did not change any existing hash (cached verdicts stay valid)
+    body = {k: v for k, v in ev.items() if k != "claude_review" and not (k == "social_posts" and not v)}
     return hashlib.sha256(json.dumps(body, sort_keys=True, ensure_ascii=False).encode()).hexdigest()[:16]

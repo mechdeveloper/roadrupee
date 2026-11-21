@@ -57,3 +57,7 @@ def trace_store() -> JsonStore:
 
 def plan_store() -> JsonStore:
     return JsonStore(Path(os.environ.get("PLAN_EXPLANATIONS_PATH", DATA_CACHE / "plan_explanations.json")))
+
+
+def social_store() -> JsonStore:
+    return JsonStore(Path(os.environ.get("SOCIAL_POSTS_PATH", DATA_CACHE / "social_posts.json")))

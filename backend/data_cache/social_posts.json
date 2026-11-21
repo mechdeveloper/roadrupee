@@ -1,0 +1,6502 @@
+{
+ "SOC00001": {
+  "input_hash": "44db8f44b7bdf741",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Mumbai Central",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00002": {
+  "input_hash": "c5a67341f919216b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Borivali East",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00003": {
+  "input_hash": "76887eef0d38f420",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Hindmata",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00004": {
+  "input_hash": "407bdd1f2990bdcc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00005": {
+  "input_hash": "f04710baefe2120b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mulund East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00006": {
+  "input_hash": "375d6a6af8ad654d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Charkop",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00007": {
+  "input_hash": "085423b8dc2ef786",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Chedda Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00008": {
+  "input_hash": "a28231249a53100a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Wadala",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00009": {
+  "input_hash": "dd921eb25fe42be3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00010": {
+  "input_hash": "0dcbc80eecd692e2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Gorai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00011": {
+  "input_hash": "0eb1a4851c609540",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00012": {
+  "input_hash": "394c5c78fa67e8ae",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Andheri East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00013": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00014": {
+  "input_hash": "8ca3850ead0450de",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Tilak Nagar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00015": {
+  "input_hash": "166d9655f65c751d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chembur",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00016": {
+  "input_hash": "f00393c44f8c7159",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Rawalpada",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00017": {
+  "input_hash": "2d77c0802d32b27b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00018": {
+  "input_hash": "1ffbe0dcc392f41e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00019": {
+  "input_hash": "93a2ac18fa0b11be",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Aarey Road",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00020": {
+  "input_hash": "715cff03151d98ba",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "RCF Colony",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00021": {
+  "input_hash": "390f54b8e84f7d2a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00022": {
+  "input_hash": "38495d0276e3a65d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Jogeshwari East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00023": {
+  "input_hash": "3a420f62300bd5e6",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Oshiwara",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00024": {
+  "input_hash": "841032b6525aea8c",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Lower Parel",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00025": {
+  "input_hash": "91d7692782207af1",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00026": {
+  "input_hash": "c32d3737596539d3",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Santacruz East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00027": {
+  "input_hash": "8ddc76bd6263611e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bhandup East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00028": {
+  "input_hash": "a206fabee1d93657",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00029": {
+  "input_hash": "1cb71e5a28e04c83",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bhandup East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00030": {
+  "input_hash": "e84f81f54c5e4c66",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00031": {
+  "input_hash": "e7017b2e44f692df",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00032": {
+  "input_hash": "c40f016d0dbf9f23",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bangur Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00033": {
+  "input_hash": "abfae62268827ff1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kandivali East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00034": {
+  "input_hash": "1a6a354bc8ca8dd2",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Poisar",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00035": {
+  "input_hash": "9a99e83c5d86c850",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00036": {
+  "input_hash": "97955651c9c1a356",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Kandivali West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00037": {
+  "input_hash": "b7e1fc9e126f6d20",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Powai",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00038": {
+  "input_hash": "bc8dc8a5c2b138a1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Anand Nagar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00039": {
+  "input_hash": "030932da353ee055",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Versova",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00040": {
+  "input_hash": "3761c52099356ac7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00041": {
+  "input_hash": "b9edd3398576c99a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00042": {
+  "input_hash": "afa09d9b15f1e1f5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Chembur",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00043": {
+  "input_hash": "1442a868fca23625",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Umerkhadi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00044": {
+  "input_hash": "1ca0b4b9117f6803",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Deonar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00045": {
+  "input_hash": "2c5f0e62f384ec4f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00046": {
+  "input_hash": "ff4be14c59a13f25",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00047": {
+  "input_hash": "ecf8ce72eaece763",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malvani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00048": {
+  "input_hash": "34f9ae9bb5805e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00049": {
+  "input_hash": "35ffd7da98e37ae7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00050": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00051": {
+  "input_hash": "6d2d3eb867791a07",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00052": {
+  "input_hash": "c4256bd0f05a9e1f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00053": {
+  "input_hash": "307579e44fc30773",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00054": {
+  "input_hash": "3ba10ffa146026e8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00055": {
+  "input_hash": "4cdeaa4825efc224",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Powai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00056": {
+  "input_hash": "63dacaabe8452e95",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Nahur West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00057": {
+  "input_hash": "416e498e6f15201a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Antop Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00058": {
+  "input_hash": "f4fe185dab5656e0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Lalbaug",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00059": {
+  "input_hash": "6435fe83abbdb8da",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Byculla",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00060": {
+  "input_hash": "21c24674cc060fd5",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Thakur Village",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00061": {
+  "input_hash": "2a2d400bc4f9edd3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Madanpura",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00062": {
+  "input_hash": "ba9709381ef17d7b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mahim",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00063": {
+  "input_hash": "8f0312c0de525141",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Poisar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00064": {
+  "input_hash": "3a420f62300bd5e6",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Oshiwara",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00065": {
+  "input_hash": "4c0fa7180a841a88",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Pali Hill",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00066": {
+  "input_hash": "f3c3c4e976a82e02",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mahim",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00067": {
+  "input_hash": "be4f9d1342b00251",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vile Parle West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00068": {
+  "input_hash": "470eef658d536027",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mankhurd",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00069": {
+  "input_hash": "9c00b12059cbade1",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mumbai Central",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00070": {
+  "input_hash": "cb77dbab233bd92e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mumbai Central",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00071": {
+  "input_hash": "987380570ae7fd0f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00072": {
+  "input_hash": "b1184ef28cd40e70",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mankhurd",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00073": {
+  "input_hash": "87123202996d9c35",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Marve Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00074": {
+  "input_hash": "268d2ad56b8a3ce5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chakala",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00075": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00076": {
+  "input_hash": "c7b54771a548deb8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00077": {
+  "input_hash": "1ebdc6d0843907a5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chakala",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00078": {
+  "input_hash": "bc28f2cc06c1e1e4",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00079": {
+  "input_hash": "521600414e2c88f4",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Worli",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00080": {
+  "input_hash": "409780becb6f769e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Rawalpada",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00081": {
+  "input_hash": "230e937cc0969d97",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Borivali East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00082": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00083": {
+  "input_hash": "3a282b6242dd892c",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00084": {
+  "input_hash": "76e8e8bf4ad1acc9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00085": {
+  "input_hash": "164be914414f3ea6",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Andheri West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00086": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00087": {
+  "input_hash": "c3b25c5965b2c158",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00088": {
+  "input_hash": "f88aef0860982a9f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dadar West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00089": {
+  "input_hash": "eaa1f9552672b0c7",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Parel",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00090": {
+  "input_hash": "a5ac9e07adcb4029",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bangur Nagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00091": {
+  "input_hash": "8d70b4af7affc213",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00092": {
+  "input_hash": "671331b1ec6770c5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chakala",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00093": {
+  "input_hash": "cebdc8689389d50d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00094": {
+  "input_hash": "0702e483c51ea20d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00095": {
+  "input_hash": "a38ab54aa188ed87",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00096": {
+  "input_hash": "b90597ac0e839249",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00097": {
+  "input_hash": "cb376246d4e5592f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malad East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00098": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00099": {
+  "input_hash": "1147b96f2a4bccd7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00100": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00101": {
+  "input_hash": "e59956ef7dfa2efb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bhandup West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00102": {
+  "input_hash": "3c3378468c8fa3e7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalanagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00103": {
+  "input_hash": "a79d41cfb84f6cb9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mumbai Central",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00104": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00105": {
+  "input_hash": "feb6487ede9d4a30",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00106": {
+  "input_hash": "a9174c57a0bb67df",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Jogeshwari East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00107": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00108": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00109": {
+  "input_hash": "987380570ae7fd0f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00110": {
+  "input_hash": "f4fe185dab5656e0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Lalbaug",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00111": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00112": {
+  "input_hash": "70ba1d70f2ec4507",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Jogeshwari East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00113": {
+  "input_hash": "183333d63e667696",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00114": {
+  "input_hash": "acbad100d4847de2",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": null,
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00115": {
+  "input_hash": "949bc34064a90697",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bandra East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00116": {
+  "input_hash": "3f98a78ee497f5cd",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00117": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00118": {
+  "input_hash": "bb281a8fcd5a75ae",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Byculla",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00119": {
+  "input_hash": "00cc8ed523dcfe47",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00120": {
+  "input_hash": "c2243cf828eac3c0",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Powai",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00121": {
+  "input_hash": "96b91a04a270334d",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00122": {
+  "input_hash": "425716cfde120649",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Marve Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00123": {
+  "input_hash": "154ef82f5bbd1174",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malabar Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00124": {
+  "input_hash": "827afb5c19da2b34",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00125": {
+  "input_hash": "e5fedbce5623df68",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurar Village",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00126": {
+  "input_hash": "1e60f5bedba31edb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00127": {
+  "input_hash": "519002bc2e3a03fd",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Park",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00128": {
+  "input_hash": "5ebacf6907906ad7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bandra West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00129": {
+  "input_hash": "80b7cc2984cc7192",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Bhandup West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00130": {
+  "input_hash": "b1184ef28cd40e70",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mankhurd",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00131": {
+  "input_hash": "2cc9d32647c8ce3b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dharavi",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00132": {
+  "input_hash": "081994664cfac8af",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Shivaji Park",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00133": {
+  "input_hash": "b086fa522b3db516",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kamani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00134": {
+  "input_hash": "af4331afa29d6064",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Goregaon West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00135": {
+  "input_hash": "fb2aeb087a8e4926",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00136": {
+  "input_hash": "feb6487ede9d4a30",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00137": {
+  "input_hash": "6648d053f6ef8483",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Shell Colony",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00138": {
+  "input_hash": "c0d5ee7ff831bf51",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Chakala",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00139": {
+  "input_hash": "b5b71e7e15d8f2ba",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Peddar Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00140": {
+  "input_hash": "09409dd3711af01c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Andheri East",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00141": {
+  "input_hash": "2a7764304302dea4",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00142": {
+  "input_hash": "49503dc4aaa252bf",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Deonar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00143": {
+  "input_hash": "c2243cf828eac3c0",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Powai",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00144": {
+  "input_hash": "cd584fa8bf7de5a8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00145": {
+  "input_hash": "70e656bb25f5b698",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00146": {
+  "input_hash": "83e48ab84312f3a5",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00147": {
+  "input_hash": "0ddbc1e9211a8565",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Charkop",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00148": {
+  "input_hash": "7a7cd1386ed2602b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00149": {
+  "input_hash": "cd584fa8bf7de5a8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00150": {
+  "input_hash": "82733d1ef9dccce9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vinoba Bhave Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00151": {
+  "input_hash": "4e79f78a7a2d5889",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Versova",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00152": {
+  "input_hash": "7de291a5c3e63201",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Matunga",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00153": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00154": {
+  "input_hash": "7c79a73e7d7708ca",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kamani",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00155": {
+  "input_hash": "b42138cc16809a41",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Goregaon East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00156": {
+  "input_hash": "b976af615d14f11c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Santacruz West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00157": {
+  "input_hash": "52d61ef3e03095b5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Juhu",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00158": {
+  "input_hash": "d870384f68b71249",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00159": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00160": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00161": {
+  "input_hash": "fce1cd706dd53bc2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Versova",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00162": {
+  "input_hash": "44efd0e37fad18f3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Juhu",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00163": {
+  "input_hash": "a4ef697e5df3e528",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Andheri West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00164": {
+  "input_hash": "78226bdac099c900",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00165": {
+  "input_hash": "ec281ff20eb8f97a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Asalpha",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00166": {
+  "input_hash": "92cc58d52ceeb543",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kandivali West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00167": {
+  "input_hash": "a7a8668d0d7e55bc",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Borivali West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00168": {
+  "input_hash": "38cfb719cee7dc16",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Parel",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00169": {
+  "input_hash": "89c7e5027e666266",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00170": {
+  "input_hash": "4f0883276ae22e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Deonar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00171": {
+  "input_hash": "742f69b796624976",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00172": {
+  "input_hash": "b6fc3a6f4244417a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Pant Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00173": {
+  "input_hash": "11264223e5136034",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Lower Parel",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00174": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00175": {
+  "input_hash": "e8e59c80e54e4bac",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Park",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00176": {
+  "input_hash": "3402240990b798e5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00177": {
+  "input_hash": "ed41b3dd518f8c90",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mulund East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00178": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00179": {
+  "input_hash": "b3e33c3a16045d9c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00180": {
+  "input_hash": "36a8bab507c4af12",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00181": {
+  "input_hash": "c4256bd0f05a9e1f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00182": {
+  "input_hash": "ffae75ee01867441",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Peddar Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00183": {
+  "input_hash": "f0d3198e6b9bf095",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Wadala",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00184": {
+  "input_hash": "885f1285db9ea35c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kings Circle",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00185": {
+  "input_hash": "987380570ae7fd0f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00186": {
+  "input_hash": "feb6487ede9d4a30",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00187": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00188": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00189": {
+  "input_hash": "819ba0c34ad37785",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00190": {
+  "input_hash": "57da7038d37c45ac",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00191": {
+  "input_hash": "201c52be0b41b0a8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Trombay",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00192": {
+  "input_hash": "7407f0397638229b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chembur",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00193": {
+  "input_hash": "35ffd7da98e37ae7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00194": {
+  "input_hash": "da8d1461b8be584f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00195": {
+  "input_hash": "67ca6f34be466f9c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sewri",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00196": {
+  "input_hash": "3627208321f285db",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Goregaon West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00197": {
+  "input_hash": "796b7cdac59d0929",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Aarey Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00198": {
+  "input_hash": "87123202996d9c35",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Marve Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00199": {
+  "input_hash": "c22d78bbc2c6ee86",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mulund Check Naka",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00200": {
+  "input_hash": "35ffd7da98e37ae7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00201": {
+  "input_hash": "65addeed41fd2a47",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Charkop",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00202": {
+  "input_hash": "c83b7fbd7b33d525",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Goregaon West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00203": {
+  "input_hash": "425716cfde120649",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Marve Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00204": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00205": {
+  "input_hash": "f1234914a0e6e2b8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00206": {
+  "input_hash": "e7c0fa21e27d58cf",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00207": {
+  "input_hash": "93538f785fcb95a5",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00208": {
+  "input_hash": "819748dce4a0c4a2",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Parel",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00209": {
+  "input_hash": "d9c2bae0e97c3c54",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Marve Road",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00210": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00211": {
+  "input_hash": "eefa096889a8f8a9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00212": {
+  "input_hash": "62ad0d3420ea27b8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vakola",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00213": {
+  "input_hash": "941cfe9bf51874a1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00214": {
+  "input_hash": "db368d4d93348d15",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bhandup East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00215": {
+  "input_hash": "671a51f781ce1752",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00216": {
+  "input_hash": "4d08b6057f6e63fd",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Shivaji Park",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00217": {
+  "input_hash": "adfd7552586acccf",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Linking Road",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00218": {
+  "input_hash": "6fd5a9a69bf8827c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nagpada",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00219": {
+  "input_hash": "7407f0397638229b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chembur",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00220": {
+  "input_hash": "a38ab54aa188ed87",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00221": {
+  "input_hash": "d8386f3f506aef6f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Goregaon East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00222": {
+  "input_hash": "1330be19aeb36fac",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00223": {
+  "input_hash": "b1d1ad8b94efcac2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bangur Nagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00224": {
+  "input_hash": "679d52b3b0d1cc39",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Lower Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00225": {
+  "input_hash": "4a28e1cdd4464498",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00226": {
+  "input_hash": "6b35014961946407",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Marol",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00227": {
+  "input_hash": "03bececcf95c231d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vikhroli",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00228": {
+  "input_hash": "e29e4288d9fc55f5",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mahim",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00229": {
+  "input_hash": "530edf6f3b70bbf3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00230": {
+  "input_hash": "7b8357a6161047c1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00231": {
+  "input_hash": "052bdcf525bf1dff",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "IC Colony",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00232": {
+  "input_hash": "7c7057bb4cbf048b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00233": {
+  "input_hash": "b0c1cb8c67e6dade",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Kanjurmarg",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00234": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00235": {
+  "input_hash": "663e35d2a902400d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00236": {
+  "input_hash": "4477b0e3b7c6c7a5",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00237": {
+  "input_hash": "093271c059626d7e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Juhu",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00238": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00239": {
+  "input_hash": "7d4661888a9847ef",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00240": {
+  "input_hash": "a730020268bb399a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mankhurd",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00241": {
+  "input_hash": "948b3a099e1d1159",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00242": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00243": {
+  "input_hash": "7b3b77df8606b50c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00244": {
+  "input_hash": "19c5e8f40c61a58d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dadar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00245": {
+  "input_hash": "7d4661888a9847ef",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00246": {
+  "input_hash": "6154eb2f941220c3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Antop Hill",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00247": {
+  "input_hash": "11c8446e5878f0a1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Saki Naka",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00248": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00249": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00250": {
+  "input_hash": "bc28f2cc06c1e1e4",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00251": {
+  "input_hash": "379c2c3c01f659e0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00252": {
+  "input_hash": "daf645bbc979d4db",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Asalpha",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00253": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00254": {
+  "input_hash": "535a9b90cd13ce6a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Aarey Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00255": {
+  "input_hash": "445189f118fa5208",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Oshiwara",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00256": {
+  "input_hash": "a63cc7b4a9554aa2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Kurla West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00257": {
+  "input_hash": "c78b99fdc4e2c60f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Marve Road",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00258": {
+  "input_hash": "f90cd4b198607c6b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vinoba Bhave Nagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00259": {
+  "input_hash": "b7861b6d3afc37df",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Ghatkopar West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00260": {
+  "input_hash": "d8eaa9fe7a7590a6",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Wadala",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00261": {
+  "input_hash": "d1cd3e18d934cf5f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00262": {
+  "input_hash": "feb6487ede9d4a30",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00263": {
+  "input_hash": "389ff14bb6e560c6",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vile Parle West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00264": {
+  "input_hash": "0eb1a4851c609540",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00265": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00266": {
+  "input_hash": "888a9013b747de7b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Lalbaug",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00267": {
+  "input_hash": "663e35d2a902400d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00268": {
+  "input_hash": "32762275aa0319a7",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00269": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00270": {
+  "input_hash": "6cba9ab388206c9a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Juhu",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00271": {
+  "input_hash": "ce4501bbc742b124",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bhandup East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00272": {
+  "input_hash": "27ac007b0d2a913a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Marve Road",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00273": {
+  "input_hash": "c5589cac174dbc62",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Tardeo",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00274": {
+  "input_hash": "779d4454e8372515",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00275": {
+  "input_hash": "f6578be118d5a93b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dahisar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00276": {
+  "input_hash": "5ca69ba334dc02a8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00277": {
+  "input_hash": "859a410a4b30e0db",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nahur",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00278": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00279": {
+  "input_hash": "a9589aeb3525dd20",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Mulund East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00280": {
+  "input_hash": "8e2858fa892963f8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00281": {
+  "input_hash": "23efa3713053c3ae",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Malad East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00282": {
+  "input_hash": "27facce335ec2575",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00283": {
+  "input_hash": "bbc72e68d06ffba9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00284": {
+  "input_hash": "5fd6e4658a3b6f8b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00285": {
+  "input_hash": "b9c88d0e2fbed6cc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chedda Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00286": {
+  "input_hash": "3645945db3b5141f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "IC Colony",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00287": {
+  "input_hash": "59fb30bb8b012145",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dharavi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00288": {
+  "input_hash": "f578ec0fd2cefc5f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sewri",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00289": {
+  "input_hash": "0f2f02f6711fc190",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00290": {
+  "input_hash": "1de6fb14135c9b21",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mankhurd",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00291": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00292": {
+  "input_hash": "ddc6815099d4ef80",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Byculla",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00293": {
+  "input_hash": "fd31f736c0fade86",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Poisar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00294": {
+  "input_hash": "32171e48b2dbd0b3",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vinoba Bhave Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00295": {
+  "input_hash": "6c93a9ed95bfeb1e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nahur",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00296": {
+  "input_hash": "900bcf7af7f98d01",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mulund West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00297": {
+  "input_hash": "0fa7b7f8efef1d96",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kandivali East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00298": {
+  "input_hash": "d60b40f48613f78c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Versova",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00299": {
+  "input_hash": "47a3e19c2b7a0500",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00300": {
+  "input_hash": "b6f6bdca57d89093",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00301": {
+  "input_hash": "2f06177fa282143c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Pali Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00302": {
+  "input_hash": "a11d17ce7b4f7028",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Poisar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00303": {
+  "input_hash": "005dc79b098267b4",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "RCF Colony",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00304": {
+  "input_hash": "fa61d25cd33b9b97",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Trombay",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00305": {
+  "input_hash": "df0c59a9ae7f8c73",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kamani",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00306": {
+  "input_hash": "0dc0fe5460295caa",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Mankhurd",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00307": {
+  "input_hash": "583d3c1569f4eb06",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Borivali East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00308": {
+  "input_hash": "47a3e19c2b7a0500",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00309": {
+  "input_hash": "afa09d9b15f1e1f5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Chembur",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00310": {
+  "input_hash": "6cbc1433915c813d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vinoba Bhave Nagar",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00311": {
+  "input_hash": "2687276424d2ceab",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Andheri East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00312": {
+  "input_hash": "50afa62d15deb30e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00313": {
+  "input_hash": "36e8f3c775d11511",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Govandi",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00314": {
+  "input_hash": "2d77c0802d32b27b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00315": {
+  "input_hash": "c499603a66f0fc1e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Marve Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00316": {
+  "input_hash": "7c79a73e7d7708ca",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kamani",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00317": {
+  "input_hash": "d870384f68b71249",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00318": {
+  "input_hash": "24fea8af48df1420",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Kurla East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00319": {
+  "input_hash": "913b4c3531bf3878",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Charkop",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00320": {
+  "input_hash": "0e25df3e82b43a5f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalbadevi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00321": {
+  "input_hash": "935199a8fe8e2138",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Saki Naka",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00322": {
+  "input_hash": "40c739df7710c295",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Kamani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00323": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00324": {
+  "input_hash": "7fb34107fc17d180",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Kurla East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00325": {
+  "input_hash": "307579e44fc30773",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00326": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00327": {
+  "input_hash": "3270cf3a4a1a8a5e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Kherwadi",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00328": {
+  "input_hash": "ba48cc215be50ec0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dahisar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00329": {
+  "input_hash": "91d7692782207af1",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00330": {
+  "input_hash": "0dc0fe5460295caa",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Mankhurd",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00331": {
+  "input_hash": "f011514448f6ff74",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00332": {
+  "input_hash": "8d061e108a060ed9",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Khar West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00333": {
+  "input_hash": "5d5e8e672065f351",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Byculla",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00334": {
+  "input_hash": "3b5310962aadd870",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malad West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00335": {
+  "input_hash": "c0c6e35f16a9c9c0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dahisar West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00336": {
+  "input_hash": "6a4a31b5290dffce",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00337": {
+  "input_hash": "1c1503a7588531f6",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00338": {
+  "input_hash": "4ee3ed9d58e21a4e",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00339": {
+  "input_hash": "62c7180d92bef62b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malvani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00340": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00341": {
+  "input_hash": "23efa3713053c3ae",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Malad East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00342": {
+  "input_hash": "9a99e83c5d86c850",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00343": {
+  "input_hash": "ae0fc9fc44a4e623",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00344": {
+  "input_hash": "9ac3cdf01301d6a7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Borivali West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00345": {
+  "input_hash": "ef4ea9916ea41d45",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kamani",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00346": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00347": {
+  "input_hash": "40a3c0f7abd5827f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nahur",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00348": {
+  "input_hash": "864b98e3a2736def",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Parel",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00349": {
+  "input_hash": "812d9360098a15dd",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Madanpura",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00350": {
+  "input_hash": "b81864c9e97aad04",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Umerkhadi",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00351": {
+  "input_hash": "c68d13d3b97a08ba",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Prabhadevi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00352": {
+  "input_hash": "5006cd2028c06403",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00353": {
+  "input_hash": "3f742571c88432d8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalanagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00354": {
+  "input_hash": "5062e54aecc9ebea",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Magathane",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00355": {
+  "input_hash": "5c28b76e49401c81",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Oshiwara",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00356": {
+  "input_hash": "4a9b02f9ea37cf93",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chembur",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00357": {
+  "input_hash": "c58f3e1db9935e83",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00358": {
+  "input_hash": "61a2c06809db209b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mulund West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00359": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00360": {
+  "input_hash": "ebcc52d0626283b2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Anand Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00361": {
+  "input_hash": "c3eb12d4ee4e91dd",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla East",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00362": {
+  "input_hash": "9a99e83c5d86c850",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00363": {
+  "input_hash": "239e3a01eb693eed",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kanjurmarg",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00364": {
+  "input_hash": "20bd60762d7e8fbb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kherwadi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00365": {
+  "input_hash": "f9da31cfa732c25a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00366": {
+  "input_hash": "b1f65bf36241ea9b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Santacruz West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00367": {
+  "input_hash": "3bea51281d0a8b6c",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00368": {
+  "input_hash": "84a95c678723cd22",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Trombay",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00369": {
+  "input_hash": "dc3fc3345a47a29d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00370": {
+  "input_hash": "4cdeaa4825efc224",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Powai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00371": {
+  "input_hash": "0b6c6544a5e94e29",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00372": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00373": {
+  "input_hash": "68532c648afbb709",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vile Parle West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00374": {
+  "input_hash": "8788eead4f30a41c",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Linking Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00375": {
+  "input_hash": "6116746571d6bc61",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bhandup East",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00376": {
+  "input_hash": "4920b676e7e62efc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00377": {
+  "input_hash": "e7507955bb99f491",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vile Parle West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00378": {
+  "input_hash": "b7a98757d11bc2b1",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vile Parle East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00379": {
+  "input_hash": "495c44b949d4a46f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kalanagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00380": {
+  "input_hash": "d870384f68b71249",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00381": {
+  "input_hash": "28d81959eebede56",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Charkop",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00382": {
+  "input_hash": "a7c09889c6e8591c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Jogeshwari East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00383": {
+  "input_hash": "aa08683349ad07f1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Lalbaug",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00384": {
+  "input_hash": "4f836b2e05245baf",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00385": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00386": {
+  "input_hash": "91d7692782207af1",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00387": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00388": {
+  "input_hash": "f7f8cd3b933d0cfb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Santacruz East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00389": {
+  "input_hash": "ba8903463a926057",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Kamani",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00390": {
+  "input_hash": "bdd52e296f87aef2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Girgaon",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00391": {
+  "input_hash": "15c51becd0ef8940",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mulund Check Naka",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00392": {
+  "input_hash": "ea3b8d82427dbd99",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Borivali East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00393": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00394": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00395": {
+  "input_hash": "ce29f2d22bd54b34",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Marol",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00396": {
+  "input_hash": "55a3e19679e2d076",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Vile Parle East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00397": {
+  "input_hash": "db77de38a65f5d58",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Andheri West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00398": {
+  "input_hash": "ac09f20e29c24a87",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00399": {
+  "input_hash": "0fc21f43713fa025",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nagpada",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00400": {
+  "input_hash": "1765e648764457e3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00401": {
+  "input_hash": "355567d55f5ee97d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00402": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00403": {
+  "input_hash": "47d4a0f9f72d6a2f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00404": {
+  "input_hash": "be8613c9b776441a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mahim",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00405": {
+  "input_hash": "64372d322e25310e",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Khar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00406": {
+  "input_hash": "1dbe7064302c0f9b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dadar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00407": {
+  "input_hash": "e7696eaa6d02122c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vakola",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00408": {
+  "input_hash": "1a6f98f00913d524",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mankhurd",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00409": {
+  "input_hash": "b2adf83a20e00108",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00410": {
+  "input_hash": "9b5ba854d9792df3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00411": {
+  "input_hash": "5ecaa6b92809f301",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00412": {
+  "input_hash": "0be52017397cca0a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00413": {
+  "input_hash": "8600ffe3f085eee6",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00414": {
+  "input_hash": "7d4661888a9847ef",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00415": {
+  "input_hash": "98ef96b6a4d6e2ea",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Peddar Road",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00416": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00417": {
+  "input_hash": "7b08010ae1b5d73e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla East",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00418": {
+  "input_hash": "34f9ae9bb5805e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00419": {
+  "input_hash": "a12c7471ec9fd5f3",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00420": {
+  "input_hash": "4920b676e7e62efc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00421": {
+  "input_hash": "a1b9e8d5f351f206",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Elphinstone",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00422": {
+  "input_hash": "390f54b8e84f7d2a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00423": {
+  "input_hash": "b0e5c0838c3ebf07",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00424": {
+  "input_hash": "a3bcb04a8a2fefcd",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vikhroli",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00425": {
+  "input_hash": "e17e0a78cc2cabca",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurar Village",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00426": {
+  "input_hash": "9d315aeffed64c4f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Deonar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00427": {
+  "input_hash": "57da7038d37c45ac",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00428": {
+  "input_hash": "9413ebb85250654b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00429": {
+  "input_hash": "7eacab723296dfbb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00430": {
+  "input_hash": "904b6349c4778bc0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sandhurst Road",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00431": {
+  "input_hash": "390f54b8e84f7d2a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00432": {
+  "input_hash": "9db6506510844729",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Dahisar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00433": {
+  "input_hash": "7e7aa680c80de1a7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Nahur West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00434": {
+  "input_hash": "f227c6d30bf71322",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00435": {
+  "input_hash": "84a95c678723cd22",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Trombay",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00436": {
+  "input_hash": "361136d71f2a94fc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Saki Naka",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00437": {
+  "input_hash": "ed9a771d59d2c590",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Chedda Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00438": {
+  "input_hash": "8a19286a92b4f922",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Borivali East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00439": {
+  "input_hash": "6188be6465d4ee1a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sion",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00440": {
+  "input_hash": "121df7d9eb5f0946",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "IC Colony",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00441": {
+  "input_hash": "164fcb1e612feef9",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Trombay",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00442": {
+  "input_hash": "4cabefa9d6bd166a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00443": {
+  "input_hash": "70e656bb25f5b698",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00444": {
+  "input_hash": "26970418d952a058",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00445": {
+  "input_hash": "722fd5c6f5b224c9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00446": {
+  "input_hash": "27b51a026e62fe7d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Nagpada",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00447": {
+  "input_hash": "7c8b6721a4df878b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vile Parle East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00448": {
+  "input_hash": "9976b156caeb4544",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00449": {
+  "input_hash": "e8374adb9ad4ea36",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Goregaon West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00450": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00451": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00452": {
+  "input_hash": "ed771147bd51ed87",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Lalbaug",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00453": {
+  "input_hash": "bbbc38b6746675d2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Rawalpada",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00454": {
+  "input_hash": "55365f8988c3a23c",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Charkop",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00455": {
+  "input_hash": "01ff7d6c9f2e979f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Linking Road",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00456": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00457": {
+  "input_hash": "73570a8fe6de8e23",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Rawalpada",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00458": {
+  "input_hash": "c05abb1462160427",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Bhandup East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00459": {
+  "input_hash": "6ad0036f3b79373a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Tilak Nagar",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00460": {
+  "input_hash": "f21777fbca654ec7",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Cuffe Parade",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00461": {
+  "input_hash": "9c2c52ad5eedf536",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Poisar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00462": {
+  "input_hash": "fc70041eefdddc11",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00463": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00464": {
+  "input_hash": "10b161d0fffca698",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Chembur",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00465": {
+  "input_hash": "c281c06a1a6e29b7",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00466": {
+  "input_hash": "eefa096889a8f8a9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00467": {
+  "input_hash": "283c7dbe3269391d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00468": {
+  "input_hash": "a7c09889c6e8591c",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": null,
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00469": {
+  "input_hash": "65a37943a40a518e",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kandivali East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00470": {
+  "input_hash": "9428f0a8d95b7313",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurar Village",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00471": {
+  "input_hash": "1dd30c91db9c7e5b",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00472": {
+  "input_hash": "870a18dc55cedde2",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Jogeshwari East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00473": {
+  "input_hash": "f3cc192fd3577c1c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malabar Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00474": {
+  "input_hash": "3bc52b93418abaec",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Andheri West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00475": {
+  "input_hash": "8419015d6dfd7b22",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kandivali West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00476": {
+  "input_hash": "c7b54c0c76b0b669",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurar Village",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00477": {
+  "input_hash": "e31f6ce22364ad4a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00478": {
+  "input_hash": "36a8bab507c4af12",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Parel",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00479": {
+  "input_hash": "09d0b64be18da3af",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalanagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00480": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00481": {
+  "input_hash": "ac5146034320ee3b",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00482": {
+  "input_hash": "5d5e8e672065f351",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Byculla",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00483": {
+  "input_hash": "2f0edb40a6f320e5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar West",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00484": {
+  "input_hash": "e8c450826ed0a208",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00485": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00486": {
+  "input_hash": "84a3eef4d7a9e8c5",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Pant Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00487": {
+  "input_hash": "40b639351a068d36",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00488": {
+  "input_hash": "ebabea656aabf37e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malabar Hill",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00489": {
+  "input_hash": "d074cb070fa178de",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malad West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00490": {
+  "input_hash": "2c6418cb970be004",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Charkop",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00491": {
+  "input_hash": "4aaa31bb76d4c101",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Deonar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00492": {
+  "input_hash": "05c9b5f61f685c47",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00493": {
+  "input_hash": "185d0764525162ce",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00494": {
+  "input_hash": "63dacaabe8452e95",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Nahur West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00495": {
+  "input_hash": "b1bc12d94730a6fb",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shell Colony",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00496": {
+  "input_hash": "ecd02121da930691",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Ghatkopar West",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00497": {
+  "input_hash": "e133b552fb91b17a",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Antop Hill",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00498": {
+  "input_hash": "4846f6601db1b9f8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Chembur",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00499": {
+  "input_hash": "4de02345a46eb286",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00500": {
+  "input_hash": "05b2eeab62439e83",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Trombay",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00501": {
+  "input_hash": "5abf2bdb1f47869e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00502": {
+  "input_hash": "ad5c659693fa9793",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sewri",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00503": {
+  "input_hash": "1511e85b20b3bf08",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00504": {
+  "input_hash": "4920b676e7e62efc",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00505": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00506": {
+  "input_hash": "ed2f1f82105c6cf1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Gorai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00507": {
+  "input_hash": "bb503cdd76664a2e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Charkop",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00508": {
+  "input_hash": "2cbe12ec68483035",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Govandi",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00509": {
+  "input_hash": "21a7179f9fc2f410",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Saki Naka Junction",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00510": {
+  "input_hash": "34f41563173d406e",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Aarey Road",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00511": {
+  "input_hash": "eda5b4fd0b7031d3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Mahim",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00512": {
+  "input_hash": "9413ebb85250654b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00513": {
+  "input_hash": "dd67c5aba8bc5e0d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalanagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00514": {
+  "input_hash": "0485673df87fde15",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kamani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00515": {
+  "input_hash": "1890c64c9be0a958",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Nehru Nagar",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00516": {
+  "input_hash": "864b98e3a2736def",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Parel",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00517": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00518": {
+  "input_hash": "f04c34a686998e7d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Deonar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00519": {
+  "input_hash": "1eec512c17fa8be3",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Jogeshwari East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00520": {
+  "input_hash": "32c6e6a629660ee8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dharavi",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00521": {
+  "input_hash": "f7c74a7ae8aa9191",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dahisar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00522": {
+  "input_hash": "39205b758329b088",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00523": {
+  "input_hash": "002d459b441b924e",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00524": {
+  "input_hash": "b25a63d83bc8d96e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malvani",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00525": {
+  "input_hash": "6afc74234a72f5a9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Nahur",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00526": {
+  "input_hash": "34475645e8272766",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vinoba Bhave Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00527": {
+  "input_hash": "93538f785fcb95a5",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Antop Hill",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00528": {
+  "input_hash": "bb1296828846b4a6",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Marve Road",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00529": {
+  "input_hash": "abf8eb14ae1e7d2d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Worli",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00530": {
+  "input_hash": "2d77c0802d32b27b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00531": {
+  "input_hash": "b8a6a338a92f1e0d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shell Colony",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00532": {
+  "input_hash": "b0c1cb8c67e6dade",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Kanjurmarg",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00533": {
+  "input_hash": "4a3da4ddbe1d44d1",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Madanpura",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00534": {
+  "input_hash": "0be52017397cca0a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Sion",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00535": {
+  "input_hash": "59cbfe8f7634167c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Chedda Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00536": {
+  "input_hash": "34f9ae9bb5805e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00537": {
+  "input_hash": "d367acd0bb461a2d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00538": {
+  "input_hash": "cab89fa39ccaee46",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00539": {
+  "input_hash": "81f1e4a31e46a993",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00540": {
+  "input_hash": "5a7f4e0cf44eb577",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kanjurmarg",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00541": {
+  "input_hash": "84a34d26590536d8",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00542": {
+  "input_hash": "65723e16da64e413",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Cuffe Parade",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00543": {
+  "input_hash": "34f9ae9bb5805e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00544": {
+  "input_hash": "6fdb0d4324df8370",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00545": {
+  "input_hash": "ab7b0715a78d8059",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Malvani",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00546": {
+  "input_hash": "2ac54b79f9f7cfa0",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00547": {
+  "input_hash": "5e3515e75fc0d999",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dharavi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00548": {
+  "input_hash": "35ffd7da98e37ae7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00549": {
+  "input_hash": "34f9ae9bb5805e95",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00550": {
+  "input_hash": "2d77c0802d32b27b",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00551": {
+  "input_hash": "6e2a142e15d364c4",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Juhu",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00552": {
+  "input_hash": "9951197796cbc3a7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bhandup West",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00553": {
+  "input_hash": "84b1616653df2e83",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Asalpha",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00554": {
+  "input_hash": "bb7fd11a5d8d8d65",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Matunga",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00555": {
+  "input_hash": "96e870eb22df52e0",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Agripada",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00556": {
+  "input_hash": "23fda25c9ecf1ef5",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kamani",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00557": {
+  "input_hash": "9df258f203b8f1af",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Andheri East",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00558": {
+  "input_hash": "1147b96f2a4bccd7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00559": {
+  "input_hash": "95e76a34abb16913",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kanjurmarg",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00560": {
+  "input_hash": "68b1b96f9d23e64b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dahisar East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00561": {
+  "input_hash": "90bc6255b51844d7",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nehru Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00562": {
+  "input_hash": "a38ab54aa188ed87",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Sewri",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00563": {
+  "input_hash": "9413ebb85250654b",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar East",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00564": {
+  "input_hash": "2d08ebb7971b7563",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Worli Naka",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00565": {
+  "input_hash": "4e0016da3f524156",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Borivali West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00566": {
+  "input_hash": "a2eacf3fc5bb0a95",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Fort",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00567": {
+  "input_hash": "0d043880cadc9100",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": "Thakur Village",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00568": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00569": {
+  "input_hash": "7eec8d4bfe09b47a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kings Circle",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00570": {
+  "input_hash": "379c2c3c01f659e0",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Ghatkopar East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00571": {
+  "input_hash": "7ac865b16a6f0e1c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00572": {
+  "input_hash": "061e479e359a77b4",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Prabhadevi",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00573": {
+  "input_hash": "7fbea54dcf836069",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00574": {
+  "input_hash": "0603f4734fdac055",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kanjurmarg",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00575": {
+  "input_hash": "a1e9ac688380e249",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Andheri East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00576": {
+  "input_hash": "0eb1a4851c609540",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00577": {
+  "input_hash": "c423da3c04f0f1a6",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Magathane",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00578": {
+  "input_hash": "feb6487ede9d4a30",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00579": {
+  "input_hash": "d7324d15e883f535",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Thakur Village",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00580": {
+  "input_hash": "8a6a94eef93c68b9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00581": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00582": {
+  "input_hash": "15c51becd0ef8940",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Mulund Check Naka",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00583": {
+  "input_hash": "06541aa724a97925",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kalanagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00584": {
+  "input_hash": "24fea8af48df1420",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Kurla East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00585": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00586": {
+  "input_hash": "56afa6aef2560f68",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Cuffe Parade",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00587": {
+  "input_hash": "53c18434f409d6ce",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Chedda Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00588": {
+  "input_hash": "0cdce911b4c47e5a",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Shivaji Park",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00589": {
+  "input_hash": "5bd2aa142ae2f7a2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00590": {
+  "input_hash": "12ee2971f24f4f4d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Nahur",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00591": {
+  "input_hash": "849df8b4841d1bed",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Juhu",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00592": {
+  "input_hash": "987380570ae7fd0f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00593": {
+  "input_hash": "875bf12384cddd5d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00594": {
+  "input_hash": "5bdacafd03cc9a2d",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Prabhadevi",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00595": {
+  "input_hash": "84146d687bc62a70",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Andheri East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00596": {
+  "input_hash": "09b9bf2c38356105",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Bhandup West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00597": {
+  "input_hash": "cf4d418a81b84606",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Umerkhadi",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00598": {
+  "input_hash": "6b2a5eadfb64a786",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kings Circle",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00599": {
+  "input_hash": "6fdb0d4324df8370",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00600": {
+  "input_hash": "ffa124b4bcd476c9",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Peddar Road",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00601": {
+  "input_hash": "682ea570276374e8",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurla West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00602": {
+  "input_hash": "18014031eb831b27",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Powai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00603": {
+  "input_hash": "f227c6d30bf71322",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00604": {
+  "input_hash": "e6da1789bf4fbf47",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kandivali West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00605": {
+  "input_hash": "715cff03151d98ba",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "RCF Colony",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00606": {
+  "input_hash": "23acc238f17ccb00",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vakola",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00607": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00608": {
+  "input_hash": "05188f9483dd1865",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Bangur Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00609": {
+  "input_hash": "5381787845964763",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Juhu",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00610": {
+  "input_hash": "f755709f10f35903",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Vakola",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00611": {
+  "input_hash": "38cfb719cee7dc16",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Parel",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00612": {
+  "input_hash": "987c9b6cc2bc6f33",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Kurar Village",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00613": {
+  "input_hash": "390f54b8e84f7d2a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00614": {
+  "input_hash": "5a4f78e728a21678",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Borivali West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00615": {
+  "input_hash": "307579e44fc30773",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00616": {
+  "input_hash": "a4ef697e5df3e528",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Andheri West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00617": {
+  "input_hash": "1a86e63cc2b826b4",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": null,
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00618": {
+  "input_hash": "8551798bc72cce13",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vikhroli",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00619": {
+  "input_hash": "3322a46b294b9489",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Thakur Village",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00620": {
+  "input_hash": "69acde9bb10df301",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Sandhurst Road",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00621": {
+  "input_hash": "ebcc52d0626283b2",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Anand Nagar",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00622": {
+  "input_hash": "6d551ac49e98e88e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00623": {
+  "input_hash": "f108a3633167ecee",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malad East",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00624": {
+  "input_hash": "c65d9a905d9e9bb0",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurla West",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00625": {
+  "input_hash": "c87f297153693c7e",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kurar Village",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00626": {
+  "input_hash": "b0080369d2d8258c",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Malad West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00627": {
+  "input_hash": "736e490f50cf7885",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Malad West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00628": {
+  "input_hash": "182b53b9fd63fcd4",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "IC Colony",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00629": {
+  "input_hash": "2dd6568aa8b947ce",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Vakola",
+  "issue_type": "Open or broken manhole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00630": {
+  "input_hash": "05f2674b679b0c3f",
+  "is_road_issue": false,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Colaba",
+  "issue_type": "other",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00631": {
+  "input_hash": "d367acd0bb461a2d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00632": {
+  "input_hash": "896cd9a36fdba57f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Dahisar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00633": {
+  "input_hash": "28da252116c76c6d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Tilak Nagar",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00634": {
+  "input_hash": "a5016fcfa1a6f5de",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Byculla",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00635": {
+  "input_hash": "96d16dd2aaecab5d",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Gorai",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00636": {
+  "input_hash": "e0b4c697e72b5c17",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Dharavi",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00637": {
+  "input_hash": "3f1b3b9805ea79fd",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Kings Circle",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00638": {
+  "input_hash": "d3304abcbcee5c40",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Goregaon East",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00639": {
+  "input_hash": "390f54b8e84f7d2a",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00640": {
+  "input_hash": "70ba1d70f2ec4507",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Jogeshwari East",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00641": {
+  "input_hash": "c4256bd0f05a9e1f",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00642": {
+  "input_hash": "ea15b61f3abab242",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Govandi",
+  "issue_type": "Road cave-in",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00643": {
+  "input_hash": "94c39967d24df275",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": "Matunga Labour Camp",
+  "issue_type": "Choked drain / nullah overflow",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00644": {
+  "input_hash": "812d9360098a15dd",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "hi-en",
+  "locality": "Madanpura",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00645": {
+  "input_hash": "ff4ca47955de76d0",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Dadar West",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00646": {
+  "input_hash": "164be914414f3ea6",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "hi-en",
+  "locality": "Andheri West",
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00647": {
+  "input_hash": "6fdb0d4324df8370",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "mr",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00648": {
+  "input_hash": "3f98a78ee497f5cd",
+  "is_road_issue": true,
+  "is_recurrence": true,
+  "language": "en",
+  "locality": null,
+  "issue_type": "Pothole",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00649": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "SOC00650": {
+  "input_hash": "0b98e61c0756e6f9",
+  "is_road_issue": true,
+  "is_recurrence": false,
+  "language": "en",
+  "locality": "Hindmata",
+  "issue_type": "Waterlogging",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ }
+}

@@ -48,8 +48,9 @@ The interface is in English, हिन्दी and मराठी (toggle in t
 | `DLP_PAID` | review | any other paid job on a DLP road (drains, manholes, pumping, utility trenches): "DLP road, but work not covered by the road contractor's liability" | 256 |
 | `SLA_BREACH` | review | completed in **more than 2×** the target hours (plain misses are a scorecard metric, not a flag) | 488 |
 | `REPEAT_FAILURE` | review | same road, same contractor, same repair method: **two or more** reopened jobs whose completion dates chain within **60 days** (30 flags covering 63 jobs; a single reopen is only a scorecard metric) | 30 |
+| `SILENT_FAILURE` | review | a resident post (classified by Claude, cached in `backend/data_cache/social_posts.json`) says the problem is back, in the same ward and issue type, within **45 days** after a repair that was **not** reopened (49 flags from 55 posts). Ward-level match, not proven to be the same road; "every year" posts are weaker evidence | 49 |
 
-Totals: **1,165 flags**, of which **391 are audit tier** (the "See all 391" on the home page). The counts are pinned by tests (`backend/tests/test_flags.py`); print them any time with `cd backend && uv run python -m app.engine.report`.
+Totals: **1,214 flags**, of which **391 are audit tier** (the "See all 391" on the home page). The counts are pinned by tests (`backend/tests/test_flags.py`); print them any time with `cd backend && uv run python -m app.engine.report`.
 
 ### Fairness method
 - **Actual vs expected, not raw failure rates.** A ward's or contractor's reopen rate is compared with the rate we would *expect* for the repair methods it used (each method has its own baseline; cold mix fails more often than hot mix), adjusted for the **rain in the week after each repair** and the ward's **flood-proneness** (`low_lying_index`). The adjustment factors come from the data, are clipped to 0.7–1.5, and are calibrated so the city total matches.

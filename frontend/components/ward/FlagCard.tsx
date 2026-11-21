@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Clock, Copy, Receipt, RotateCcw, ShieldAlert, type LucideIcon } from "lucide-react";
+import { ArrowRight, Clock, Copy, Receipt, RotateCcw, ShieldAlert, type LucideIcon, MessagesSquare } from "lucide-react";
 import Link from "next/link";
 import { Chip } from "@/components/Chip";
 import { ClaudeVerdictChip } from "@/components/ClaudeVerdictChip";
@@ -13,6 +13,7 @@ const ICON: Record<string, LucideIcon> = {
   DOUBLE_BILL: Copy,
   DLP_PAID: ShieldAlert,
   SLA_BREACH: Clock,
+  SILENT_FAILURE: MessagesSquare,
   REPEAT_FAILURE: RotateCcw,
 };
 

@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { ErrorBox } from "@/components/ErrorBox";
 import { VerdictChip } from "@/components/VerdictChip";
 import { RainTimeline } from "@/components/ward/RainTimeline";
+import { SocialCards } from "@/components/ward/SocialCards";
 import { Skeleton } from "@/components/ui/skeleton";
 import { type Ward, useApi } from "@/lib/api";
 import { pct } from "@/lib/format";
@@ -112,6 +113,8 @@ export function HeldTab({ ward }: { ward: Ward }) {
           )}
         </div>
       </section>
+
+      <SocialCards ward={ward} />
     </div>
   );
 }

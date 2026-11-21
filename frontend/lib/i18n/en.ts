@@ -320,6 +320,17 @@ export const en = {
   "plan.overspentShort": "Over budget",
   "plan.inWard": "in ward",
   "error.rateLimited": "You're asking quickly. Please wait a minute and try again.",
+  "rule.SILENT_FAILURE.title": "Residents say the problem is back, but the repair was never reopened",
+  "rule.SILENT_FAILURE.short": "Reported again",
+  "social.title": "Reported again on social media",
+  "social.sub": "Posts saying the same kind of problem is back, in the 45 days after a repair that was recorded as holding. Same ward and issue type, not proven to be the same road.",
+  "social.empty": "No social-media post in this ward matched a recent repair that was recorded as holding.",
+  "social.after": "{n} days after the repair",
+  "social.more": "+{n} more posts",
+  "social.lang.en": "English",
+  "social.lang.hi": "Hindi",
+  "social.lang.mr": "Marathi",
+  "social.lang.hi-en": "Hinglish",
 } as const;
 
 export type Key = keyof typeof en;

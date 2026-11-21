@@ -57,6 +57,8 @@ export type Flag = {
   amount_inr: number;
   /** Claude's review of the flag (verdict, headline, reasoning, source). Render only if present. */
   review?: Partial<import("@/lib/types").ClaudeReview> | null;
+  /** rule-specific evidence; SILENT_FAILURE carries the social posts */
+  extra?: { posts?: import("@/lib/types").SocialPost[] } | null;
 };
 
 export type State<T> =

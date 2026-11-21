@@ -160,6 +160,17 @@ class ContractorSummary(BaseModel):
     small_sample: bool
 
 
+class SocialPost(BaseModel):
+    post_id: str
+    posted_at: str
+    source: str
+    text: str
+    language: str
+    locality: str
+    likes_or_forwards: int
+    days_after_repair: int
+
+
 class FlagEvidence(BaseModel):
     flag_id: str
     rule: str
@@ -177,5 +188,6 @@ class FlagEvidence(BaseModel):
     context: Context
     related_work_orders: list[RelatedWO]
     contractor: ContractorSummary
+    social_posts: list[SocialPost] = []  # only SILENT_FAILURE flags have any
     data_notes: list[str]
     claude_review: ClaudeReview | None = None

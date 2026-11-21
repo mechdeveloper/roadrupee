@@ -46,7 +46,7 @@ def facts(pre, w: dict, flags: list[Flag]) -> dict:
     flow = views.ward_flow(pre.data, pre.wo, w["ward_code"], w["ward_name"], w["budget_inr"])
     spend = flow["spend_inr"] or 1.0
     c, m = flow["contractors"][0], flow["methods"][0]
-    mine = [f for f in flags if f.ward_code == w["ward_code"]]
+    mine = [f for f in flags if f.ward_code == w["ward_code"] and f.rule != "SILENT_FAILURE"]  # keeps stored summaries valid
     top = max((f for f in mine if f.tier == "audit"), key=lambda f: f.amount_inr, default=None) \
         or max(mine, key=lambda f: f.amount_inr, default=None)
     n = int(w["work_orders"])
@@ -63,7 +63,7 @@ def facts(pre, w: dict, flags: list[Flag]) -> dict:
         "reopen_observed_pct": round(w["reopen_observed_pct"]), "reopen_expected_pct": round(w["reopen_expected_pct"]),
         "reopen_ci_low_pct": round(w["reopen_ci_low_pct"]), "reopen_ci_high_pct": round(w["reopen_ci_high_pct"]),
         "fixes_vs_expected": views_verdict(w),
-        "flags_audit": w["flags_audit"], "flags_review": w["flags_review"],
+        "flags_audit": w["flags_audit"], "flags_review": sum(1 for f in mine if f.tier == "review"),
     }
     if top:
         out["top_flag"] = {"work_order_id": top.work_order_ids[0], "what": RULE_PLAIN[top.rule],

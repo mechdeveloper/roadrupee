@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, Clock, Copy, FileText, Mail, Printer, Receipt, RotateCcw, ShieldAlert, type LucideIcon } from "lucide-react";
+import { ChevronLeft, Clock, Copy, FileText, Mail, Printer, Receipt, RotateCcw, ShieldAlert, type LucideIcon, MessagesSquare } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Chip } from "@/components/Chip";
@@ -23,6 +23,7 @@ const ICON: Record<string, LucideIcon> = {
   DOUBLE_BILL: Copy,
   DLP_PAID: ShieldAlert,
   SLA_BREACH: Clock,
+  SILENT_FAILURE: MessagesSquare,
   REPEAT_FAILURE: RotateCcw,
 };
 
@@ -238,6 +239,25 @@ function Body({ flag, ev }: { flag: Flag; ev: FlagEvidence }) {
           )}
         </div>
       </Card>
+
+      {ev.social_posts.length > 0 && (
+        <Card title={t("social.title")} id="soc-h">
+          <ul className="space-y-3">
+            {ev.social_posts.map((p) => (
+              <li key={p.post_id} className="rounded-xl border bg-background p-4">
+                <p lang={p.language === "hi-en" ? "en" : p.language} className="text-[16px] text-ink">
+                  “{p.text}”
+                </p>
+                <p className="mt-2 flex flex-wrap items-center gap-2 text-[13px] text-muted-foreground">
+                  <Chip tone="neutral">{t(`social.lang.${p.language}` as Key)}</Chip>
+                  {p.source} · {fmtDate(p.posted_at)} · {p.locality} · {t("social.after", { n: p.days_after_repair })}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-[13px] text-muted-foreground">{t("social.sub")}</p>
+        </Card>
+      )}
 
       <ClaudeCard flagId={flag.flag_id} initial={ev.claude_review} />
 

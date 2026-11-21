@@ -11,7 +11,7 @@ import pandas as pd
 from .ai import ward_summary
 from .ai.store import JsonStore, plan_store, verdict_store, ward_summary_store
 from .ai.verdict import to_review
-from .engine import evidence, planner
+from .engine import evidence, planner, silent
 from .engine import flags as F
 from .engine import metrics
 from .engine.expected import add_expected
@@ -45,6 +45,14 @@ def build() -> Precomputed:
         contractors=contractors,
         evidence_index=evidence.build_index(data, wo, contractors),
     )
+    # SILENT_FAILURE flags (review tier only) are appended AFTER the existing ones, so existing flag ids never change
+    extra = silent.build(pre)
+    for i, f in enumerate(extra, len(pre.flags) + 1):
+        f.flag_id = f"F{i:04d}"
+    if extra:
+        pre.flags.extend(extra)
+        pre.summary = metrics.summary(data, wo, pre.flags)
+        pre.wards = metrics.wards(data, wo, pre.flags)
     pre.verdicts = verdict_store()
     attach_verdicts(pre)
     pre.ward_summaries = ward_summary_store()

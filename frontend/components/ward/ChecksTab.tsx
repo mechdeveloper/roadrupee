@@ -10,7 +10,7 @@ import { type Flag, type Ward, useApi } from "@/lib/api";
 import { num } from "@/lib/format";
 import { type Key, useT } from "@/lib/i18n";
 
-const RULES = ["OVER_RATE", "DOUBLE_BILL", "DLP_PAID", "SLA_BREACH", "REPEAT_FAILURE"] as const;
+const RULES = ["OVER_RATE", "DOUBLE_BILL", "DLP_PAID", "SLA_BREACH", "REPEAT_FAILURE", "SILENT_FAILURE"] as const;
 const PAGE = 12;
 
 /** Tab c: What's worth checking? Flag cards, filter by type, audit tier first. */
