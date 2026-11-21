@@ -5,7 +5,6 @@ Claude may later add `review` text to a flag but never alters rule fields.
 """
 from __future__ import annotations
 
-import math
 import re
 from dataclasses import asdict, dataclass, field
 
@@ -17,7 +16,6 @@ OVER_RATE_X = 1.5
 DOUBLE_BILL_DAYS = 7
 SLA_SEVERE_X = 2.0
 REPEAT_WINDOW_DAYS = 60
-REPEAT_P_MAX = 0.05  # Poisson tail probability under which repeats are "unusual"
 
 # DLP_PAID: surface defects the original road contractor is liable for
 DLP_AUDIT_WORK_TYPES = {"Pothole", "Broken paver blocks", "Road cave-in"}
@@ -169,43 +167,36 @@ def sla_breach(data: Data, wo: pd.DataFrame) -> list[Flag]:
     return out
 
 
-def _poisson_tail(k: int, lam: float) -> float:
-    """P(X >= k) for Poisson(lam)."""
-    return 1.0 - sum(math.exp(-lam) * lam**i / math.factorial(i) for i in range(k))
-
-
 def repeat_failure(wo: pd.DataFrame) -> list[Flag]:
-    """Roads where >=2 fixes failed within REPEAT_WINDOW_DAYS AND the count is
-    unusual given each job's expected failure probability (Poisson tail)."""
+    """Same road + same contractor + same repair method, with >=2 reopened WOs whose
+    completion dates chain within REPEAT_WINDOW_DAYS of each other. One flag per chain;
+    the most recent WO is primary, earlier ones follow as evidence."""
     out = []
-    for road, g in wo.groupby("road_id"):
-        failed = g[g.reopened].sort_values("completed_at")
-        if len(failed) < 2:
+    failed = wo[wo.reopened].sort_values("completed_at")
+    for (road, contractor, method), g in failed.groupby(["road_id", "contractor_id", "repair_method"]):
+        if len(g) < 2:
             continue
-        # largest cluster of failures inside the window
-        times = list(failed.completed_at)
-        best = []
-        for i in range(len(times)):
-            cl = [j for j in range(i, len(times)) if (times[j] - times[i]).days <= REPEAT_WINDOW_DAYS]
-            if len(cl) > len(best):
-                best = cl
-        if len(best) < 2:
-            continue
-        lam = float(g.expected_reopen_p.sum())
-        p = _poisson_tail(len(best), lam)
-        if p >= REPEAT_P_MAX:
-            continue
-        cl = failed.iloc[best].sort_values("completed_at", ascending=False)
-        s = cl.iloc[0]
-        out.append(Flag(
-            rule="REPEAT_FAILURE", tier="review", severity="medium",
-            work_order_ids=list(cl.work_order_id),
-            reason=(f"{len(best)} fixes on {road} failed within {REPEAT_WINDOW_DAYS} days of each other; about "
-                    f"{lam:.1f} failures were expected from its {len(g)} jobs. Worth a look at the road itself."),
-            ward_code=s.ward_code, road_id=road, contractor_id=s.contractor_id,
-            cost_inr=float(cl.cost_inr.sum()), expected_inr=float(cl.expected_cost_inr.sum()),
-            amount_inr=float(cl.cost_inr.sum()),
-        ))
+        chains: list[list[int]] = [[0]]
+        for i in range(1, len(g)):
+            gap = (g.completed_at.iloc[i] - g.completed_at.iloc[i - 1]).days
+            if gap <= REPEAT_WINDOW_DAYS:
+                chains[-1].append(i)
+            else:
+                chains.append([i])
+        for ch in chains:
+            if len(ch) < 2:
+                continue
+            c = g.iloc[ch].sort_values("completed_at", ascending=False)
+            s = c.iloc[0]
+            out.append(Flag(
+                rule="REPEAT_FAILURE", tier="review", severity="medium",
+                work_order_ids=list(c.work_order_id),
+                reason=(f"Same fix by same contractor failed again within {REPEAT_WINDOW_DAYS} days "
+                        f"({len(ch)} reopened jobs on {road}, {method})."),
+                ward_code=s.ward_code, road_id=road, contractor_id=contractor,
+                cost_inr=float(c.cost_inr.sum()), expected_inr=float(c.expected_cost_inr.sum()),
+                amount_inr=float(c.cost_inr.sum()),
+            ))
     return out
 
 

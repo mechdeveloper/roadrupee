@@ -71,6 +71,19 @@ def test_sla_breach_only_severe(pre):
     assert all(f.tier == "review" for f in fl)
 
 
+def test_repeat_failure(pre):
+    fl = by_rule(pre, "REPEAT_FAILURE")
+    assert len(fl) == 30
+    assert len({w for f in fl for w in f.work_order_ids}) == 63
+    assert all(f.tier == "review" for f in fl)
+    wo = pre.wo.set_index("work_order_id")
+    for f in fl:
+        rows = wo.loc[f.work_order_ids]
+        assert rows.reopened.all()
+        assert rows.road_id.nunique() == rows.contractor_id.nunique() == rows.repair_method.nunique() == 1
+        assert f.reason.startswith("Same fix by same contractor failed again within 60 days")
+
+
 def test_every_flag_has_evidence_and_fair_wording(pre):
     banned = ("fraud", "scam", "corrupt", "steal")
     for f in pre.flags:

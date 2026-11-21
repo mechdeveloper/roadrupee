@@ -23,7 +23,7 @@ Expected cost = rate × `area_sqm` (per sqm) or rate (per job). Normal variation
 | DOUBLE_BILL | audit | same road + same repair_method within 7 days; the later WO has no linked complaint |
 | DLP_PAID | audit / review | road `under_dlp=Y` and cost > 0. **audit**: work_type in (Pothole, Broken paver blocks, Road cave-in) AND surface repair method (cold/hot mix, mastic, paver blocks relaid, PQC patch) AND remark has no MTNL/MGL utility trench. **review**: everything else on DLP roads ("DLP road, but work not covered by road contractor's liability") |
 | SLA_BREACH | review | completion > 2 × `sla_hours` only (plain misses are a scorecard metric) |
-| REPEAT_FAILURE | review | repeat reopens on the same road (single reopen = scorecard metric only) |
+| REPEAT_FAILURE | review | same road + same contractor + same repair_method, ≥2 reopened WOs whose completion dates chain within 60 days (63 WOs, 30 flags). A single reopen is a scorecard metric only |
 
 Claude **adds** a one-line explanation or "likely justified" to each flag. It never deletes or changes the rule result.
 Scorecards compare observed vs EXPECTED reopen rate (method baseline, adjusted for rain in the completion week and ward `low_lying_index`). Small samples are not blamed.
