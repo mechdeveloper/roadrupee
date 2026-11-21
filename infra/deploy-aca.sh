@@ -66,8 +66,11 @@ az acr build --registry "$ACR_NAME" --platform linux/amd64 \
   --image "roadrupee-backend:$TAG" --file backend/Dockerfile .
 
 log "Building frontend image"
+# az acr build resolves --file relative to the current working directory (not the build context),
+# so the path must include frontend/ even though the context is ./frontend. Same rule as the backend
+# build above (--file backend/Dockerfile .). "--file Dockerfile" fails with "Unable to find 'Dockerfile'".
 az acr build --registry "$ACR_NAME" --platform linux/amd64 \
-  --image "roadrupee-frontend:$TAG" --file Dockerfile frontend
+  --image "roadrupee-frontend:$TAG" --file frontend/Dockerfile frontend
 
 # --- Container Apps environment (also creates the Log Analytics workspace) ---------------------
 log "Container Apps environment $ENV_NAME"
