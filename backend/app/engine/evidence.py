@@ -230,9 +230,12 @@ def _related(ix: EvidenceIndex, f: Flag, p: pd.Series) -> list[dict]:
 
 def _contractor(ix: EvidenceIndex, cid: str) -> dict:
     c = ix.contractors[cid]
-    return {k: c[k] for k in ("contractor_id", "contractor_name", "work_orders", "reopen_observed_pct",
-                              "reopen_expected_pct", "reopen_ci_low_pct", "reopen_ci_high_pct",
-                              "sla_met_pct", "median_cost_vs_rate")} | {"small_sample": c["work_orders"] < 30}
+    out = {k: c[k] for k in ("contractor_id", "contractor_name", "work_orders")}
+    out |= {k: round(float(c[k]), 1) for k in ("reopen_observed_pct", "reopen_expected_pct", "reopen_ci_low_pct",
+                                              "reopen_ci_high_pct", "sla_met_pct")}
+    out["median_cost_vs_rate"] = round(float(c["median_cost_vs_rate"]), 2)
+    out["small_sample"] = c["work_orders"] < 30
+    return out
 
 
 # ---------------------------------------------------------------- entry points

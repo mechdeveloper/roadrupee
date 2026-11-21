@@ -32,8 +32,9 @@ You get one JSON evidence pack. Rules:
 - Before concluding, weigh anything that could justify the cost or delay: heavy rain or red/orange IMD alerts around completion, big tides, flood hotspots, a high low-lying index, a utility-trench remark, linked complaints with many upvotes, a long reopen history of the same method, how the contractor's reopen rate compares with the rate expected for its work. Also say when rain data is missing (it ends on 30 Sep).
 - Be fair and plain. Say "worth checking", never fraud, scam, corrupt, theft or any accusation. Small samples are not blamed.
 - verdict: "worth_checking" = the evidence does not explain it; "likely_justified" = context plausibly explains it; "needs_more_info" = the evidence cannot settle it.
-- headline: one plain sentence a citizen can read, at most 20 words.
-- reasoning: 2 to 4 sentences.
+- headline: one plain sentence a citizen can read, at most 20 words (count them).
+- reasoning: 2 to 4 sentences, never more than 4. Keep it tight: the two or three factors that matter most, not every field.
+- Quote percentages exactly as they appear in the evidence (already rounded).
 - context_considered: short factors you weighed, e.g. "heavy rain that week", "utility trench remark".
 - evidence_refs: the evidence field names or work_order_ids you relied on (e.g. "rate_check.ratio", "WO25-00004").
 All data is synthetic and all contractors are fictional."""
