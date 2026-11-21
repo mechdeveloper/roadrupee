@@ -10,6 +10,9 @@
 
 ![RoadRupee home: ₹3.07 Cr of ₹13.43 Cr didn't hold, ward map and league table](docs/screenshots/home.png)
 
+> 🏆 **Built during [Claude Impact Lab Mumbai: Civic Budget & Accountability](https://luma.com/claude-ImpactLab)** (Mumbai, 21 November 2026) by **Team 7**:  
+> Aditya Panigrahi · Tejas Bangera · Pratik Pujari · Aaryan Thakur · Ashish Singh Baghel
+
 Built for Claude Impact Lab Mumbai ("Follow the Rupee: Mumbai Monsoon Roads"). Every monsoon Mumbai spends crores fixing the same roads, and the potholes come back. RoadRupee shows, for each ward, where the road repair money went, whether the work held up, who is responsible, and where the next rupee should go.
 
 > **All data is synthetic and all contractors are fictional.** Nothing here is real BMC data. Don't use it to judge any real person, contractor or department.
