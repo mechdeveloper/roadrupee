@@ -58,6 +58,28 @@ def top_flags(request: Request, limit: int = Query(6, ge=1, le=24)) -> dict:
     return {"total_audit": total, "items": out}
 
 
+@router.get("/home/audit-strip")
+def audit_strip(request: Request) -> dict:
+    """The 'How we audited' numbers: repairs checked, audit-tier flags, Claude's verdict split, and one likely-justified example."""
+    p, wards, names, methods = _lookups(request)
+    audit = [f for f in p.flags if f.tier == "audit"]
+    split = {v: 0 for v in VERDICTS}
+    for f in audit:
+        v = (f.review or {}).get("verdict")
+        if v in split:
+            split[v] += 1
+    # a verdict whose own headline still says "worth a look" would contradict the card, so it is not used as the example
+    just = [f for f in audit if (f.review or {}).get("verdict") == "likely_justified"
+            and "worth a look" not in (f.review or {}).get("headline", "").lower()
+            and "worth check" not in (f.review or {}).get("headline", "").lower()]
+    ex = max(just, key=lambda f: f.amount_inr, default=None)
+    return {
+        "repairs_checked": int(len(p.wo)), "flagged": len(audit),
+        "reviewed": sum(split.values()), **split,
+        "example": _flag_row(ex, wards, names, methods) if ex else None,
+    }
+
+
 @router.get("/home/contractors")
 def home_contractors(request: Request) -> list[dict]:
     """All contractors with their four plain grades, compact, for the home cards."""

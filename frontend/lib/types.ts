@@ -72,6 +72,16 @@ export type CityPlanResponse = { items: CityPlanItem[] }; // GET /api/plan/city?
 // ---------- Ward / contractor / search pages (mirror of backend/app/contracts/pages.py) ----------
 export type Outcome = "held" | "failed";
 export type Alert = "Green" | "Yellow" | "Orange" | "Red";
+export type AuditStrip = {
+  repairs_checked: number;
+  flagged: number;
+  reviewed: number;
+  worth_checking: number;
+  likely_justified: number;
+  needs_more_info: number;
+  example: HomeFlag | null;
+};
+
 export type Band = "better" | "as_expected" | "watch" | "worse" | "neutral";
 
 export type Locality = {

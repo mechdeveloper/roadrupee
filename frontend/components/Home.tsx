@@ -6,6 +6,7 @@ import { Landmark, MapPin } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { ErrorBox } from "@/components/ErrorBox";
+import { AuditStrip } from "@/components/home/AuditStrip";
 import { ContractorCards } from "@/components/home/ContractorCards";
 import { HookBand } from "@/components/home/HookBand";
 import { MoneyByMethod } from "@/components/home/MoneyByMethod";
@@ -61,6 +62,8 @@ export function Home() {
         error={summary.state.status === "error" ? summary.state.message : undefined}
         retry={summary.retry}
       />
+
+      <AuditStrip />
 
       <main className="mx-auto w-full max-w-[1280px] flex-1 space-y-12 px-4 pt-8 pb-16 sm:px-6">
         <Section id="wards" title={t("home.q.wards")} seeAll="/wards">

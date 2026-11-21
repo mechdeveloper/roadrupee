@@ -72,6 +72,13 @@ def test_audit_csv_matches_filters(client):
     assert len(lines) - 1 == 109 and all(",OVER_RATE," in l for l in lines[1:])
 
 
+def test_audit_strip_counts_and_example(client):
+    d = client.get("/api/home/audit-strip").json()
+    assert d["repairs_checked"] == 2499 and d["flagged"] == 391
+    assert d["worth_checking"] + d["likely_justified"] + d["needs_more_info"] == d["reviewed"] == 391
+    assert d["example"]["verdict"] == "likely_justified" and d["example"]["headline"]
+
+
 def test_home_top_flags_only_worth_checking(client):
     items = client.get("/api/home/top-flags").json()["items"]
     assert items and all(i["verdict"] == "worth_checking" for i in items)
