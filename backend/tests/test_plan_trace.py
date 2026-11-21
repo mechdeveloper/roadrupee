@@ -63,7 +63,9 @@ def test_plan_budget_fit_is_greedy(pre):
     for d in pre.plan["by_ward"].values():
         left = d["remaining_inr"]
         for i in d["items"]:
-            free = "should cost the city ₹0" in i["cost_basis"]
+            free = i["cost_basis"].startswith("₹0 to the city")
+            if free:
+                assert i["estimated_cost_inr"] == 0
             if free:
                 assert i["within_budget"]
             elif i["estimated_cost_inr"] <= left:
@@ -93,3 +95,11 @@ def test_trace_free_text_marathi(pre):
 
 def test_trace_unknown_id(pre):
     assert t(pre, "BMC25-999999")["found"] is False
+
+
+def test_recommended_set_fits_the_budget_bar(pre):
+    """The UI pre-selects within_budget items and sums estimated_cost_inr against max(remaining, 0)."""
+    for d in pre.plan["by_ward"].values():
+        chosen = sum(i["estimated_cost_inr"] for i in d["items"] if i["within_budget"])
+        assert chosen <= max(d["remaining_inr"], 0) + 1e-6, d["ward_slug"]
+

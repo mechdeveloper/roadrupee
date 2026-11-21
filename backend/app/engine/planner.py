@@ -155,8 +155,10 @@ def build_plan(data: Data, wo: pd.DataFrame, flags: list[Flag], open_linked: pd.
             cost = float(m.cost)
             basis = f"{inr(m.rate)} per sqm × {int(m.area)} sqm (typical area for this repair)" if per_sqm else f"{inr(m.rate)} per job (rate card)"
             dlp = road.under_dlp == "Y" and top.issue_type in DLP_AUDIT_WORK_TYPES
-            if dlp:
-                within, basis = True, basis + ". Under the original contractor's warranty: should cost the city ₹0"
+            if dlp:  # cost to the city is ₹0; the UI sums estimated_cost_inr against the remaining budget
+                within = True
+                basis = f"₹0 to the city: the original contractor should repair it under warranty (standard cost {inr(cost)}: {basis})"
+                cost = 0.0
             elif cost <= left:
                 within, left = True, left - cost
             else:
