@@ -25,3 +25,9 @@ export function verdict(w: {
   if (w.reopen_ci_high_pct < w.reopen_expected_pct) return "better";
   return "about as expected";
 }
+
+export const VERDICT_KEY = {
+  better: "verdict.better",
+  "about as expected": "verdict.expected",
+  worse: "verdict.worse",
+} as const;

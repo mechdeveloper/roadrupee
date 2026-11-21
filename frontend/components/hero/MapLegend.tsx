@@ -1,13 +1,17 @@
+"use client";
+
+import { useT } from "@/lib/i18n";
 import { pct } from "@/lib/format";
 import type { Bins } from "@/lib/scale";
 
 export function MapLegend({ bins }: { bins: Bins }) {
+  const t = useT();
   return (
     <div className="mt-3 text-[13px] text-hero-muted">
       <div className="flex items-center justify-between font-medium text-ink">
-        <span>Higher share didn&apos;t hold</span>
+        <span>{t("map.higher")}</span>
         <span aria-hidden>←  →</span>
-        <span>Held better</span>
+        <span>{t("map.better")}</span>
       </div>
       <ul className="mt-1.5 grid grid-cols-5 gap-1" aria-label="Map legend: share of repair spend that didn't hold">
         {bins.ranges.map((r) => (
@@ -20,10 +24,7 @@ export function MapLegend({ bins }: { bins: Bins }) {
           </li>
         ))}
       </ul>
-      <p className="mt-1.5">
-        Share of each ward&apos;s repair spend on fixes reopened within 30 days. Click a ward for details. Ward
-        boundaries are approximate.
-      </p>
+      <p className="mt-1.5">{t("map.note")}</p>
     </div>
   );
 }

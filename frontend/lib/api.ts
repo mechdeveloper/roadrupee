@@ -20,8 +20,14 @@ export type Summary = {
   flag_counts: Record<string, { count: number; audit: number; review: number; amount_inr: number }>;
 };
 
+export type AiSummary = { en: string; hi: string; mr: string };
+
 export type Ward = {
   ward_code: string;
+  slug: string; // G/S -> g-s, used in /ward/[slug]
+  localities: string[];
+  /** Claude's plain-language summary of the ward, precomputed by another session. Hide the card when absent. */
+  ai_summary?: AiSummary | null;
   ward_name: string;
   budget_inr: number;
   remaining_budget_inr: number;
@@ -49,6 +55,8 @@ export type Flag = {
   road_id: string;
   cost_inr: number;
   amount_inr: number;
+  /** Claude's review of the flag. Shape finalised by the review session; render only if present. */
+  review?: { verdict?: string; explanation?: string } | null;
 };
 
 export type State<T> =

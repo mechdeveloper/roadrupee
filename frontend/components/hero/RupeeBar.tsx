@@ -1,5 +1,6 @@
 "use client";
 
+import { useT } from "@/lib/i18n";
 import { useInView } from "@/lib/useInView";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
@@ -10,6 +11,7 @@ const STAGGER_SPAN = 650; // ms across all failed tiles; each tile's drop is ~55
 export function RupeeBar({ failedPct }: { failedPct: number }) {
   const failed = Math.max(0, Math.min(TOTAL, Math.round(failedPct)));
   const held = TOTAL - failed;
+  const t = useT();
   const reduced = useReducedMotion();
   const [ref, inView] = useInView<HTMLDivElement>({ once: true, threshold: 0.5 });
   const drop = inView && !reduced;
@@ -40,7 +42,7 @@ export function RupeeBar({ failedPct }: { failedPct: number }) {
         })}
       </div>
       <figcaption className="mt-3 text-[15px] text-hero-muted">
-        <span className="font-semibold text-ink">₹{failed}</span> of every ₹100 cracked and fell away
+        {t("hero.bar.caption", { n: failed })}
       </figcaption>
     </figure>
   );

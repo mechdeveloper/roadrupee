@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useT } from "@/lib/i18n";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
 // Real rows from the dataset: Marathi, Hinglish, English, and a complaint ID.
@@ -16,6 +17,7 @@ const EXAMPLES = [
 type Phase = "idle" | "loading" | "soon" | "error";
 
 export function HeroTrace() {
+  const t = useT();
   const reduced = useReducedMotion();
   const [text, setText] = useState("");
   const [focused, setFocused] = useState(false);
@@ -47,10 +49,10 @@ export function HeroTrace() {
   return (
     <section aria-labelledby="trace-h">
       <h2 id="trace-h" className="text-xl font-semibold tracking-tight text-ink sm:text-2xl">
-        Trace my complaint
+        {t("hero.trace.title")}
       </h2>
       <p className="mt-1 text-[15px] text-hero-muted">
-        Paste it in Marathi, Hindi, Hinglish or English, or type a complaint ID.
+        {t("hero.trace.help")}
       </p>
       <form onSubmit={submit} className="mt-3 flex flex-col gap-3 sm:flex-row">
         <Input
@@ -59,22 +61,21 @@ export function HeroTrace() {
           onFocus={() => setFocused(true)}
           onBlur={() => setFocused(false)}
           placeholder={EXAMPLES[i]}
-          aria-label="Complaint text or complaint ID"
-          lang="mr"
+          aria-label={t("hero.trace.aria")}
           className="h-14 w-full rounded-xl sm:flex-1 bg-surface px-4 text-base"
         />
         <Button type="submit" className="h-14 rounded-xl px-8 text-base" disabled={phase === "loading"}>
-          {phase === "loading" ? "Tracing…" : "Trace"}
+          {phase === "loading" ? "…" : t("hero.trace.button")}
         </Button>
       </form>
       {phase === "soon" && (
         <p role="status" className="mt-3 text-sm text-hero-muted">
-          Complaint tracing is being built today. Check back soon.
+          {t("hero.trace.soon")}
         </p>
       )}
       {phase === "error" && (
         <p role="alert" className="mt-3 text-sm text-destructive">
-          Something went wrong. Please try again.
+          {t("hero.trace.error")}
         </p>
       )}
     </section>

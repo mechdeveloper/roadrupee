@@ -65,3 +65,112 @@ export type PlanResponse = {
   formula: Formula;
   items: PlanItem[]; // ranked, rank 1 first
 };
+
+// ---------- Ward / contractor / search pages (mirror of backend/app/contracts/pages.py) ----------
+export type Outcome = "held" | "failed";
+export type Alert = "Green" | "Yellow" | "Orange" | "Red";
+export type Band = "better" | "as_expected" | "worse" | "neutral";
+
+export type Locality = {
+  locality: string;
+  ward_code: string;
+  ward_slug: string;
+  ward_name: string;
+  aliases: string[]; // incl. Devanagari
+};
+
+export type FlowNode = {
+  id: string;
+  label: string;
+  kind: "spend" | "contractor" | "method" | "outcome";
+  value_inr: number;
+  outcome: Outcome | null;
+  contractor_id: string | null;
+};
+export type FlowLink = { source: number; target: number; value: number; outcome: Outcome | null };
+export type FlowContractor = {
+  contractor_id: string;
+  contractor_name: string;
+  spend_inr: number;
+  held_inr: number;
+  failed_inr: number;
+  failed_pct: number;
+  work_orders: number;
+};
+export type FlowMethod = {
+  repair_method: string;
+  spend_inr: number;
+  held_inr: number;
+  failed_inr: number;
+  failed_pct: number;
+  work_orders: number;
+};
+export type WardFlow = {
+  ward_code: string;
+  ward_slug: string;
+  ward_name: string;
+  budget_inr: number;
+  spend_inr: number;
+  held_inr: number;
+  failed_inr: number;
+  nodes: FlowNode[];
+  links: FlowLink[];
+  contractors: FlowContractor[];
+  methods: FlowMethod[];
+};
+
+export type TimelineDay = {
+  date: string;
+  rain_mm: number | null; // null after rain data ends
+  alert: Alert | null;
+  failed: number; // repairs COMPLETED this day that failed within 30 days
+  failed_wo_ids: string[];
+};
+export type WardTimeline = {
+  ward_code: string;
+  ward_slug: string;
+  start: string;
+  end: string;
+  rain_data_ends: string;
+  red_alert_days: number;
+  failed_total: number;
+  days: TimelineDay[];
+};
+
+export type Grade = {
+  key: "speed" | "durability" | "cost" | "volume";
+  title: string;
+  band: Band;
+  headline: string;
+  detail: string;
+  value: number;
+  benchmark: number | null;
+  scale_min: number;
+  scale_max: number;
+  unit: string;
+};
+export type ContractorWard = {
+  ward_code: string;
+  ward_slug: string;
+  ward_name: string;
+  work_orders: number;
+  spend_inr: number;
+  failed_pct: number;
+  reopen_expected_pct: number;
+  small_sample: boolean;
+};
+export type ContractorCard = {
+  contractor_id: string;
+  contractor_name: string;
+  empanelled_since: string | null;
+  wards_active: number;
+  work_orders: number;
+  spend_inr: number;
+  failed_spend_inr: number;
+  over_rate_count: number;
+  small_sample: boolean;
+  summary: string;
+  summary_source: "template" | "claude";
+  grades: Grade[];
+  wards: ContractorWard[];
+};

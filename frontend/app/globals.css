@@ -30,6 +30,15 @@
   --hero-muted: #4e5a66;
   --rain: rgba(60, 80, 105, 0.08);
 
+  /* Chip tones. Colour always means the same: check = red/amber (didn't hold / worth checking),
+     held = teal (held / fine), neutral = grey (no data / context). */
+  --tone-check-bg: color-mix(in srgb, var(--scale-1) 10%, var(--surface));
+  --tone-check-ink: var(--scale-1);
+  --tone-held-bg: var(--accent-soft);
+  --tone-held-ink: var(--accent);
+  --tone-neutral-bg: var(--scale-none);
+  --tone-neutral-ink: var(--hero-muted);
+
   --radius: 0.75rem;
 
   /* shadcn/ui variables mapped onto the tokens above */
@@ -78,8 +87,8 @@
   --color-scale-5: var(--scale-5);
   --color-scale-none: var(--scale-none);
   --color-hero-muted: var(--hero-muted);
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-inter);
+  --font-sans: var(--font-inter), var(--font-deva), sans-serif;
+  --font-heading: var(--font-inter), var(--font-deva), sans-serif;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
