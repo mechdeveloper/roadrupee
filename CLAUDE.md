@@ -29,6 +29,183 @@ Claude **adds** a one-line explanation or "likely justified" to each flag. It ne
 Scorecards compare observed vs EXPECTED reopen rate (method baseline, adjusted for rain in the completion week and ward `low_lying_index`). Small samples are not blamed.
 Planner: transparent risk formula shown in the UI; recommend the most durable method (lowest reopen rate), not the cheapest, within ward budget − spend.
 
+## Planner contract
+`GET /api/plan?ward={slug}` → `PlanResponse`. **Engine owner: Student C. UI owner: tech lead.** Models: `backend/app/contracts/plan.py` (Pydantic, source of truth) and `frontend/lib/types.ts` (TypeScript mirror). Change both in the same commit and update the example below (a test fails if the example drifts from the model). Until the engine exists the route returns **HTTP 501** and the frontend shows clearly labelled example data. **Only on 501**: never fake data once the route returns 200.
+
+`slug` is the ward code lower-cased with `/` replaced by `-` (`G/S` → `g-s`); the `slug` field is on every ward in `/api/wards`.
+
+| Field | Meaning |
+|---|---|
+| `ward_slug`, `ward_code`, `ward_name` | which ward |
+| `budget_inr`, `spent_inr`, `remaining_inr` | monsoon budget, spend so far, `budget − spend` (can be ≤ 0) |
+| `formula` | `{weights: [{key, label, weight, description}], note}`. `weight` = max points of that part; weights sum to 100. Rendered transparently in the UI |
+| `items[]` | ranked road segments, `rank` 1 = fix first (about 5 to 15 items) |
+| `items[].road_id, road_name, segment_no, road_type, length_m, lat, lon` | the segment (lat/lon = midpoint) |
+| `items[].risk_score` | 0–100, **equals the sum of `score_parts[].points`** |
+| `items[].score_parts[]` | `{key: complaints\|flood\|traffic\|accidents\|facilities, label, points, max_points}` |
+| `items[].reasons[]` | icon chips: `{kind: flood_hotspot\|tide\|ambulance_route\|school_route\|accidents\|open_complaints\|traffic\|bus_route, label, detail, count?}`. `label` is plain English |
+| `items[].recommended_method` | `{repair_method, reopen_rate_pct, rate_inr, unit, why}`. **Most durable method (lowest 30-day reopen rate among methods suited to the issue), not the cheapest.** `repair_method` must exist in `rate_card.csv` |
+| `items[].alternatives[]` | optional `{repair_method, reopen_rate_pct, estimated_cost_inr}` |
+| `items[].area_sqm_estimate`, `estimated_cost_inr`, `cost_basis` | cost = rate × area (per sqm) or rate (per job); `cost_basis` says how, in words |
+| `items[].within_budget` | greedy fit: fund items in rank order until `remaining_inr` runs out |
+| `items[].evidence` | `{complaint_ids, accident_ids, hotspot_ids, facility_ids}`: every number links to evidence |
+| `items[].explanation` | Claude's one-line explanation; `null` until wired. Claude never computes numbers |
+
+Engine rules: deterministic Python (pandas), no LLM arithmetic. Inputs: open/unresolved complaints (severity, upvotes), flood hotspot proximity (+ tide sensitivity), traffic (congestion, bus routes), pothole / waterlogging / open-chamber accidents, school and hospital `ambulance_entry_road`. Open complaints have no `road_id`, so match each to the nearest road segment in its ward (GPS if present, else the locality centroid from `localities.csv`).
+
+### Example response
+```json
+{
+  "ward_slug": "g-s",
+  "ward_code": "G/S",
+  "ward_name": "Worli, Lower Parel, Prabhadevi",
+  "budget_inr": 1400000,
+  "spent_inr": 1020000,
+  "remaining_inr": 380000,
+  "formula": {
+    "weights": [
+      {
+        "key": "complaints",
+        "label": "Open complaints",
+        "weight": 30,
+        "description": "More unresolved complaints, weighted by severity and 'me too' votes, add more points."
+      },
+      {
+        "key": "flood",
+        "label": "Flooding",
+        "weight": 25,
+        "description": "Roads near a chronic flood spot score higher; tide-sensitive spots score highest."
+      },
+      {
+        "key": "traffic",
+        "label": "Traffic",
+        "weight": 15,
+        "description": "Busier roads and bus routes score higher."
+      },
+      {
+        "key": "accidents",
+        "label": "Accidents",
+        "weight": 15,
+        "description": "Pothole, waterlogging and open-chamber accidents on the road add points."
+      },
+      {
+        "key": "facilities",
+        "label": "Schools and hospitals",
+        "weight": 15,
+        "description": "Roads that are a hospital's ambulance entry or serve a school score higher."
+      }
+    ],
+    "note": "Items are funded in rank order until the remaining budget runs out."
+  },
+  "items": [
+    {
+      "rank": 1,
+      "road_id": "RD0151",
+      "road_name": "Dr E Moses Road",
+      "segment_no": 2,
+      "road_type": "Arterial",
+      "length_m": 310,
+      "lat": 18.9985,
+      "lon": 72.8292,
+      "risk_score": 81.5,
+      "score_parts": [
+        {
+          "key": "complaints",
+          "label": "Open complaints",
+          "points": 24.0,
+          "max_points": 30
+        },
+        {
+          "key": "flood",
+          "label": "Flooding",
+          "points": 22.5,
+          "max_points": 25
+        },
+        {
+          "key": "traffic",
+          "label": "Traffic",
+          "points": 11.0,
+          "max_points": 15
+        },
+        {
+          "key": "accidents",
+          "label": "Accidents",
+          "points": 9.0,
+          "max_points": 15
+        },
+        {
+          "key": "facilities",
+          "label": "Schools and hospitals",
+          "points": 15.0,
+          "max_points": 15
+        }
+      ],
+      "reasons": [
+        {
+          "kind": "flood_hotspot",
+          "label": "Floods when rain passes 75 mm a day",
+          "detail": "Flagged in 4 of the last 5 years",
+          "count": null
+        },
+        {
+          "kind": "ambulance_route",
+          "label": "Ambulance entry road for a hospital",
+          "detail": "Serves an emergency department",
+          "count": 1
+        },
+        {
+          "kind": "open_complaints",
+          "label": "7 complaints still open",
+          "detail": "Most recent 3 days ago",
+          "count": 7
+        },
+        {
+          "kind": "accidents",
+          "label": "2 accidents blamed on potholes",
+          "detail": "1 fatal, 1 grievous",
+          "count": 2
+        }
+      ],
+      "recommended_method": {
+        "repair_method": "Hot mix patch",
+        "reopen_rate_pct": 22.6,
+        "rate_inr": 2600,
+        "unit": "per sqm",
+        "why": "Hot mix patches reopened less often (22.6%) than cold mix (32.2%), so the dearer repair wastes less money."
+      },
+      "alternatives": [
+        {
+          "repair_method": "Cold mix patch",
+          "reopen_rate_pct": 32.2,
+          "estimated_cost_inr": 86400
+        }
+      ],
+      "area_sqm_estimate": 48,
+      "estimated_cost_inr": 124800,
+      "cost_basis": "₹2,600 per sqm × 48 sqm",
+      "within_budget": true,
+      "evidence": {
+        "complaint_ids": [
+          "BMC25-001234",
+          "BMC25-001301"
+        ],
+        "accident_ids": [
+          "ACC-0042",
+          "ACC-0107"
+        ],
+        "hotspot_ids": [
+          "FH07"
+        ],
+        "facility_ids": [
+          "FAC-021"
+        ]
+      },
+      "explanation": null
+    }
+  ]
+}
+```
+
 ## Stack
 `frontend/` Next.js + TS + Tailwind + shadcn/ui + react-leaflet + Recharts. `backend/` FastAPI + Anthropic SDK (Messages API tool loop, no betas), uv, Python 3.12, pandas. Audit, scorecards and risk are precomputed at startup.
 

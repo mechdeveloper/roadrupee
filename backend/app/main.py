@@ -11,6 +11,7 @@ from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
 
 from . import cache
+from .contracts.plan import PlanResponse
 
 load_dotenv()
 
@@ -117,8 +118,12 @@ def explain() -> JSONResponse:
     return _stub("explain")
 
 
-@app.get("/api/plan")
-def plan() -> JSONResponse:
+@app.get(
+    "/api/plan",
+    response_model=PlanResponse,
+    responses={501: {"description": "Planner engine not built yet (Student C). Frontend shows example data on 501."}},
+)
+def plan(ward: str = Query(..., description="Ward slug, e.g. 'g-s' for G/S")) -> JSONResponse:
     return _stub("plan")
 
 
