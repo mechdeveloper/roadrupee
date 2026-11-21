@@ -1,5 +1,25 @@
 # CLAUDE.md — RoadRupee
 
+## North Star
+**Problem:** Mumbai spends crores fixing the same roads every monsoon; nobody can answer where the money went, whether the fix held, who is responsible, and where the next rupee should go.
+
+**Promise:** "From a citizen's complaint to a ward officer's action — with evidence at every step."
+
+**Judging:** Audit accuracy 25% (real problems, not normal variation) · Fair accountability 20% (evidence, context) · Budget smarts 20% (next-rupee plan) · Connects the trail 15% (complaints → issues → work orders) · Usable + demo 20% (could a ward officer or citizen act on it?).
+
+**Interface first:** the home screen is the hook (₹ didn't hold headline, ₹100 bar, ward map, three doors: Trace my complaint / Explore your ward / I'm a ward officer). Questions as headings, plain sentences, one idea per card, evidence one tap away, every screen ends with an action, light & trustworthy, EN/HI/MR.
+
+**AI must do real work:**
+- Trace: multilingual understanding + matching + reply + RTI
+- Evidence verdicts: context-aware, fair
+- Fair report cards: plain explanation of actual vs expected
+- Next-rupee plan: explained recommendations
+- Silent failures: social posts → unlogged failures
+
+Python does the maths; Claude does judgement and language; Claude never invents numbers or changes rule results.
+
+**Every feature PR must say which judging criterion it improves.**
+
 ## Product
 **RoadRupee — "Where did the repair money go, and did the fix hold?"** A Claude-powered audit tool for the Claude Impact Lab Mumbai hackathon, built from scratch in one day. Theme: "Follow the Rupee: Mumbai Monsoon Roads".
 

@@ -6,6 +6,11 @@ Built for Claude Impact Lab Mumbai ("Follow the Rupee: Mumbai Monsoon Roads"). E
 
 > **All data is synthetic and all contractors are fictional.** Nothing here is real BMC data. Don't use it to judge any real person, contractor or department.
 
+## North Star
+**Promise:** "From a citizen's complaint to a ward officer's action — with evidence at every step."
+
+We are judged on audit accuracy (25%), fair accountability (20%), budget smarts (20%), connecting the trail from complaints to work orders (15%) and usability plus demo (20%). The interface comes first: a hook home screen with three doors (Trace my complaint, Explore your ward, I'm a ward officer), in English, Hindi and Marathi. Claude does real work (multilingual complaint tracing, fair evidence verdicts, plain-language report cards, explained next-rupee plans, silent-failure spotting). Python does all the maths, and Claude never invents numbers or changes rule results. Full text: [CLAUDE.md](CLAUDE.md#north-star).
+
 ## How it works
 1. **Hook screen.** Headline numbers are computed from the data: money spent on repairs that failed within 30 days, money paid on roads still under their Defect Liability Period (DLP), billing above the rate card, and fatal accidents tied to road defects. A ward map is coloured by "money that didn't hold".
 2. **Audit engine.** Plain Python (pandas), no LLM arithmetic. Rules: OVER_RATE, DOUBLE_BILL, DLP_PAID, SLA_BREACH, REPEAT_FAILURE. Every flag lists its work order ids, severity and reason. Claude then reviews each flag in context and adds an explanation. It never removes the rule result.
