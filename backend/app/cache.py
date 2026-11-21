@@ -11,7 +11,7 @@ import pandas as pd
 from .ai import ward_summary
 from .ai.store import JsonStore, verdict_store, ward_summary_store
 from .ai.verdict import to_review
-from .engine import evidence
+from .engine import evidence, linker, planner
 from .engine import flags as F
 from .engine import metrics
 from .engine.expected import add_expected
@@ -29,6 +29,9 @@ class Precomputed:
     evidence_index: evidence.EvidenceIndex | None = None
     verdicts: JsonStore | None = None
     ward_summaries: JsonStore | None = None
+    complaints: pd.DataFrame | None = None  # enriched: issue_type, geocode, work_order_id
+    plan: dict | None = None  # {by_ward: {slug: PlanResponse}, issues, methods}
+    linker_accuracy: dict | None = None
 
 
 def build() -> Precomputed:
@@ -37,12 +40,15 @@ def build() -> Precomputed:
     wo = add_expected(data, wo)
     flags = F.run_all(data, wo)
     contractors = metrics.contractors(data, wo)
+    comp = linker.enrich_complaints(data)
     pre = Precomputed(
         data=data, wo=wo, flags=flags,
         summary=metrics.summary(data, wo, flags),
         wards=metrics.wards(data, wo, flags),
         contractors=contractors,
         evidence_index=evidence.build_index(data, wo, contractors),
+        complaints=comp, plan=planner.build_plan(data, wo, flags, linker.link_open(data, comp)),
+        linker_accuracy=linker.accuracy(data, comp),
     )
     pre.verdicts = verdict_store()
     attach_verdicts(pre)

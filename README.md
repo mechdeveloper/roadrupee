@@ -47,3 +47,6 @@ Audit export for judges: `GET /api/flags.csv` (one row per flag, `work_order_id`
 Dataset: **Follow the Rupee: Mumbai Monsoon Roads** by Sumeet Doshi, Claude Community Ambassador, Anthropic, for Claude Impact Lab Mumbai. Source: https://github.com/SumeetGDoshi/Claude-Impact-Labs-data-2. Licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Included unmodified in `data/` with its original README and DATA_DICTIONARY.md.
 
 The code in this repository was written from scratch during the hackathon.
+
+## Planner and trace endpoints
+`GET /api/plan?ward=f-s` returns the `PlanResponse` contract for every ward (engine: `backend/app/engine/planner.py`). `POST /api/trace {"text": "BMC25-000005"}` takes a complaint ID or free text in EN/HI/MR/Hinglish. `GET /api/linker/accuracy` checks complaint linking against complaints a work order fixed: issue type 95.3% (83.5% for the category citizens pick), ward 96%, road segment ~74%.

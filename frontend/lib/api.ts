@@ -89,3 +89,16 @@ export function useApi<T>(path: string): { state: State<T>; retry: () => void } 
   }, []);
   return { state, retry };
 }
+
+export type TraceStep = { label: string; detail: string; status: "info" | "ok" | "warn" | "bad" };
+
+export type TraceResult = {
+  kind: "complaint" | "text";
+  found: boolean;
+  query: string;
+  summary: string;
+  claude_summary?: string | null;
+  steps: TraceStep[];
+  understood?: { issue_type: string; type_source: string; locality: string | null; ward_code: string | null; road_name?: string; language: string };
+  history?: { work_order_id: string; completed_at: string; contractor_name: string; repair_method: string; cost_inr: number; held_up: boolean }[];
+};

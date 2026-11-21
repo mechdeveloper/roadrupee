@@ -9,6 +9,7 @@ from contextlib import asynccontextmanager
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse, Response, StreamingResponse
+from pydantic import BaseModel
 
 import anthropic
 
@@ -18,6 +19,7 @@ from .ai.structured import Generated
 from .ai.verdict import make_verdict, template_verdict, to_entry, to_review
 from .engine import evidence
 from .contracts.plan import PlanResponse
+from .engine.trace import trace as run_trace
 from .routes.pages import router as pages_router
 
 load_dotenv()
@@ -119,9 +121,18 @@ def _stub(name: str) -> JSONResponse:
                          "detail": "Claude-powered endpoint, coming in a later milestone."}, status_code=501)
 
 
+class TraceIn(BaseModel):
+    text: str
+
+
 @app.post("/api/trace")
-def trace() -> JSONResponse:
-    return _stub("trace")
+def trace(body: TraceIn, request: Request) -> dict:
+    """Complaint id or free text (EN/HI/MR/Hinglish) -> work order, cost, SLA, held up, or place in the queue."""
+    text = body.text.strip()
+    if not text:
+        raise HTTPException(status_code=422, detail="Enter a complaint id or describe the problem.")
+    p = pre(request)
+    return run_trace(text[:1000], p.data, p.wo, p.flags, p.complaints, p.plan)
 
 
 @app.post("/api/explain/{flag_id}")
@@ -154,10 +165,21 @@ async def explain(request: Request, flag_id: str) -> dict:
 @app.get(
     "/api/plan",
     response_model=PlanResponse,
-    responses={501: {"description": "Planner engine not built yet (Student C). Frontend shows example data on 501."}},
+    responses={404: {"description": "Unknown ward slug"}},
 )
-def plan(ward: str = Query(..., description="Ward slug, e.g. 'g-s' for G/S")) -> JSONResponse:
-    return _stub("plan")
+def plan(request: Request, ward: str = Query(..., description="Ward slug, e.g. 'g-s' for G/S")) -> dict:
+    """Next-rupee plan for one ward, precomputed at startup (engine/planner.py)."""
+    by_ward = pre(request).plan["by_ward"]
+    key = ward.strip().lower().replace("/", "-")
+    if key not in by_ward:
+        raise HTTPException(status_code=404, detail=f"No ward '{ward}'. Use a slug like 'g-s'.")
+    return by_ward[key]
+
+
+@app.get("/api/linker/accuracy")
+def linker_accuracy(request: Request) -> dict:
+    """How well complaints are linked to issue type, ward and road, checked against fixed complaints."""
+    return pre(request).linker_accuracy
 
 
 @app.post("/api/ask")

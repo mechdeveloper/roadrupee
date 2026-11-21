@@ -31,6 +31,10 @@ export const en = {
   "hero.trace.aria": "Complaint text or complaint ID",
   "hero.trace.soon": "Complaint tracing is being built today. Check back soon.",
   "hero.trace.error": "Something went wrong. Please try again.",
+  "trace.byClaude": "Written by Claude from the record below.",
+  "trace.history": "Earlier repairs for this problem on this road",
+  "trace.heldUp": "Held up",
+  "trace.failed": "Failed within 30 days",
   "map.higher": "Higher share didn't hold",
   "map.better": "Held better",
   "map.note":
