@@ -227,6 +227,12 @@
   .area-map { align-self: center; }
 }
 
+/* Printing a plan: plain white page, no chrome (nav, tabs, buttons carry print:hidden) */
+@media print {
+  body { background: #fff; }
+  .hero-sky { background: none; }
+}
+
 /* Must stay LAST so it overrides the hero motion rules above */
 @media (prefers-reduced-motion: reduce) {
   * {

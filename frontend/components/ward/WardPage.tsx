@@ -10,6 +10,7 @@ import { ErrorBox } from "@/components/ErrorBox";
 import { TopNav } from "@/components/TopNav";
 import { VerdictChip } from "@/components/VerdictChip";
 import { ChecksTab } from "@/components/ward/ChecksTab";
+import { PlanTab } from "@/components/ward/PlanTab";
 import { TabComingSoon } from "@/components/ward/TabComingSoon";
 import { buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -180,6 +181,8 @@ export function WardPage({ slug }: { slug: string }) {
             <Skeleton className="h-64 w-full rounded-2xl" />
           ) : tab === "check" ? (
             <ChecksTab ward={ward} />
+          ) : tab === "next" ? (
+            <PlanTab ward={ward} />
           ) : (
             <TabComingSoon title={t(TABS.find((x) => x.key === tab)!.label)} />
           )}
