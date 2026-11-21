@@ -153,7 +153,6 @@ export const hi: Partial<Record<Key, string>> = {
   "ev.rti.copied": "कॉपी हो गया",
   "ev.notFound": "वह मामला नहीं मिला।",
   "plan.intro": "सड़कें जोखिम के क्रम में, हर एक के साथ वह मरम्मत विधि जो सबसे ज़्यादा टिकती है, सबसे सस्ती नहीं। जिन्हें आप फंड करेंगे उन पर टिक करें।",
-  "plan.example": "उदाहरण डेटा: प्लानर इंजन अभी जुड़ा नहीं है, इसलिए ये सड़कें और खर्च केवल उदाहरण हैं।",
   "plan.budgetLeft": "इस वार्ड के बजट में {amount} बचे",
   "plan.noBudget": "इस वार्ड का बजट खत्म है। कुछ भी फंड करने पर सीमा पार होगी।",
   "plan.selected": "बचे {remaining} में से {selected} चुने गए",
@@ -300,4 +299,9 @@ export const hi: Partial<Record<Key, string>> = {
   "trace.rti.mr": "मराठी",
   "trace.rti.print": "प्रिंट करें",
   "trace.status": "स्थिति",
+  "plan.page.pick": "किसी वार्ड का बजट तय करें",
+  "plan.page.top": "शहर की सबसे जोखिम वाली सड़कें",
+  "plan.remainingShort": "{amount} बचे",
+  "plan.overspentShort": "बजट से ज़्यादा खर्च",
+  "plan.inWard": "वार्ड में",
 };

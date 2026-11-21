@@ -65,11 +65,6 @@ def test_audit_combined_filters(client):
     assert all(i["verdict"] is None for i in v["items"])
 
 
-def test_plan_city_stub_documented(client):
-    assert client.get("/api/plan/city").status_code == 501
-    assert "CityPlanResponse" in client.get("/openapi.json").json()["components"]["schemas"]
-
-
 def test_audit_csv_matches_filters(client):
     r = client.get("/api/audit.csv?rule=OVER_RATE")
     lines = r.text.strip().splitlines()

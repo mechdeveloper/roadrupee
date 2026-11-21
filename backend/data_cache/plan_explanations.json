@@ -1,0 +1,1394 @@
+{
+ "a:RD0001": {
+  "input_hash": "be598bd678ffb428",
+  "text": "Shahid Bhagat Singh Marg segment 1 ranks third because it leads to a school and carries heavy traffic (congestion 9.2 out of 10); hot mix patch, the cheapest option at ₹15,730, exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0002": {
+  "input_hash": "8997dbbaf1158841",
+  "text": "Shahid Bhagat Singh Marg segment 2 ranks sixth because of one accident blamed on road defects and heavy traffic; a hot mix patch, also the cheapest option at ₹15,730, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0003": {
+  "input_hash": "9c7ace1b64f9d93b",
+  "text": "Shahid Bhagat Singh Marg, segment 3 ranks fifth because it leads to a public school and has one open complaint; hot mix patch, also the cheapest at ₹15,730, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0004": {
+  "input_hash": "955190f3083d4b84",
+  "text": "Shahid Bhagat Singh Marg, segment 4 ranks 4th because it leads to a school and 14 bus routes use it; a hot mix patch, also the cheapest option at ₹15,730, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0005": {
+  "input_hash": "fdb6ac02b76f6181",
+  "text": "Veer Nariman Road, segment 1 ranks 7th because an accident was blamed on road defects and a complaint is still open; a Hot mix patch, also the cheapest option at ₹15,730, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0006": {
+  "input_hash": "f1268620ad211e63",
+  "text": "Veer Nariman Road, segment 2 ranks tenth because of heavy traffic (congestion 8.4 out of 10) and 7 bus routes; a hot mix patch, also the cheapest option at ₹15,730, does not fit the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0008": {
+  "input_hash": "6d50bbc7c94e039c",
+  "text": "Veer Nariman Road, segment 4 ranks first because it leads to a Fort school and has 3 complaints still open; the recommended durable, cheapest repair is an excavation, pipeline repair and PQC patch, which exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0009": {
+  "input_hash": "0a465fdad63873d2",
+  "text": "Colaba Causeway segment 1 ranks second because it leads to a municipal school and has one accident blamed on road defects; a hot mix patch, also the cheapest option at ₹15,730, is recommended but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0010": {
+  "input_hash": "dc5f6e3530072b89",
+  "text": "Colaba Causeway segment 2 ranks ninth because 2 complaints remain open and traffic is heavy; a hot mix patch at ₹15,730 is the cheapest option but exceeds the ward's remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "a:RD0011": {
+  "input_hash": "3096c765b0a8c23d",
+  "text": "Colaba Causeway segment 3 ranks eighth because it leads to a school and carries 19 bus routes; a hot mix patch, also the cheapest option at ₹15,730, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0012": {
+  "input_hash": "f1a24e9bc3a5e8c4",
+  "text": "Mohammed Ali Road, segment 1 ranks first as the ambulance entry road for Sir JJ Hospital and it floods in heavy rain; a manhole cover replacement with grating, also the cheapest, fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0013": {
+  "input_hash": "dcc8021f305f9e7f",
+  "text": "Mohammed Ali Road, segment 2 ranks fifth because it leads to a public school and floods when rain passes 80 mm a day, so a dewatering pump (₹60,000), also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0014": {
+  "input_hash": "ff9ef49cf9cdc6cb",
+  "text": "Mohammed Ali Road segment 3 ranks 7th because it leads to a school and has heavy traffic, so desilting and garbage removal, also the cheapest option at ₹70,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0016": {
+  "input_hash": "b597c61017262427",
+  "text": "P D'Mello Road, segment 1 ranks fourth because it leads to a public school and floods when daily rain passes 80 mm; a dewatering pump, the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0017": {
+  "input_hash": "4cba556ec725ec08",
+  "text": "P D'Mello Road, segment 2 ranks sixth because it floods when daily rain passes 80 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0018": {
+  "input_hash": "099f1df30578b422",
+  "text": "This segment ranks ninth mainly because it floods when daily rain passes 80 mm and worsens on big-tide days, so deploying a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0019": {
+  "input_hash": "1459f59c8cff496b",
+  "text": "P D'Mello Road, segment 4 ranks 8th because it floods when rain passes 80 mm a day and worsens on big-tide days; a hot mix patch, also the cheapest option at ₹15,730, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0020": {
+  "input_hash": "117a7f814bae0163",
+  "text": "Nishanpada Road, segment 1 ranks third because it floods when rain passes 80 mm a day and worsens on big-tide days; a hot mix patch, also the cheapest option at ₹15,730, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0026": {
+  "input_hash": "95d912380637d1a3",
+  "text": "Ranked 10th because it floods when rain passes 80 mm a day and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "b:RD0027": {
+  "input_hash": "37c37ede3244ab1e",
+  "text": "This segment ranks second because it leads to a school and floods when daily rain passes 80 mm, so a hot mix patch at ₹15,730, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0022": {
+  "input_hash": "be7106f1013c0a0a",
+  "text": "Kalbadevi Road segment 1 ranks seventh mainly because it floods in heavy rain and worsens on big-tide days; desilting and garbage removal is recommended, the cheapest option, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0023": {
+  "input_hash": "575b8f826790144e",
+  "text": "Kalbadevi Road segment 2 ranks third because it leads to a school and floods when daily rain passes 80 mm; we recommend replacing the manhole cover with a grating, also the cheapest option, though ₹45,000 exceeds the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0024": {
+  "input_hash": "bf9ff31a2209dbd7",
+  "text": "Kalbadevi Road, segment 3 ranks fifth because it leads to a school and floods when rain passes 80 mm a day; a dewatering pump at ₹60,000, also the cheapest option, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0025": {
+  "input_hash": "cfb51b3e3c53fdc3",
+  "text": "Jagannath Shankarseth Road segment 1 ranks second because it leads to a school and floods when rain passes 80 mm a day; a dewatering pump at ₹60,000, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0028": {
+  "input_hash": "55af7c6575cbc9bb",
+  "text": "Princess Street, segment 1 ranks 8th mainly because 3 complaints are still open, and hot mix patch, the most durable option at ₹15,730, does not fit the remaining ₹1 L budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0029": {
+  "input_hash": "8ef2b401ab5c4b4f",
+  "text": "Princess Street, segment 2 ranks sixth because it floods in heavy rain and worsens on big-tide days; we recommend a hot mix patch at ₹15,730, which does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0030": {
+  "input_hash": "f5860f525f93827d",
+  "text": "Princess Street, segment 3 ranks first because it leads to 2 municipal schools and floods when rain passes 80 mm a day; hot mix patch, costing ₹15,730, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0032": {
+  "input_hash": "d26b0f613b34d994",
+  "text": "Nepean Sea Road, segment 2 ranks fourth because it leads to a school and has one accident blamed on road defects; a hot mix patch at ₹15,730 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "c:RD0033": {
+  "input_hash": "a587779711105ef0",
+  "text": "Nepean Sea Road, segment 3 ranks ninth, with 22.6% of its repairs reopened within 30 days; we recommend a hot mix patch at ₹15,730, which does not fit the remaining ₹1 L budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0034": {
+  "input_hash": "8b353419136ebbe1",
+  "text": "Pandita Ramabai Road, segment 1 ranks ninth because it floods when rain passes 60 mm a day and carries heavy traffic, so a dewatering pump, also the cheapest option at ₹60,000, fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0035": {
+  "input_hash": "8d47ea17a2b48bc7",
+  "text": "Pandita Ramabai Road, segment 2 ranks 8th because it floods when rain passes 60 mm a day and 28 bus routes use it; a dewatering pump, the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0036": {
+  "input_hash": "390b6e60f89d2626",
+  "text": "Pandita Ramabai Road, segment 3 ranks third because it leads to a school and floods when rain passes 60 mm a day; desilting and garbage removal, also the cheapest option at ₹70,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0037": {
+  "input_hash": "f484387dce6c2ddf",
+  "text": "Tardeo Road, segment 1 ranks second because it leads to 2 municipal schools and 16 bus routes use it; a hot mix patch at ₹17,550 is recommended, lasts longer than cold mix, and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0038": {
+  "input_hash": "716af3fdd3aaca22",
+  "text": "Tardeo Road segment 2 ranks sixth because of heavy traffic (congestion 6.7 out of 10) and 25 bus routes, so a hot mix patch at ₹17,550 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0039": {
+  "input_hash": "691cce99dcae35d7",
+  "text": "Tardeo Road, segment 3 ranks 7th mainly because of an accident blamed on road defects and heavy traffic, so a hot mix patch at ₹17,550 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0040": {
+  "input_hash": "489b7fec22327454",
+  "text": "Tardeo Road, segment 4 ranks 10th because it floods when rain passes 60 mm a day and 16 bus routes use it; a dewatering pump, also the cheapest option at ₹60,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0041": {
+  "input_hash": "fe137dcf49dc9a3b",
+  "text": "Peddar Road, segment 1 ranks first because it leads to a school and has one accident blamed on road defects; a hot mix patch at ₹17,550 is recommended, lasts longer than cold mix, and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0042": {
+  "input_hash": "41d13574e5a90911",
+  "text": "Peddar Road, segment 2 ranks fifth mainly because 2 complaints are still open and congestion is heavy at 8.0 out of 10, so we recommend a durable hot mix patch at ₹17,550, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "d:RD0044": {
+  "input_hash": "b7ec658bd2ecd5fa",
+  "text": "Peddar Road, segment 4 ranks 4th because it leads to a municipal school and has one complaint still open; hot mix patch at ₹17,550 is the most durable option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0045": {
+  "input_hash": "33a84bdffb940e93",
+  "text": "Ranked 8th because it floods when rain passes 100 mm a day and has had 1 accident blamed on road defects; a dewatering pump at ₹60,000, also the cheapest option, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0046": {
+  "input_hash": "833613c674585e66",
+  "text": "This road ranks seventh because it floods when rain passes 100 mm a day and carries heavy traffic; excavation, pipeline repair and a PQC patch is the most durable and cheapest option, but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0047": {
+  "input_hash": "b3a5acc48fb4dcbd",
+  "text": "This road ranks ninth because it floods in heavy rain and has heavy traffic; replacing the manhole cover with a grating is the cheapest durable option, but it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0049": {
+  "input_hash": "4c140eb421cd6ab0",
+  "text": "Maulana Azad Road, segment 1 ranks sixth because it floods in heavy rain and has a defect-related accident; Hot mix patch, the most durable option at ₹14,560, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0050": {
+  "input_hash": "4ed77118f03dc456",
+  "text": "Maulana Azad Road, segment 2 ranks fifth because it floods when daily rain passes 100 mm and has 4 open complaints; hot mix patch, the most durable option at ₹14,560, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0052": {
+  "input_hash": "5bc05412e7e24339",
+  "text": "Clare Road segment 1 ranks fourth because it floods when rain passes 100 mm a day and has 2 complaints still open; a dewatering pump (₹60,000), also the cheapest option, does not fit the exhausted budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0053": {
+  "input_hash": "9a71baea9080d2c2",
+  "text": "Clare Road segment 2 ranks tenth because it floods when rain passes 100 mm a day and has 2 open complaints; the longer-lasting hot mix patch at ₹14,560 does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0055": {
+  "input_hash": "31ab0efea08f81c9",
+  "text": "Bellasis Road segment 1 ranks first because it is the ambulance entry road for BYL Nair Hospital and floods in heavy rain; we recommend a Hot mix patch at ₹14,560, which exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0056": {
+  "input_hash": "db4c82b57da4f34d",
+  "text": "Bellasis Road, segment 2 ranks third because it leads to 2 municipal schools and floods when rain passes 100 mm a day; hot mix patch, the most durable option at ₹14,560, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "e:RD0057": {
+  "input_hash": "999d3919001dc72b",
+  "text": "Bellasis Road, segment 3 ranks second because it leads to 4 municipal schools and floods when rain passes 100 mm a day; the recommended excavation, pipeline repair and PQC patch is also cheapest but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0071": {
+  "input_hash": "e0b76003ac3c5a5d",
+  "text": "Sion Trombay Road, segment 1 ranks 8th because it leads to a school and floods when rain passes 90 mm a day; a dewatering pump at ₹60,000 is the cheapest option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0073": {
+  "input_hash": "e832e8a304a4fac0",
+  "text": "Sion Trombay Road, segment 3 ranks 7th mainly because it floods when rain passes 90 mm a day and has one accident blamed on road defects; a dewatering pump at ₹60,000 is cheapest and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0074": {
+  "input_hash": "f3dddfc86384d7fa",
+  "text": "Sion Trombay Road, segment 4 ranks second because it leads to a school and floods when rain passes 90 mm a day; a dewatering pump at ₹60,000 is also the cheapest option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0076": {
+  "input_hash": "d96bc706774f6e8c",
+  "text": "This segment ranks third mainly because it is an ambulance entry road for LTMG Sion Hospital and floods in heavy rain, so hot mix patch, which lasts longer than cold mix, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0077": {
+  "input_hash": "f445262e659d7828",
+  "text": "This segment ranks first because it floods when daily rain passes 80 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0079": {
+  "input_hash": "c110c09d0fc05d04",
+  "text": "Road No 24 Sion, segment 2 ranks fourth because it leads to a public school and floods in heavy rain, so we recommend a hot mix patch at ₹16,380, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0080": {
+  "input_hash": "6eb20f03f7ce93a0",
+  "text": "Bhaudaji Road, segment 1 ranks tenth because it leads to a public school and floods in heavy rain; we recommend a hot mix patch at ₹16,380, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0081": {
+  "input_hash": "d9c860b3f893254e",
+  "text": "Bhaudaji Road segment 2 ranks sixth mainly because it floods when rain passes 90 mm a day and has 8 open complaints; excavation, pipeline repair and a PQC patch is the most durable option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0082": {
+  "input_hash": "cb24174c3adcac2e",
+  "text": "Bhaudaji Road segment 3 ranks fifth because it floods when rain passes 90 mm a day and has 3 accidents blamed on road defects, so a Hot mix patch at ₹16,380 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-n:RD0106": {
+  "input_hash": "c90db471f709c228",
+  "text": "Gokhale Road segment 3 ranks ninth mainly because it floods when rain passes 100 mm a day and has 7 complaints still open, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0048": {
+  "input_hash": "721c64b2c26d5e48",
+  "text": "This segment ranks 8th mainly because it floods when daily rain passes 60 mm and worsens on big-tide days, so a hot mix patch at ₹18,720 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0058": {
+  "input_hash": "a210cb70625799ab",
+  "text": "This road ranks first mainly because it is the ambulance entry road for KEM Hospital and floods in heavy rain; excavation, pipeline repair and a PQC patch is recommended, the cheapest durable option, within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0059": {
+  "input_hash": "10907f9fce8c358c",
+  "text": "This segment ranks third mainly because it floods when rain passes 60 mm a day and has 6 complaints still open, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0062": {
+  "input_hash": "fe3285bd13833961",
+  "text": "Dr E Moses Road, segment 1 ranks seventh because it leads to a municipal secondary school and floods after heavy rain, so desilting and garbage removal, also the cheapest option at ₹70,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0065": {
+  "input_hash": "fb18a41f51dfab82",
+  "text": "G D Ambekar Marg, segment 1 ranks fifth because it is the ambulance entry road for Wadia Children's Hospital and floods in heavy rain; a dewatering pump at ₹60,000 is the cheapest option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0066": {
+  "input_hash": "d03f6168858ffbb3",
+  "text": "G D Ambekar Marg segment 2 ranks second because it leads to a municipal school and floods when daily rain passes 60 mm; a hot mix patch at ₹18,720 fits the remaining budget and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0068": {
+  "input_hash": "2b5617c6c4f39124",
+  "text": "Acharya Donde Marg segment 1 ranks sixth because it leads to a public school and floods when daily rain passes 60 mm, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0069": {
+  "input_hash": "59095bef59e7abc7",
+  "text": "Acharya Donde Marg segment 2 ranks tenth mainly because it floods when daily rain passes 60 mm and carries heavy traffic, so a dewatering pump at ₹60,000 is recommended, the cheapest option and within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "f-s:RD0093": {
+  "input_hash": "301f43629afc7ad0",
+  "text": "Ganpatrao Kadam Marg segment 3 ranks 4th because it floods when rain passes 60 mm a day and has 8 complaints still open, so a durable hot mix patch at ₹18,720 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0094": {
+  "input_hash": "f15a3f1ff616b01e",
+  "text": "Senapati Bapat Marg segment 1 ranks fourth because it is an ambulance entry road for Mahim Fever Hospital and leads to a school, so hot mix patch at ₹20,410 is recommended and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0095": {
+  "input_hash": "19ca5ab1e55941cb",
+  "text": "Senapati Bapat Marg, segment 2 ranks third because 16 complaints are still open and 13 bus routes use it, so a hot mix patch at ₹20,410 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0097": {
+  "input_hash": "c37d00c65e950ac7",
+  "text": "Senapati Bapat Marg, segment 4 ranks 7th because 7 complaints remain open and 6 bus routes use it; we recommend a hot mix patch at ₹20,410, which fits the remaining budget, while cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0098": {
+  "input_hash": "395208cec1586b3d",
+  "text": "Lady Jamshedji Road, segment 1 ranks tenth mainly because 2 complaints are still open and traffic is heavy, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0099": {
+  "input_hash": "b271e45616697e49",
+  "text": "Lady Jamshedji Road segment 2 ranks 9th because 5 complaints are still open and 18 bus routes use it, so a hot mix patch at ₹20,410 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0100": {
+  "input_hash": "1be9ef8a53256ce8",
+  "text": "Lady Jamshedji Road, segment 3 ranks sixth because it leads to 2 municipal schools and has 5 complaints still open, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0101": {
+  "input_hash": "43f097b72193e0a5",
+  "text": "This road ranks first because it leads to 2 municipal schools and floods when rain passes 80 mm a day, so a hot mix patch at ₹20,410 is recommended, fits the remaining budget, and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0102": {
+  "input_hash": "7c8998daf3fe9838",
+  "text": "90 Feet Road Dharavi segment 2 ranks second because it floods when rain passes 80 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0104": {
+  "input_hash": "4d4d5bcde8a12a33",
+  "text": "Gokhale Road, segment 1 ranks fifth because it floods when rain passes 80 mm a day and worsens on big-tide days; excavation, pipeline repair and a PQC patch is recommended, is also the cheapest, and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-n:RD0105": {
+  "input_hash": "595aabc92013e106",
+  "text": "Gokhale Road segment 2 ranks eighth because it leads to a school and floods in heavy rain, so excavation, pipeline repair and a PQC patch is recommended as the most durable option, and it fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0083": {
+  "input_hash": "f691fafbdbc7a60b",
+  "text": "Senapati Bapat Marg segment 1 ranks third because it floods once rain passes 90 mm a day and has 6 open complaints; a hot mix patch at ₹18,460 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0084": {
+  "input_hash": "dfb51882b3489c11",
+  "text": "Senapati Bapat Marg, segment 2 ranks fourth because it leads to a public school and floods when rain passes 90 mm a day, so a dewatering pump, also the cheapest option at ₹60,000, fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0085": {
+  "input_hash": "2cdea1006c94a614",
+  "text": "Senapati Bapat Marg segment 3 ranks sixth because it floods in heavy rain and has 2 accidents blamed on road defects; the durable hot mix patch at ₹18,460 fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0086": {
+  "input_hash": "6d6abd4429230de7",
+  "text": "Senapati Bapat Marg segment 4 ranks 10th because it floods when rain passes 90 mm a day and 13 bus routes use it, so a dewatering pump, also the cheapest option at ₹60,000, fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0087": {
+  "input_hash": "04f80dc3744935b4",
+  "text": "Dr Annie Besant Road, segment 1 ranks second because it leads to 3 municipal schools and floods when rain passes 90 mm a day; a dewatering pump at ₹60,000 is the cheapest option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0088": {
+  "input_hash": "d4e06033698e5f8b",
+  "text": "Ranked first because it leads to a school and floods when rain passes 90 mm a day, so a hot mix patch at ₹18,460 is recommended, fits the remaining budget, and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0089": {
+  "input_hash": "41bcd1be0fc35afb",
+  "text": "This segment ranks fifth mainly because it leads to 2 municipal schools and floods when rain passes 90 mm a day, so we recommend a hot mix patch at ₹18,460, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0090": {
+  "input_hash": "80f8197f958210c7",
+  "text": "Dr Annie Besant Road segment 4 ranks ninth because it leads to a school and floods when rain passes 60 mm a day; a dewatering pump at ₹60,000, also the cheapest, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0091": {
+  "input_hash": "497b3b5a2cd55241",
+  "text": "Ganpatrao Kadam Marg segment 1 ranks seventh because it leads to a school and floods in heavy rain, so hot mix patch at ₹18,460 is recommended, lasting longer than cold mix and fitting the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "g-s:RD0092": {
+  "input_hash": "7cfeddf915c67851",
+  "text": "Ganpatrao Kadam Marg segment 2 ranks eighth because it floods when rain passes 60 mm a day and has 5 open complaints, so a hot mix patch at ₹18,460 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0107": {
+  "input_hash": "4a838823883364e4",
+  "text": "Western Express Highway segment 1 ranks fifth because 3 accidents were blamed on road defects and 3 complaints remain open; a hot mix patch at ₹12,740 is recommended, lasts longer than cold mix, and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0108": {
+  "input_hash": "dc5118be9e39d91c",
+  "text": "Western Express Highway segment 2 ranks sixth because 2 accidents were blamed on road defects and 9 bus routes use it, so a Hot mix patch at ₹12,740 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0109": {
+  "input_hash": "4744af1d1fd67649",
+  "text": "Western Express Highway segment 3 ranks ninth because of heavy traffic (congestion 8.7 out of 10) and 28 bus routes, so a durable hot mix patch at ₹12,740 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0110": {
+  "input_hash": "1c40a7a0fdde7e29",
+  "text": "Kalanagar Road, segment 1 ranks first because it leads to 2 municipal schools and has 18 complaints still open; we recommend a Hot mix patch at ₹12,740, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0111": {
+  "input_hash": "c851884688b33109",
+  "text": "Kalanagar Road, segment 2 ranks seventh mainly because it leads to a municipal school and has 2 open complaints, so a hot mix patch at ₹12,740 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0112": {
+  "input_hash": "beb4483d28091dd2",
+  "text": "Kalanagar Road, segment 3 ranks 8th because it floods when daily rain passes 100 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0113": {
+  "input_hash": "8ac514c342e79060",
+  "text": "Vakola Bridge Road, segment 1 ranks third because it floods when daily rain passes 100 mm and worsens on big-tide days, so hot mix patch at ₹12,740 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0114": {
+  "input_hash": "7e0996de836c5faf",
+  "text": "Vakola Bridge Road segment 2 ranks fourth because it floods when daily rain passes 100 mm and worsens on big-tide days; hot mix patch, costing ₹12,740, is the most durable option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-e:RD0115": {
+  "input_hash": "0471b6324fb9c668",
+  "text": "Vakola Bridge Road, segment 3 ranks second because it leads to 2 municipal schools and floods heavily in rain, so hot mix patch, the most durable option, is recommended at ₹12,740, within the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0117": {
+  "input_hash": "34016b824ff194df",
+  "text": "SV Road, segment 2 ranks 4th because it floods when rain passes 70 mm a day and has 5 complaints still open; a dewatering pump, also the cheapest option at ₹60,000, exceeds the remaining ₹54,758 budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0119": {
+  "input_hash": "cd2ae5080a66f731",
+  "text": "SV Road, segment 4 ranks third because it floods when rain passes 70 mm a day and has 3 complaints still open; desilting and garbage removal, also the cheapest option, costs ₹70,000, which exceeds the remaining ₹54,758.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0120": {
+  "input_hash": "d8c2db1eacfa1e62",
+  "text": "Linking Road segment 1 ranks second because it floods when rain passes 70 mm a day and has 2 accidents blamed on road defects; a dewatering pump at ₹60,000 is cheapest but exceeds the remaining ₹54,758.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0121": {
+  "input_hash": "f042ce3586286234",
+  "text": "Linking Road segment 2 ranks first because it is an ambulance entry road for KB Bhabha Hospital and floods in heavy rain; desilting and garbage removal, also the cheapest option, at ₹70,000 exceeds the remaining ₹54,758.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0122": {
+  "input_hash": "4394070476b120c4",
+  "text": "Linking Road segment 3 ranks 10th because it floods when rain passes 80 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, exceeds the remaining ₹54,758 budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0123": {
+  "input_hash": "8f52721147792828",
+  "text": "Linking Road segment 4 ranks 7th because it floods when rain passes 80 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, exceeds the remaining ₹54,758 budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0125": {
+  "input_hash": "9cece533bad5da43",
+  "text": "Hill Road segment 2 ranks 9th because it floods when rain passes 80 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, exceeds the remaining ₹54,758 budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0126": {
+  "input_hash": "36e6d82c9c62926f",
+  "text": "Hill Road, segment 3 ranks fifth because it floods when rain passes 80 mm a day and worsens on big-tide days; a dewatering pump, the cheapest option at ₹60,000, exceeds the remaining ₹54,758 budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0127": {
+  "input_hash": "28b1be61e31b2087",
+  "text": "Milan Subway Road, segment 1 ranks sixth mainly because it leads to 3 municipal schools, and a hot mix patch at ₹10,400 is recommended, which fits the remaining budget, though cold mix would wear out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "h-w:RD0128": {
+  "input_hash": "2ae2553ea4d0dcdf",
+  "text": "Milan Subway Road, segment 2 ranks 8th because it leads to a school and carries heavy traffic, so we recommend a hot mix patch at ₹10,400, which fits the remaining budget, though cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0130": {
+  "input_hash": "70b8d5f9e0c0cd4e",
+  "text": "This segment ranks fourth because it leads to a school and has 3 accidents blamed on road defects, so a hot mix patch at ₹9,490, also the cheapest option, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0131": {
+  "input_hash": "0245a0d37cff2d97",
+  "text": "This road ranks 7th mainly because it leads to a school and floods when rain passes 120 mm a day, so a hot mix patch, also the cheapest option at ₹9,490, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0132": {
+  "input_hash": "e8b0419667072780",
+  "text": "Ranked sixth because the road floods when rain passes 120 mm a day and 5 complaints remain open; a dewatering pump at ₹60,000 is recommended, also the cheapest, and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0133": {
+  "input_hash": "8bfb48d64a5514a7",
+  "text": "Andheri Kurla Road, segment 4 ranks fifth because it floods in heavy rain and has 6 open complaints; a hot mix patch at ₹9,490 is the most durable, cheapest option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0134": {
+  "input_hash": "039e1e7ebeeb5b8e",
+  "text": "This Western Express Highway segment ranks 9 because it floods when rain passes 120 mm a day and has 2 accidents blamed on road defects; a dewatering pump at ₹60,000 is cheapest and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0135": {
+  "input_hash": "f43055d56553be84",
+  "text": "This Western Express Highway segment ranks tenth mainly because it floods when rain passes 120 mm a day and has one accident blamed on road defects; a dewatering pump, also the cheapest option at ₹60,000, fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0136": {
+  "input_hash": "a8321e5614761c6d",
+  "text": "Western Express Highway segment 3 ranks second because it leads to a school and floods when rain passes 120 mm a day, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0138": {
+  "input_hash": "448c2d3981b1fff0",
+  "text": "This segment ranks third because it is the ambulance entry road for Trauma Care Centre Jogeshwari and leads to 2 municipal schools, so a hot mix patch at ₹9,490, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0139": {
+  "input_hash": "5e12779b85948fb8",
+  "text": "This segment ranks 8th mainly because 3 accidents were blamed on road defects and heavy traffic (congestion 7.7 out of 10); replacing the manhole cover with a grating, also the cheapest option at ₹45,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-e:RD0146": {
+  "input_hash": "c2f6b29300577f60",
+  "text": "SV Road, segment 4 ranks first because it leads to a municipal school and floods when daily rain passes 60 mm; a hot mix patch, also the cheapest option at ₹9,490, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0143": {
+  "input_hash": "f7a94b9c78cd0971",
+  "text": "SV Road, segment 1 ranks second because it leads to a municipal school and floods in heavy rain, so we recommend a hot mix patch at ₹14,820, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0144": {
+  "input_hash": "eed4e2bf468a766c",
+  "text": "SV Road segment 2 ranks 7th mainly because it floods when daily rain passes 60 mm and worsens on big-tide days; a hot mix patch at ₹14,820 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0145": {
+  "input_hash": "c1584f4c15e09c05",
+  "text": "SV Road segment 3 ranks ninth because it floods when daily rain passes 60 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0147": {
+  "input_hash": "766e3c199a8b45e9",
+  "text": "Juhu Tara Road, segment 1 ranks tenth mainly because it floods when daily rain passes 60 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0148": {
+  "input_hash": "17cc99692d99aad0",
+  "text": "Juhu Tara Road, segment 2 ranks fourth because it floods in heavy rain and worsens on big-tide days; replacing the manhole cover with a grating is the cheapest durable option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0152": {
+  "input_hash": "dbba174c38aeffaa",
+  "text": "JP Road, segment 3 ranks 8th because it floods when rain passes 60 mm a day and worsens on big-tide days; replacing the manhole cover with a grating, ₹45,000, is cheapest and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0153": {
+  "input_hash": "7f2482d6226848f3",
+  "text": "Andheri Subway segment 1 ranks sixth because it leads to 3 municipal schools and floods when rain passes 60 mm a day, so hot mix patch at ₹14,820 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0154": {
+  "input_hash": "b1728950d5518bc7",
+  "text": "Andheri Subway segment 2 ranks third because it is an ambulance entry road for HBT Trauma / Cooper Hospital and floods in heavy rain, so a hot mix patch at ₹14,820 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0155": {
+  "input_hash": "7ad7382f2a3fa693",
+  "text": "Link Road segment 1 ranks first because it floods when daily rain passes 60 mm and worsens on big-tide days, so a Hot mix patch at ₹14,820 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "k-w:RD0156": {
+  "input_hash": "251901f8bb6b802d",
+  "text": "Link Road, segment 2 ranks fifth because it floods when rain passes 60 mm a day and worsens on big-tide days, so we recommend replacing the manhole cover with a grating for ₹45,000, the cheapest option, within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0216": {
+  "input_hash": "8a0f67fd6ba2e9d2",
+  "text": "LBS Marg segment 1 ranks third because it is the ambulance entry road for KB Bhabha Hospital and floods in heavy rain; a hot mix patch costing ₹17,550 is recommended, though it exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0218": {
+  "input_hash": "ed3e4d39602e4430",
+  "text": "LBS Marg segment 3 ranks ninth because it floods in heavy rain and worsens on big-tide days; a hot mix patch at ₹17,550 is the most durable option but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0219": {
+  "input_hash": "12d2c99c516ca383",
+  "text": "LBS Marg segment 4 ranks second because it leads to a school and floods in heavy rain, so Hot mix patch at ₹17,550 is recommended, though it does not fit the remaining budget; cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0220": {
+  "input_hash": "2601ec2e647f2765",
+  "text": "Kurla Andheri Road, segment 1 ranks first because it leads to 4 municipal schools and floods heavily; we recommend a hot mix patch at ₹17,550, which lasts longer than cold mix but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0221": {
+  "input_hash": "294d74f993bf2361",
+  "text": "Kurla Andheri Road, segment 2 ranks eighth because it floods in heavy rain and worsens on big-tide days; we recommend a hot mix patch at ₹17,550, which lasts longer than cold mix but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0222": {
+  "input_hash": "7809f81d5f194246",
+  "text": "Kurla Andheri Road, segment 3 ranks fourth because it floods when daily rain passes 90 mm and worsens on big-tide days; a dewatering pump at ₹60,000 is also the cheapest option but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0223": {
+  "input_hash": "77f9837a571a4bc0",
+  "text": "Kurla Andheri Road, segment 4 ranks tenth because it floods in heavy rain and has 6 complaints still open; hot mix patch, costing ₹17,550, is the most durable option but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0224": {
+  "input_hash": "bf96bcc6915d4029",
+  "text": "CST Road segment 1 ranks sixth because it floods in heavy rain and worsens on big-tide days, so we recommend a durable hot mix patch at ₹17,550, which does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0225": {
+  "input_hash": "0f2d5ef690981d45",
+  "text": "CST Road segment 2 ranks fifth because it floods when rain passes 100 mm a day and worsens on big-tide days; paver blocks relaid, also the cheapest option at ₹63,000, exceed the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "l:RD0228": {
+  "input_hash": "fc33e8e8dbca13f8",
+  "text": "Kamani Junction Road segment 2 ranks 7th because it floods when rain passes 90 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0229": {
+  "input_hash": "bfb9b40707f3b52b",
+  "text": "This segment ranks third because it leads to 2 municipal schools and floods when rain passes 120 mm a day, so a dewatering pump at ₹60,000, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0230": {
+  "input_hash": "d62e82ab36150b19",
+  "text": "Ghatkopar Mankhurd Link Road, segment 2 ranks 7th because it floods when rain passes 120 mm a day and worsens on big-tide days; a dewatering pump at ₹60,000 is the cheapest option and fits the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0231": {
+  "input_hash": "eef69a66116c1bb6",
+  "text": "This segment ranks first because it is the ambulance entry road for Shatabdi Hospital Govandi and floods when rain passes 120 mm a day, so a Hot mix patch at ₹15,730 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0232": {
+  "input_hash": "e7f5e29cf42498d5",
+  "text": "Ghatkopar Mankhurd Link Road segment 4 ranks fifth because it leads to a public school and floods when rain passes 120 mm a day; a dewatering pump, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0233": {
+  "input_hash": "e3c27617fe423162",
+  "text": "Sion Trombay Road segment 1 ranks fourth because it leads to a municipal school and floods in heavy rain, so we recommend a hot mix patch at ₹15,730, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0234": {
+  "input_hash": "cce4559bbdc9b350",
+  "text": "Sion Trombay Road, segment 2 ranks ninth because 6 complaints are still open and congestion is heavy at 9.5 out of 10; a hot mix patch, costing ₹15,730, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0235": {
+  "input_hash": "25fb19f5dced8138",
+  "text": "Sion Trombay Road segment 3 ranks sixth because of 5 accidents blamed on road defects and 4 open complaints, so a hot mix patch at ₹15,730 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0236": {
+  "input_hash": "d61f5b48a46eb69f",
+  "text": "Sion Trombay Road, segment 4 ranks 10th because 2 complaints are still open and 28 bus routes use it, so we recommend a Hot mix patch at ₹15,730, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0237": {
+  "input_hash": "697255aae5c55a83",
+  "text": "Deonar Village Road, segment 1 ranks second because it leads to a school and has 2 accidents blamed on road defects; a hot mix patch at ₹15,730 is recommended, fits the remaining budget, and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-e:RD0238": {
+  "input_hash": "79cae84abbdb1957",
+  "text": "Deonar Village Road, segment 2 ranks 8th mainly because 4 accidents were blamed on road defects and heavy traffic; a hot mix patch at ₹15,730 is recommended, fits the remaining budget, and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0226": {
+  "input_hash": "225a71f89e912008",
+  "text": "CST Road, segment 3 ranks sixth because it leads to a school and floods when rain passes 100 mm a day; desilting and garbage removal, also the cheapest option at ₹70,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0240": {
+  "input_hash": "21319d42d929142d",
+  "text": "Sion Trombay Road, segment 2 ranks tenth because it floods in heavy rain and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, does not fit the exhausted budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0242": {
+  "input_hash": "bfd3ff239018ddfd",
+  "text": "Sion Trombay Road segment 4 ranks seventh because it floods when daily rain passes 120 mm and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, does not fit the exhausted budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0243": {
+  "input_hash": "c544e4c1ff4c7695",
+  "text": "RC Marg segment 1 ranks fourth because it leads to a school and floods when rain passes 100 mm a day; a dewatering pump at ₹60,000 is the cheapest option but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0244": {
+  "input_hash": "e475cccfa418b3ff",
+  "text": "RC Marg segment 2 ranks 8th because it floods when rain passes 100 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0245": {
+  "input_hash": "085b322fd713afda",
+  "text": "RC Marg segment 3 ranks first because it leads to a school and floods in heavy rain, so a durable hot mix patch at ₹20,670 is recommended, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0246": {
+  "input_hash": "93801f8028d8564e",
+  "text": "Eastern Express Highway segment 1 ranks fifth because it floods in heavy rain and worsens on big-tide days, so a hot mix patch at ₹20,670 is recommended, though it exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0247": {
+  "input_hash": "9ec3b948ccf4935f",
+  "text": "This segment ranks ninth mainly because it floods in heavy rain and worsens on big-tide days, so a hot mix patch at ₹20,670 is recommended, though it exceeds the ward's spent budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0248": {
+  "input_hash": "61158d40e536af7a",
+  "text": "This segment ranks third because it floods when rain passes 120 mm a day and worsens on big-tide days; a hot mix patch at ₹20,670 is recommended, lasting longer than cold mix, but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "m-w:RD0250": {
+  "input_hash": "a62e0a84ca5eaa6b",
+  "text": "Shell Colony Road segment 2 ranks second because it leads to a public school and floods in heavy rain; a hot mix patch at ₹20,670 is recommended, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0251": {
+  "input_hash": "d24d216ce692cb80",
+  "text": "LBS Marg segment 1 ranks second because it is the ambulance entry road for Rajawadi Hospital and leads to 2 municipal schools; a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0252": {
+  "input_hash": "2daaeb6ab7090f0c",
+  "text": "LBS Marg segment 2 ranks 7th because it floods when rain passes 90 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0253": {
+  "input_hash": "c5ea9a5071661369",
+  "text": "LBS Marg segment 3 ranks fifth because it floods in heavy rain and worsens on big-tide days, so a hot mix patch at ₹15,600 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0254": {
+  "input_hash": "77de75326c1abb65",
+  "text": "LBS Marg, segment 4 ranks third mainly because it floods when rain passes 90 mm a day and worsens on big-tide days, so desilting and garbage removal, also the cheapest option at ₹70,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0255": {
+  "input_hash": "b36269654843e0c1",
+  "text": "MG Road Ghatkopar segment 1 ranks fourth because it leads to a school and floods when daily rain passes 90 mm; a hot mix patch at ₹15,600 is recommended, fits the remaining budget, and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0257": {
+  "input_hash": "a3ab18e78fcc7b5a",
+  "text": "MG Road Ghatkopar, segment 3 ranks 8th mainly because 3 complaints are still open and traffic is heavy, so a dewatering pump (₹60,000, also the cheapest option) is recommended, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0258": {
+  "input_hash": "f3188365ac689045",
+  "text": "Eastern Express Highway segment 1 ranks 10th because it floods when rain passes 90 mm a day and worsens on big-tide days; a dewatering pump, the cheapest option at ₹60,000, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0261": {
+  "input_hash": "99649c169d8af396",
+  "text": "Ranked first because it leads to a school and floods when rain passes 90 mm a day, so we recommend a hot mix patch at ₹15,600, which fits the remaining budget and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0263": {
+  "input_hash": "981fec9b3d588dfd",
+  "text": "Andheri Ghatkopar Link Road, segment 3 ranks 6th because it floods when rain passes 90 mm a day and worsens on big-tide days; desilting and garbage removal, the cheapest option, does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "n:RD0264": {
+  "input_hash": "09e4c01947ea021c",
+  "text": "This segment ranks ninth because it floods when rain passes 90 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option, is recommended but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0173": {
+  "input_hash": "3d9c29bd9f5f14c0",
+  "text": "Marve Road, segment 1 ranks second because it leads to a public school and floods in heavy rain, so a hot mix patch at ₹16,120 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0174": {
+  "input_hash": "ed5bb87a56ba6823",
+  "text": "Marve Road, segment 2 ranks first because it leads to 4 municipal schools and floods when rain passes 70 mm a day, so hot mix patch is recommended at ₹16,120, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0175": {
+  "input_hash": "11a07ef877b1a953",
+  "text": "Marve Road segment 3 ranks fifth mainly because it floods when daily rain passes 70 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0176": {
+  "input_hash": "5c0e458a4a4fda93",
+  "text": "SV Road segment 1 ranks fourth because it leads to a school and floods when daily rain passes 70 mm, so we recommend a durable hot mix patch at ₹16,120, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0180": {
+  "input_hash": "d9b9db94bc309a2a",
+  "text": "Malad Subway segment 1 ranks third because it leads to a municipal school and floods when daily rain passes 70 mm; hot mix patch, the most durable option at ₹16,120, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0181": {
+  "input_hash": "9fc1533a88657239",
+  "text": "Malad Subway segment 2 ranks 6th because it leads to 2 municipal schools and floods when rain passes 70 mm a day, so a dewatering pump at ₹60,000 is recommended, the cheapest option and within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-n:RD0182": {
+  "input_hash": "1ec8f27992a71d6b",
+  "text": "Link Road segment 1 ranks 7th because it floods when rain passes 70 mm a day and worsens on big-tide days; a hot mix patch, costing ₹16,120, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0162": {
+  "input_hash": "8f207534aeacd594",
+  "text": "SV Road segment 4 ranks third because it floods in heavy daily rain and worsens on big-tide days, so a Hot mix patch at ₹19,500 is recommended, lasting longer than Cold mix and fitting the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0163": {
+  "input_hash": "8b24ca791d748222",
+  "text": "Aarey Road segment 1 ranks sixth because it floods when daily rain passes 120 mm and worsens on big-tide days, so a hot mix patch at ₹19,500 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0166": {
+  "input_hash": "be979960e590a6e6",
+  "text": "MG Road Goregaon, segment 1 ranks second because it leads to 3 municipal schools and floods when rain passes 120 mm a day; a dewatering pump at ₹60,000 is the cheapest option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0167": {
+  "input_hash": "bcb1dd272c9948af",
+  "text": "MG Road Goregaon, segment 2 ranks fourth because it leads to a school and floods in heavy rain, so we recommend a hot mix patch at ₹19,500, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0168": {
+  "input_hash": "27f5e581abb51ded",
+  "text": "MG Road Goregaon segment 3 ranks 8th because it leads to a public school and floods in heavy rain, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0169": {
+  "input_hash": "1dac890b5dd342e0",
+  "text": "Link Road segment 1 ranks first because it is the ambulance entry road for Siddharth Hospital Goregaon and floods in heavy rain; a Hot mix patch at ₹19,500 is the most durable option and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0170": {
+  "input_hash": "e025ca1f217c8b96",
+  "text": "Link Road, segment 2 ranks tenth mainly because it floods when rain passes 120 mm a day and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0171": {
+  "input_hash": "3a682b02cd44f7cc",
+  "text": "Link Road, segment 3 ranks ninth because it floods when rain passes 120 mm a day and worsens on big-tide days; a dewatering pump, the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0177": {
+  "input_hash": "8d27aa9018099e06",
+  "text": "SV Road segment 2 ranks seventh because it leads to a public school and floods when daily rain passes 70 mm, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "p-s:RD0178": {
+  "input_hash": "cf68bdf69ba5c498",
+  "text": "SV Road, segment 3 ranks fifth because it floods in heavy rain and worsens on big-tide days, so a Hot mix patch at ₹19,500 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0196": {
+  "input_hash": "9072b82c17ec6203",
+  "text": "SV Road, segment 1 ranks ninth mainly because of heavy traffic (congestion 7.7 out of 10) and 29 bus routes; excavation, pipeline repair and PQC patch is the durable, cheapest option but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0197": {
+  "input_hash": "6c02ff1a2808ab2f",
+  "text": "SV Road segment 2 ranks 8th because an accident was blamed on road defects and 4 complaints are still open; a durable hot mix patch at ₹16,770 is recommended but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0198": {
+  "input_hash": "7198dfb28d44c664",
+  "text": "SV Road segment 3 ranks tenth because of heavy traffic and 17 bus routes, so a hot mix patch at ₹16,770 is recommended, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0200": {
+  "input_hash": "1671b0612bf675c9",
+  "text": "LT Road, segment 1 ranks fourth because it leads to 2 municipal schools and has 3 complaints still open; hot mix patch is the most durable option at ₹16,770, but it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0201": {
+  "input_hash": "73dd1e7a85acf9bf",
+  "text": "LT Road, segment 2 ranks 7th because it floods when rain passes 120 mm a day and worsens on big-tide days; hot mix patch is the most durable fit at ₹16,770, but it exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0203": {
+  "input_hash": "aab9eeac997fd3e4",
+  "text": "This segment ranks third because it is the ambulance entry road for Bhagwati Hospital Borivali and has had one accident blamed on road defects; a hot mix patch at ₹16,770 is recommended, though it exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0204": {
+  "input_hash": "d1fd78355a212388",
+  "text": "This road ranks second mainly because it leads to a school and has 6 complaints still open; the recommended excavation, pipeline repair and PQC patch is also the cheapest option but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0205": {
+  "input_hash": "07ba8674ba87e61d",
+  "text": "This road ranks fifth mainly because it leads to a school and has 6 complaints still open; the recommended repair is excavation, pipeline repair and a PQC patch, the cheapest option, but it exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0206": {
+  "input_hash": "82e09406aaeaf347",
+  "text": "Gorai Road, segment 1 ranks first because it leads to 2 municipal schools and has 8 complaints still open; we recommend excavation, pipeline repair and a PQC patch, the cheapest durable option, though it exceeds the budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-c:RD0208": {
+  "input_hash": "f29ad6c8b1f8da4f",
+  "text": "Gorai Road, segment 3 ranks sixth because it leads to a school and has 3 accidents blamed on road defects; we recommend the longer-lasting hot mix patch at ₹16,770, which does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0202": {
+  "input_hash": "edc282c4f245152f",
+  "text": "LT Road, segment 3 ranks fifth because it floods when rain passes 120 mm a day and worsens on big-tide days, so a hot mix patch at ₹9,360 is recommended, the cheapest option and within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0209": {
+  "input_hash": "4fca072224be1d19",
+  "text": "Dahisar Subway Road, segment 1 ranks 8th because it floods when rain passes 120 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0210": {
+  "input_hash": "4ac0dc748bb1cb36",
+  "text": "Dahisar Subway Road, segment 2 ranks sixth because it floods when rain passes 120 mm a day and worsens on big-tide days, so a hot mix patch at ₹9,360 is recommended, the cheapest option, within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0211": {
+  "input_hash": "11c9ac234ca7f08a",
+  "text": "Western Express Highway, segment 1 ranks fourth because it floods when rain passes 120 mm a day and worsens on big-tide days, so a hot mix patch at ₹9,360 is recommended, also the cheapest and within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0212": {
+  "input_hash": "b02fb8f9c5af7fbf",
+  "text": "This segment ranks second because it leads to a school and floods in heavy rain, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0213": {
+  "input_hash": "c99d7b9d466198e5",
+  "text": "This road ranks first because it leads to 2 municipal schools and floods in heavy rain, so a hot mix patch at ₹9,360 is recommended, the cheapest option, and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0214": {
+  "input_hash": "33a61e2409672038",
+  "text": "Anand Nagar Road, segment 1 ranks third because it leads to 2 municipal schools and floods when rain passes 120 mm a day, so a Hot mix patch at ₹9,360 is recommended, the cheapest option, within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-n:RD0215": {
+  "input_hash": "102249d7f45e7f75",
+  "text": "Anand Nagar Road, segment 2 ranks 7th because it floods when daily rain passes 120 mm and worsens on big-tide days, so a hot mix patch at ₹9,360 is recommended, the cheapest durable option, within budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0183": {
+  "input_hash": "e437c82fd3001213",
+  "text": "Link Road segment 2 ranks first because it floods when rain passes 70 mm a day and worsens on big-tide days; a dewatering pump, also the cheapest option at ₹60,000, is recommended but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0184": {
+  "input_hash": "28aef52aa6124890",
+  "text": "Link Road segment 3 ranks second because of 3 accidents blamed on road defects and 3 open complaints; replacing the manhole cover with a grating is durable and cheapest, but exceeds the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0186": {
+  "input_hash": "802109231488bffc",
+  "text": "SV Road, segment 1 ranks 9th mainly because 1 accident was blamed on road defects and 2 complaints remain open; a dewatering pump, the cheapest option at ₹60,000, is recommended but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0187": {
+  "input_hash": "65d6caaee0a2d3b5",
+  "text": "SV Road segment 2 ranks 7th because it leads to a public school and has 2 complaints still open; hot mix patch is the most durable option at ₹18,720, but it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0188": {
+  "input_hash": "923ff28993ba46ed",
+  "text": "SV Road segment 3 ranks 8th because it leads to a school and carries heavy traffic; hot mix patch, the most durable option at ₹18,720, does not fit the ward's remaining budget, and cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0189": {
+  "input_hash": "e04b6cab91ad563c",
+  "text": "SV Road segment 4 ranks fifth because of an accident blamed on road defects and three open complaints, so we recommend a hot mix patch at ₹18,720, which does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0190": {
+  "input_hash": "45218ba92721053b",
+  "text": "Charkop Road, segment 1 ranks sixth because it is an ambulance entry road for Shatabdi Hospital Kandivali and leads to 3 municipal schools; a hot mix patch at ₹18,720 is recommended but does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0191": {
+  "input_hash": "0539a7c9ce25f851",
+  "text": "Charkop Road, segment 2 ranks third mainly because 15 complaints are still open, and we recommend a hot mix patch at ₹18,720, which does not fit the remaining budget, though the cheaper cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0192": {
+  "input_hash": "99761a1133d1e878",
+  "text": "Charkop Road segment 3 ranks 10th because 3 complaints are still open and traffic is heavy; we recommend a Hot mix patch at ₹18,720, which does not fit the remaining budget, and cold mix would wear out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "r-s:RD0195": {
+  "input_hash": "13d9b95c0335651a",
+  "text": "Thakur Village Road segment 3 ranks fourth because 2 accidents were blamed on road defects and 3 complaints remain open; a hot mix patch at ₹18,720 is recommended, though it does not fit the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0265": {
+  "input_hash": "60fe564026821b2c",
+  "text": "LBS Marg, segment 1 ranks first because it leads to 3 municipal schools and floods when rain passes 70 mm a day; replacing the manhole cover with grating, also the cheapest option at ₹45,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0268": {
+  "input_hash": "19011979fa11590c",
+  "text": "LBS Marg, segment 4 ranks 8th because it floods when daily rain passes 70 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0269": {
+  "input_hash": "25f63a158fb222e6",
+  "text": "JVLR segment 1 ranks 10th because it floods when rain passes 70 mm a day and worsens on big-tide days, so a hot mix patch at ₹14,690 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0270": {
+  "input_hash": "1435ca7d06ee169d",
+  "text": "JVLR segment 2 ranks fourth because it floods when rain passes 70 mm a day and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0271": {
+  "input_hash": "1c443892cb04a276",
+  "text": "JVLR segment 3 ranks sixth because it floods when rain passes 70 mm a day and worsens on big-tide days, so a hot mix patch at ₹14,690 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0273": {
+  "input_hash": "12571ce8b6d7f742",
+  "text": "This segment ranks third because it is the ambulance entry road for Bhandup Maternity Home and floods in heavy rain, so replacing the manhole cover with a grating, also the cheapest option at ₹45,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0274": {
+  "input_hash": "39a350c4e2b3ee9b",
+  "text": "This segment ranks ninth mainly because it floods when daily rain passes 70 mm and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0276": {
+  "input_hash": "c9b6d7fba6bf5801",
+  "text": "This segment ranks 7th because it floods when daily rain passes 70 mm and worsens on big-tide days, so we recommend a hot mix patch at ₹14,690, which fits the remaining budget and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0277": {
+  "input_hash": "caba07c9b54c16f9",
+  "text": "Village Road Bhandup, segment 1 ranks second because it leads to 2 municipal schools and floods when rain passes 70 mm a day; we recommend a hot mix patch at ₹14,690, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "s:RD0278": {
+  "input_hash": "5377a75f434f25a3",
+  "text": "Village Road Bhandup, segment 2 ranks fifth because it floods in heavy rain and worsens on big-tide days, so a Hot mix patch at ₹14,690 is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0279": {
+  "input_hash": "d6129c91623f71bb",
+  "text": "LBS Marg segment 1 ranks fifth mainly because it floods when rain passes 70 mm a day and worsens on big-tide days, so a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0280": {
+  "input_hash": "11bf0429ef3ec2eb",
+  "text": "LBS Marg, segment 2 ranks third because it leads to a school and floods when rain passes 70 mm a day; a dewatering pump, also the cheapest option at ₹60,000, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0281": {
+  "input_hash": "23f74d663b3b5284",
+  "text": "LBS Marg segment 3 ranks 8th because an accident was blamed on road defects and 2 complaints remain open; hot mix patch is recommended at ₹11,570, which fits the remaining budget, though cold mix wears out sooner.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0282": {
+  "input_hash": "649b92412ff404dd",
+  "text": "LBS Marg segment 4 ranks 4th because it leads to a school and has one accident blamed on road defects, so a hot mix patch at ₹11,570 is recommended, fitting the budget, and lasts longer than cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0283": {
+  "input_hash": "384230496f58431b",
+  "text": "This segment ranks second because it leads to 3 municipal schools and floods when rain passes 70 mm a day, so a dewatering pump at ₹60,000, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0286": {
+  "input_hash": "6d69207ac551dedb",
+  "text": "Mulund Goregaon Link Road segment 1 ranks 9th because it floods in heavy rain and worsens on big-tide days, so a hot mix patch at ₹11,570 is recommended, and it fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0288": {
+  "input_hash": "6b17ab8c12382a40",
+  "text": "Mulund Goregaon Link Road, segment 3 ranks 7th because it floods when daily rain passes 70 mm and worsens on big-tide days, so a Hot mix patch at ₹11,570 is recommended, which fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0289": {
+  "input_hash": "807d8c9eb59a2d42",
+  "text": "This segment ranks 10th mainly because 2 complaints are still open and traffic is heavy, so relaying paver blocks, the most durable and also cheapest option at ₹60,000, is recommended and fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0290": {
+  "input_hash": "2d5e4f1b65656ffb",
+  "text": "Devidayal Road, segment 1 ranks 6th mainly because 4 complaints are still open and traffic is heavy, so a hot mix patch at ₹11,570 is recommended, which fits the remaining budget and outlasts cold mix.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ },
+ "t:RD0291": {
+  "input_hash": "484bf8d5834a384e",
+  "text": "Devidayal Road, segment 2 ranks first because it is the ambulance entry road for MT Agarwal Hospital Mulund and floods in heavy rain, so a dewatering pump at ₹60,000, also the cheapest option, fits the remaining budget.",
+  "source": "claude",
+  "model": "claude-sonnet-5-5"
+ }
+}

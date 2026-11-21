@@ -98,7 +98,7 @@ export function Home() {
             <MonsoonVsFailures />
           </Section>
           <Section id="next" title={t("home.q.next")} seeAll="/plan">
-            <NextRupeeTop5 wards={wardData ?? []} />
+            <NextRupeeTop5 />
           </Section>
         </div>
 

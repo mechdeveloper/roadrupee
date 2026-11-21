@@ -1,15 +1,15 @@
 """Contract for GET /api/plan?ward={slug}  (next-rupee planner).
 
-Owner of the ENGINE that fills this: Student C. Owner of the UI that renders it: tech lead.
+The engine that fills this is engine/planner.py (implemented). The UI that renders it is components/ward/PlanTab.tsx.
 Both sides code against these models; the TypeScript mirror is frontend/lib/types.ts and the
-human-readable description is CLAUDE.md > "Planner contract". Until the engine exists the
-route returns HTTP 501 and the frontend shows clearly labelled example data.
+human-readable description is CLAUDE.md > "Planner contract".
 
 Rules the engine must follow (judged: "budget smarts"):
   * risk_score is 0-100 and is the SUM of score_parts[].points (transparent, shown in the UI).
   * recommend the most DURABLE method (lowest 30-day reopen rate among methods suited to the
     issue), not the cheapest.
-  * rank by risk_score; mark within_budget greedily down the ranking against remaining_inr.
+  * rank by risk_score; mark within_budget greedily down the ranking against remaining_inr (an item that does not
+    fit is skipped so a smaller one below can still be funded; overspent wards fund nothing).
   * every number links to evidence: fill evidence.* ids.
   * all arithmetic is deterministic Python. Claude only writes `explanation`.
 """
@@ -138,7 +138,7 @@ EXAMPLE_PLAN: dict = {
             {"key": "facilities", "label": "Schools and hospitals", "weight": 15,
              "description": "Roads that are a hospital's ambulance entry or serve a school score higher."},
         ],
-        "note": "Items are funded in rank order until the remaining budget runs out.",
+        "note": "Items are funded in rank order; one that does not fit is skipped so a smaller one below can still be funded.",
     },
     "items": [
         {

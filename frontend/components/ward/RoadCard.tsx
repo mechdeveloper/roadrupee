@@ -75,7 +75,7 @@ export function RoadCard({
           const Icon = REASON_ICON[r.kind];
           return (
             <li key={`${r.kind}-${r.label}`}>
-              <Chip tone="neutral" icon={Icon}>
+              <Chip tone="neutral" icon={Icon} wrap>
                 {r.label}
               </Chip>
             </li>

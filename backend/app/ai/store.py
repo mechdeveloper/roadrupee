@@ -52,3 +52,7 @@ def ward_summary_store() -> JsonStore:
 
 def trace_store() -> JsonStore:
     return JsonStore(Path(os.environ.get("TRACE_PATH", DATA_CACHE / "trace.json")))
+
+
+def plan_store() -> JsonStore:
+    return JsonStore(Path(os.environ.get("PLAN_EXPLANATIONS_PATH", DATA_CACHE / "plan_explanations.json")))

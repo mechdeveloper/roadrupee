@@ -6,14 +6,13 @@ import { Chip } from "@/components/Chip";
 import { ErrorBox } from "@/components/ErrorBox";
 import { Gauge } from "@/components/Gauge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { type Ward, useApi } from "@/lib/api";
+import { useApi } from "@/lib/api";
 import { inr } from "@/lib/format";
 import { useT } from "@/lib/i18n";
-import { examplePlan } from "@/lib/placeholder/plan";
 import type { CityPlanItem, CityPlanResponse } from "@/lib/types";
 import { wardHref } from "@/lib/wards";
 
-function Row({ r, example }: { r: CityPlanItem; example?: boolean }) {
+function Row({ r, n }: { r: CityPlanItem; n: number }) {
   const t = useT();
   const it = r.item;
   return (
@@ -25,12 +24,12 @@ function Row({ r, example }: { r: CityPlanItem; example?: boolean }) {
         <span className="flex items-start justify-between gap-3">
           <span className="flex items-start gap-2.5">
             <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-semibold text-primary">
-              {example ? it.rank : it.rank}
+              {n}
             </span>
             <span>
-              <span className="block font-semibold text-ink">{it.road_name}</span>
+              <span className="block font-semibold text-ink">{it.road_name}, segment {it.segment_no}</span>
               <span className="block text-[13px] text-muted-foreground">
-                {t("picker.ward", { code: r.ward_code })} · {it.recommended_method.repair_method}
+                {t("picker.ward", { code: r.ward_code })} · #{it.rank} {t("plan.inWard")} · {it.recommended_method.repair_method}
               </span>
             </span>
           </span>
@@ -44,7 +43,7 @@ function Row({ r, example }: { r: CityPlanItem; example?: boolean }) {
         </span>
         <span className="mt-2 flex flex-wrap items-center gap-1.5">
           {it.reasons.slice(0, 2).map((x) => (
-            <Chip key={x.label} tone="neutral">
+            <Chip key={x.label} tone="neutral" wrap>
               {x.label}
             </Chip>
           ))}
@@ -55,32 +54,16 @@ function Row({ r, example }: { r: CityPlanItem; example?: boolean }) {
   );
 }
 
-/** Top riskiest roads across the city. Labelled example data only while /api/plan/city returns 501. */
-export function NextRupeeTop5({ wards }: { wards: Ward[] }) {
-  const t = useT();
-  const { state, retry } = useApi<CityPlanResponse>("/api/plan/city?limit=5");
-  const example = state.status === "error" && state.message.includes("501");
-
+/** The riskiest road segments across the city, from the engine (/api/plan/city). */
+export function NextRupeeTop5({ limit = 5 }: { limit?: number }) {
+  const { state, retry } = useApi<CityPlanResponse>(`/api/plan/city?limit=${limit}`);
   if (state.status === "loading") return <Skeleton className="h-[330px] w-full rounded-2xl" aria-busy="true" />;
-  if (state.status === "error" && !example) return <ErrorBox message={state.message} onRetry={retry} />;
-
-  const rows: CityPlanItem[] =
-    state.status === "ready"
-      ? state.data.items
-      : wards[0]
-        ? examplePlan(wards[0]).items.map((item) => ({ ward_slug: wards[0].slug, ward_code: wards[0].ward_code, ward_name: wards[0].ward_name, item }))
-        : [];
-
+  if (state.status === "error") return <ErrorBox message={state.message} onRetry={retry} />;
   return (
     <div className="rounded-2xl border bg-surface p-3 sm:p-4">
-      {example && (
-        <p role="note" className="mb-2 rounded-lg border border-dashed p-2.5 text-[13px] font-medium text-ink">
-          {t("plan.example")}
-        </p>
-      )}
       <ol>
-        {rows.slice(0, 5).map((r) => (
-          <Row key={`${r.ward_slug}-${r.item.road_id}`} r={r} example={example} />
+        {state.data.items.map((r, i) => (
+          <Row key={`${r.ward_slug}-${r.item.road_id}`} r={r} n={i + 1} />
         ))}
       </ol>
     </div>

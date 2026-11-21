@@ -50,7 +50,7 @@ Scorecards compare observed vs EXPECTED reopen rate (method baseline, adjusted f
 Planner: transparent risk formula shown in the UI; recommend the most durable method (lowest reopen rate), not the cheapest, within ward budget − spend.
 
 ## Planner contract
-`GET /api/plan?ward={slug}` → `PlanResponse`. **Engine owner: Student C. UI owner: tech lead.** Models: `backend/app/contracts/plan.py` (Pydantic, source of truth) and `frontend/lib/types.ts` (TypeScript mirror). Change both in the same commit and update the example below (a test fails if the example drifts from the model). Until the engine exists the route returns **HTTP 501** and the frontend shows clearly labelled example data. **Only on 501**: never fake data once the route returns 200.
+`GET /api/plan?ward={slug}` → `PlanResponse`. **Implemented:** engine in `backend/app/engine/planner.py` (deterministic, precomputed at startup), Claude one-liners in `data_cache/plan_explanations.json`, UI in `frontend/components/ward/PlanTab.tsx` and the home top-5. Models: `backend/app/contracts/plan.py` (Pydantic, source of truth) and `frontend/lib/types.ts` (TypeScript mirror). Change both in the same commit and update the example below (a test fails if the example drifts from the model).
 
 `slug` is the ward code lower-cased with `/` replaced by `-` (`G/S` → `g-s`); the `slug` field is on every ward in `/api/wards`.
 
@@ -67,11 +67,11 @@ Planner: transparent risk formula shown in the UI; recommend the most durable me
 | `items[].recommended_method` | `{repair_method, reopen_rate_pct, rate_inr, unit, why}`. **Most durable method (lowest 30-day reopen rate among methods suited to the issue), not the cheapest.** `repair_method` must exist in `rate_card.csv` |
 | `items[].alternatives[]` | optional `{repair_method, reopen_rate_pct, estimated_cost_inr}` |
 | `items[].area_sqm_estimate`, `estimated_cost_inr`, `cost_basis` | cost = rate × area (per sqm) or rate (per job); `cost_basis` says how, in words |
-| `items[].within_budget` | greedy fit: fund items in rank order until `remaining_inr` runs out |
+| `items[].within_budget` | greedy fit in rank order against `remaining_inr`; an item that does not fit is skipped so a smaller one below can still be funded; overspent wards fund nothing |
 | `items[].evidence` | `{complaint_ids, accident_ids, hotspot_ids, facility_ids}`: every number links to evidence |
 | `items[].explanation` | Claude's one-line explanation; `null` until wired. Claude never computes numbers |
 
-Engine rules: deterministic Python (pandas), no LLM arithmetic. Inputs: open/unresolved complaints (severity, upvotes), flood hotspot proximity (+ tide sensitivity), traffic (congestion, bus routes), pothole / waterlogging / open-chamber accidents, school and hospital `ambulance_entry_road`. Open complaints have no `road_id`, so match each to the nearest road segment in its ward (GPS if present, else the locality centroid from `localities.csv`).
+Engine rules (as built): deterministic Python (pandas), no LLM arithmetic. Inputs: open/unresolved complaints (severity, upvotes), flood hotspot proximity (+ tide sensitivity), traffic (congestion, bus routes), pothole / waterlogging / open-chamber accidents, school and hospital `ambulance_entry_road`. Open complaints have no `road_id`, so match each to the nearest road segment in its ward (GPS if present, else the locality centroid from `localities.csv`).
 
 ### Example response
 ```json
@@ -115,7 +115,7 @@ Engine rules: deterministic Python (pandas), no LLM arithmetic. Inputs: open/unr
         "description": "Roads that are a hospital's ambulance entry or serve a school score higher."
       }
     ],
-    "note": "Items are funded in rank order until the remaining budget runs out."
+    "note": "Items are funded in rank order; one that does not fit is skipped so a smaller one below can still be funded."
   },
   "items": [
     {

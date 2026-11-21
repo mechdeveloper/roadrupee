@@ -9,9 +9,9 @@ from pathlib import Path
 import pandas as pd
 
 from .ai import ward_summary
-from .ai.store import JsonStore, verdict_store, ward_summary_store
+from .ai.store import JsonStore, plan_store, verdict_store, ward_summary_store
 from .ai.verdict import to_review
-from .engine import evidence
+from .engine import evidence, planner
 from .engine import flags as F
 from .engine import metrics
 from .engine.expected import add_expected
@@ -29,6 +29,7 @@ class Precomputed:
     evidence_index: evidence.EvidenceIndex | None = None
     verdicts: JsonStore | None = None
     ward_summaries: JsonStore | None = None
+    plans: dict | None = None  # ward slug -> PlanResponse dict (engine/planner.py)
 
 
 def build() -> Precomputed:
@@ -48,6 +49,8 @@ def build() -> Precomputed:
     attach_verdicts(pre)
     pre.ward_summaries = ward_summary_store()
     attach_ward_summaries(pre)
+    pre.plans = planner.build_all(pre)
+    attach_plan_explanations(pre)
     _dump(pre)
     return pre
 
@@ -61,6 +64,22 @@ def attach_verdicts(pre: Precomputed) -> int:
             f.review = to_review(e)
             n += 1
     return n
+
+def attach_plan_explanations(pre: Precomputed) -> int:
+    """Attach Claude's stored one-liners (top 10 per ward) when the facts they were written from are unchanged."""
+    from .ai import plan_explain
+
+    store, n = plan_store(), 0
+    for plan in pre.plans.values():
+        for it in plan["items"]:
+            if it["rank"] > plan_explain.TOP_N:
+                continue
+            e = store.get(f"{plan['ward_slug']}:{it['road_id']}", plan_explain.input_hash(plan_explain.facts(plan, it)))
+            if e:
+                it["explanation"] = e["text"]
+                n += 1
+    return n
+
 
 def _dump(pre: Precomputed) -> None:
     """Best-effort JSON snapshot for debugging / the team (not read back)."""

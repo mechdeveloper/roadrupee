@@ -14,16 +14,19 @@ export function Chip({
   tone,
   icon: Icon,
   children,
+  wrap = false,
   className = "",
 }: {
   tone: Tone;
   icon?: LucideIcon;
   children: React.ReactNode;
+  /** allow long text (e.g. a school name) to wrap instead of overflowing */
+  wrap?: boolean;
   className?: string;
 }) {
   return (
     <span
-      className={`inline-flex min-h-7 items-center gap-1.5 rounded-full whitespace-nowrap px-2.5 py-0.5 text-[13px] font-medium ${TONE[tone]} ${className}`}
+      className={`inline-flex min-h-7 max-w-full items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[13px] font-medium ${wrap ? "" : "whitespace-nowrap"} ${TONE[tone]} ${className}`}
     >
       {Icon && <Icon className="size-3.5 shrink-0" aria-hidden />}
       {children}

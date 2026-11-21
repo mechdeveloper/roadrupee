@@ -5,10 +5,9 @@ import csv
 import io
 
 from fastapi import APIRouter, Query, Request
-from fastapi.responses import JSONResponse, Response
+from fastapi.responses import Response
 
 from ..contracts.pages import WardTimeline
-from ..contracts.plan import CityPlanResponse
 from ..engine import views
 
 router = APIRouter(prefix="/api")
@@ -154,8 +153,3 @@ def audit_csv(
                     "claude_verdict": r["verdict"] or "", "claude_headline": r["headline"] or ""})
     return Response(buf.getvalue(), media_type="text/csv",
                     headers={"Content-Disposition": 'attachment; filename="roadrupee_audit.csv"'})
-
-
-@router.get("/plan/city", response_model=CityPlanResponse, responses={501: {"description": "Engine not built yet"}})
-def plan_city(request: Request, limit: int = Query(5, ge=1, le=50)) -> JSONResponse:
-    return JSONResponse({"error": "not_implemented", "endpoint": "plan/city"}, status_code=501)

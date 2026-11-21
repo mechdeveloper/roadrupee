@@ -17,9 +17,9 @@ from .ai import client as ai_client
 from .ai.structured import Generated
 from .ai.verdict import make_verdict, template_verdict, to_entry, to_review
 from .engine import evidence
-from .contracts.plan import PlanResponse
 from .routes.home import router as home_router
 from .routes.pages import router as pages_router
+from .routes.plan import router as plan_router
 from .routes.trace import router as trace_router
 
 load_dotenv()
@@ -41,6 +41,7 @@ app = FastAPI(title="RoadRupee API", lifespan=lifespan)
 app.include_router(pages_router)
 app.include_router(home_router)
 app.include_router(trace_router)
+app.include_router(plan_router)
 
 
 def pre(request: Request) -> cache.Precomputed:
@@ -148,15 +149,6 @@ async def explain(request: Request, flag_id: str) -> dict:
     p.verdicts.save()
     f.review = to_review(entry)
     return {"flag_id": f.flag_id, "review": f.review, "cached": False}
-
-
-@app.get(
-    "/api/plan",
-    response_model=PlanResponse,
-    responses={501: {"description": "Planner engine not built yet (Student C). Frontend shows example data on 501."}},
-)
-def plan(ward: str = Query(..., description="Ward slug, e.g. 'g-s' for G/S")) -> JSONResponse:
-    return _stub("plan")
 
 
 @app.post("/api/ask")

@@ -10,7 +10,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { type Ward, useApi } from "@/lib/api";
 import { inr } from "@/lib/format";
 import { useT } from "@/lib/i18n";
-import { examplePlan } from "@/lib/placeholder/plan";
 import type { PlanResponse } from "@/lib/types";
 
 /** Tab d: Where should the next rupee go? Real /api/plan; labelled example data ONLY while the route returns 501. */
@@ -22,11 +21,7 @@ export function PlanTab({ ward }: { ward: Ward }) {
   const { state, retry } = useApi<PlanResponse>(`/api/plan?ward=${encodeURIComponent(ward.slug)}`);
   const [copied, setCopied] = useState(false);
 
-  const isExample = state.status === "error" && state.message.includes("501");
-  const plan = useMemo<PlanResponse | null>(
-    () => (state.status === "ready" ? state.data : isExample ? examplePlan(ward) : null),
-    [state, isExample, ward],
-  );
+  const plan = state.status === "ready" ? state.data : null;
 
   // Selection lives in the URL (?sel=RD1,RD2) so a shared or printed link restores the same plan.
   const selParam = params.get("sel");
@@ -56,7 +51,7 @@ export function PlanTab({ ward }: { ward: Ward }) {
         <Skeleton className="h-72 rounded-2xl" />
       </div>
     );
-  if (state.status === "error" && !isExample) return <ErrorBox message={state.message} onRetry={retry} />;
+  if (state.status === "error") return <ErrorBox message={state.message} onRetry={retry} />;
   if (!plan) return null;
 
   const chosen = plan.items.filter((i) => selected.has(i.road_id));
@@ -87,12 +82,6 @@ export function PlanTab({ ward }: { ward: Ward }) {
 
   return (
     <div>
-      {isExample && (
-        <p role="note" className="mb-4 rounded-xl border border-dashed bg-surface p-3 text-sm font-medium text-ink">
-          {t("plan.example")}
-        </p>
-      )}
-
       <p className="hidden text-lg font-semibold print:block">
         {t("plan.printed", { ward: plan.ward_code, date: new Date().toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }) })}
       </p>

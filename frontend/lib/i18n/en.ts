@@ -163,7 +163,6 @@ export const en = {
   "ev.notFound": "We couldn't find that item.",
   // ward page: next-rupee tab
   "plan.intro": "Roads ranked by risk, each with the repair method that lasts longest, not the cheapest. Tick the ones you'd fund.",
-  "plan.example": "Example data: the planner engine isn't connected yet, so these roads and costs are only illustrative.",
   "plan.budgetLeft": "{amount} left in this ward's budget",
   "plan.noBudget": "This ward has no budget left. Funding anything means going over.",
   "plan.selected": "{selected} selected of {remaining} left",
@@ -315,6 +314,11 @@ export const en = {
   "trace.rti.mr": "मराठी",
   "trace.rti.print": "Print",
   "trace.status": "Status",
+  "plan.page.pick": "Plan a ward's budget",
+  "plan.page.top": "The riskiest roads in the city",
+  "plan.remainingShort": "{amount} left",
+  "plan.overspentShort": "Over budget",
+  "plan.inWard": "in ward",
 } as const;
 
 export type Key = keyof typeof en;
