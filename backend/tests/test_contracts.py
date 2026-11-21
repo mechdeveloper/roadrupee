@@ -37,11 +37,21 @@ def test_example_follows_the_contract_rules():
         assert all(p.points <= p.max_points for p in item.score_parts)
 
 
-def test_plan_route_is_501_and_documented():
+def test_plan_route_returns_contract_for_every_ward():
     from app.main import app
 
     with TestClient(app) as client:
-        r = client.get("/api/plan", params={"ward": "g-s"})
-        assert r.status_code == 501
+        wards = client.get("/api/wards").json()
+        for w in wards:
+            r = client.get("/api/plan", params={"ward": w["slug"]})
+            assert r.status_code == 200, w["slug"]
+            plan = PlanResponse.model_validate(r.json())
+            assert sum(x.weight for x in plan.formula.weights) == 100
+            assert plan.remaining_inr == plan.budget_inr - plan.spent_inr
+            assert [i.rank for i in plan.items] == list(range(1, len(plan.items) + 1))
+            for item in plan.items:
+                assert abs(sum(p.points for p in item.score_parts) - item.risk_score) < 0.01
+                assert all(p.points <= p.max_points for p in item.score_parts)
+        assert client.get("/api/plan", params={"ward": "zz"}).status_code == 404
         schema = client.get("/openapi.json").json()
         assert "PlanResponse" in schema["components"]["schemas"]
