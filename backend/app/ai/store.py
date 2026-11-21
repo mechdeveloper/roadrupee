@@ -48,3 +48,7 @@ def verdict_store() -> JsonStore:
 
 def ward_summary_store() -> JsonStore:
     return JsonStore(Path(os.environ.get("WARD_SUMMARIES_PATH", DATA_CACHE / "ward_summaries.json")))
+
+
+def trace_store() -> JsonStore:
+    return JsonStore(Path(os.environ.get("TRACE_PATH", DATA_CACHE / "trace.json")))

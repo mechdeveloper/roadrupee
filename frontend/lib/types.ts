@@ -378,3 +378,98 @@ export type AuditList = {
   contractors: Record<string, string>;
   wards: Record<string, string>;
 };
+
+// ---------- Trace my complaint: POST /api/trace (mirror of backend/app/contracts/trace.py) ----------
+export type TraceOutcome =
+  | "fixed_held"
+  | "fixed_failed"
+  | "in_progress"
+  | "open"
+  | "forwarded"
+  | "rejected"
+  | "not_found"
+  | "needs_confirmation";
+export type TraceLang = "en" | "hi" | "mr" | "hi-en";
+
+export type TraceComplaint = {
+  complaint_id: string;
+  received_at: string;
+  channel: string;
+  language: string;
+  text: string;
+  locality_text: string;
+  ward_code: string | null;
+  category_reported: string;
+  status: string;
+  upvotes: number;
+  photo_description: string;
+  resolved_at: string | null;
+  score: number | null; // only on alternatives
+};
+export type Geocoded = {
+  locality: string;
+  ward_code: string;
+  ward_slug: string;
+  ward_name: string;
+  lat: number;
+  lon: number;
+  match: "exact" | "alias" | "contained" | "prefix" | "fuzzy";
+};
+export type TraceExtraction = {
+  language: TraceLang;
+  locality: string | null;
+  geocoded: Geocoded | null;
+  issue_type: string;
+  summary: string;
+  source: "id" | "text-match" | "claude" | "rules";
+};
+export type TraceWorkOrder = {
+  work_order_id: string;
+  work_type: string;
+  repair_method: string;
+  contractor_id: string;
+  contractor_name: string;
+  assigned_at: string;
+  completed_at: string | null;
+  cost_inr: number;
+  expected_inr: number;
+  cost_ratio: number;
+  within_normal_range: boolean;
+  sla_hours: number;
+  actual_hours: number | null;
+  sla_met: string;
+  reopened_within_30d: boolean;
+  road_id: string;
+  road_name: string;
+  under_dlp: boolean;
+};
+export type TraceFlag = {
+  flag_id: string;
+  rule: string;
+  tier: string;
+  severity: string;
+  reason: string;
+  amount_inr: number;
+};
+export type TraceStep = {
+  key: "complaint" | "issue" | "work_order" | "held" | "warranty" | "action";
+  title: string;
+  status: "done" | "failed" | "pending" | "skipped";
+  headline: string;
+  detail: string;
+  links: { label: string; href: string }[];
+};
+export type TraceResponse = {
+  outcome: TraceOutcome;
+  input_kind: "id" | "text";
+  complaint: TraceComplaint | null;
+  duplicates: TraceComplaint[];
+  extraction: TraceExtraction;
+  match: { confidence: number; basis: string; alternatives: TraceComplaint[] };
+  work_order: TraceWorkOrder | null;
+  flags: TraceFlag[];
+  steps: TraceStep[];
+  answer: { text: string; language: TraceLang; source: "claude" | "template" };
+  rti: { en: string; mr: string } | null;
+  cached: boolean;
+};

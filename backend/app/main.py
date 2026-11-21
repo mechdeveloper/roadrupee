@@ -20,6 +20,7 @@ from .engine import evidence
 from .contracts.plan import PlanResponse
 from .routes.home import router as home_router
 from .routes.pages import router as pages_router
+from .routes.trace import router as trace_router
 
 load_dotenv()
 
@@ -39,6 +40,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title="RoadRupee API", lifespan=lifespan)
 app.include_router(pages_router)
 app.include_router(home_router)
+app.include_router(trace_router)
 
 
 def pre(request: Request) -> cache.Precomputed:
@@ -119,11 +121,6 @@ def flags_csv(request: Request, rule: str | None = None, tier: str | None = None
 def _stub(name: str) -> JSONResponse:
     return JSONResponse({"error": "not_implemented", "endpoint": name,
                          "detail": "Claude-powered endpoint, coming in a later milestone."}, status_code=501)
-
-
-@app.post("/api/trace")
-def trace() -> JSONResponse:
-    return _stub("trace")
 
 
 @app.post("/api/explain/{flag_id}")

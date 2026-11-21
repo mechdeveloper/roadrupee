@@ -14,6 +14,10 @@ def model_live() -> str:
     return os.environ.get("CLAUDE_MODEL_LIVE", "claude-sonnet-5-5")
 
 
+def model_extract() -> str:
+    return os.environ.get("CLAUDE_MODEL_EXTRACT", "claude-opus-5-5")
+
+
 def have_key() -> bool:
     return bool(os.environ.get("ANTHROPIC_API_KEY"))
 

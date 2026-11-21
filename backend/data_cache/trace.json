@@ -1,0 +1,589 @@
+{
+ "t:bmc25 000036": {
+  "input_hash": "7b0f3837255706f2",
+  "response": {
+   "outcome": "fixed_failed",
+   "input_kind": "id",
+   "complaint": {
+    "complaint_id": "BMC25-000036",
+    "received_at": "2025-06-03 06:09",
+    "channel": "1916 Helpline",
+    "language": "hi-en",
+    "text": "As per caller waterlogging at Dahisar East, near BEST depot on Western Express Highway. ",
+    "locality_text": "Dahisar East",
+    "ward_code": "R/N",
+    "category_reported": "Waterlogging",
+    "status": "Resolved",
+    "upvotes": 0,
+    "photo_description": "",
+    "resolved_at": "2025-06-08 09:43",
+    "score": null
+   },
+   "duplicates": [
+    {
+     "complaint_id": "BMC25-000035",
+     "received_at": "2025-06-03 06:27",
+     "channel": "MyBMC Web Portal",
+     "language": "en",
+     "text": "Western Express Highway completely flooded, kids unable to go to school. Dahisar East.",
+     "locality_text": "Dahisar East",
+     "ward_code": "R/N",
+     "category_reported": "Waterlogging",
+     "status": "Resolved",
+     "upvotes": 0,
+     "photo_description": "Road under brown water up to car wheel arches",
+     "resolved_at": "2025-06-08 09:43",
+     "score": null
+    }
+   ],
+   "extraction": {
+    "language": "hi-en",
+    "locality": "Dahisar East",
+    "geocoded": {
+     "locality": "Dahisar East",
+     "ward_code": "R/N",
+     "ward_slug": "r-n",
+     "ward_name": "Dahisar",
+     "lat": 19.252,
+     "lon": 72.86,
+     "match": "exact"
+    },
+    "issue_type": "Waterlogging",
+    "summary": "As per caller waterlogging at Dahisar East, near BEST depot on Western Express Highway. ",
+    "source": "id"
+   },
+   "match": {
+    "confidence": 1.0,
+    "basis": "id",
+    "alternatives": []
+   },
+   "work_order": {
+    "work_order_id": "WO25-00016",
+    "work_type": "Waterlogging",
+    "repair_method": "Drain desilting",
+    "contractor_id": "CT03",
+    "contractor_name": "Mahalaxmi Civil Contractors (synthetic)",
+    "assigned_at": "2025-06-07 07:15",
+    "completed_at": "2025-06-08 09:43",
+    "cost_inr": 91929.0,
+    "expected_inr": 90000.0,
+    "cost_ratio": 1.02,
+    "within_normal_range": true,
+    "sla_hours": 120.0,
+    "actual_hours": 123.6,
+    "sla_met": "N",
+    "reopened_within_30d": true,
+    "road_id": "RD0212",
+    "road_name": "Western Express Highway",
+    "under_dlp": false
+   },
+   "flags": [],
+   "steps": [
+    {
+     "key": "complaint",
+     "title": "What did you report?",
+     "status": "done",
+     "headline": "Complaint BMC25-000036, received 2025-06-03 via 1916 Helpline",
+     "detail": "“As per caller waterlogging at Dahisar East, near BEST depot on Western Express Highway. ” Status: Resolved.",
+     "links": []
+    },
+    {
+     "key": "issue",
+     "title": "What issue is this?",
+     "status": "done",
+     "headline": "Waterlogging · Dahisar East, ward R/N",
+     "detail": "1 other report of the same problem were joined to the same repair.",
+     "links": [
+      {
+       "label": "Ward R/N report",
+       "href": "/ward/r-n"
+      }
+     ]
+    },
+    {
+     "key": "work_order",
+     "title": "Was it fixed?",
+     "status": "done",
+     "headline": "Yes: work order WO25-00016, Drain desilting, by Mahalaxmi Civil Contractors (synthetic)",
+     "detail": "Finished 2025-06-08. Billed ₹91,929 against about ₹90,000 expected from the rate card (1.0×). Target time was 120 h, it took 124 h (target missed).",
+     "links": [
+      {
+       "label": "Contractor Mahalaxmi Civil Contractors",
+       "href": "/contractor/CT03"
+      }
+     ]
+    },
+    {
+     "key": "held",
+     "title": "Did the fix hold?",
+     "status": "failed",
+     "headline": "No: it was reopened within 30 days",
+     "detail": "The same problem came back within a month of the repair.",
+     "links": []
+    },
+    {
+     "key": "warranty",
+     "title": "Was the road under warranty?",
+     "status": "done",
+     "headline": "No",
+     "detail": "The road was not under its original contractor's warranty, so paying for the repair is normal.",
+     "links": []
+    },
+    {
+     "key": "action",
+     "title": "What can you do?",
+     "status": "pending",
+     "headline": "Ask for the records",
+     "detail": "You can ask the ward office for the records with the RTI request below.",
+     "links": []
+    }
+   ],
+   "answer": {
+    "text": "Aapki Dahisar East ki waterlogging complaint (BMC25-000036) mein kaam hua tha, lekin 30 din ke andar complaint dobara khul gayi, yaani repair tika nahi. Drain desilting ka kaam Mahalaxmi Civil Contractors (synthetic) ne 2025-06-08 ko poora kiya; bill ₹91,929 raha, jo rate card ke ₹90,000 ke hisaab se 1.0× hai, yaani normal range mein. Target 120 ghante ka tha aur kaam mein 124 ghante lage, isliye time target poora nahi hua; road warranty mein nahi thi. Aap is page par evidence page dekh sakte hain aur chahein to RTI request bhi daal sakte hain, taaki dobara kaam ki details worth checking ho sakein.",
+    "language": "hi-en",
+    "source": "claude"
+   },
+   "rti": {
+    "en": "(Demo draft: the data in this app is synthetic. Replace with real records before use.)\n\nTo,\nThe Public Information Officer,\nMunicipal Corporation of Greater Mumbai, Ward R/N office\n\nSubject: Information under the Right to Information Act, 2005, about complaint BMC25-000036\n\nSir / Madam,\n\nI request the following information about complaint BMC25-000036 (Waterlogging, Dahisar East, Ward R/N), registered on 2025-06-03. Current status in your records: Resolved. The amount billed was ₹91,929.\n\n1. Copies of the work order, estimate, measurement book and bill for work order WO25-00016.\n2. The inspection report after the repair failed within 30 days, and any action taken under the contractor's responsibility.\n3. The name and designation of the officer who certified that the work was completed.\n\nThis is a request for records, not an accusation.\n\nDate: ____________\nName and address of applicant: ____________",
+    "mr": "(डेमो मसुदा: या अ‍ॅपमधील डेटा काल्पनिक आहे. वापरण्यापूर्वी खरी कागदपत्रे लावा.)\n\nप्रति,\nजन माहिती अधिकारी,\nबृहन्मुंबई महानगरपालिका, वॉर्ड R/N कार्यालय\n\nविषय: माहिती अधिकार अधिनियम, 2005 अन्वये तक्रार क्रमांक BMC25-000036 बाबत माहिती\n\nमहोदय / महोदया,\n\nमी 2025-06-03 रोजी नोंदवलेल्या तक्रार क्रमांक BMC25-000036 (Waterlogging, Dahisar East, वॉर्ड R/N) बाबत पुढील माहिती मागत आहे. तुमच्या नोंदीनुसार सध्याची स्थिती: Resolved. बिलाची रक्कम ₹91,929 होती.\n\n1. कामाचा आदेश WO25-00016 साठी कामाचा आदेश, अंदाजपत्रक, मोजमाप पुस्तिका आणि बिलाच्या प्रती.\n2. दुरुस्ती 30 दिवसांत टिकली नाही त्यानंतरचा तपासणी अहवाल आणि कंत्राटदाराच्या जबाबदारीखाली केलेली कार्यवाही.\n3. काम पूर्ण झाल्याचे प्रमाणित करणाऱ्या अधिकाऱ्याचे नाव आणि पदनाम.\n\nही कागदपत्रांची मागणी आहे, कोणावरही आरोप नाही.\n\nदिनांक: ____________\nअर्जदाराचे नाव आणि पत्ता: ____________"
+   }
+  }
+ },
+ "t:bmc25 005606": {
+  "input_hash": "3db1af5c2daa85af",
+  "response": {
+   "outcome": "open",
+   "input_kind": "id",
+   "complaint": {
+    "complaint_id": "BMC25-005606",
+    "received_at": "2025-09-10 13:23",
+    "channel": "MyBMC App",
+    "language": "hi-en",
+    "text": "Bhai Western Express Highway pe post office ke paas bahut bada khadda hai, roz koi na koi girta hai. Please jaldi theek karo",
+    "locality_text": "Dahisar East",
+    "ward_code": "R/N",
+    "category_reported": "Pothole",
+    "status": "Open",
+    "upvotes": 0,
+    "photo_description": "Close-up of a crater filled with muddy water, broken asphalt edges",
+    "resolved_at": null,
+    "score": null
+   },
+   "duplicates": [],
+   "extraction": {
+    "language": "hi-en",
+    "locality": "Dahisar East",
+    "geocoded": {
+     "locality": "Dahisar East",
+     "ward_code": "R/N",
+     "ward_slug": "r-n",
+     "ward_name": "Dahisar",
+     "lat": 19.252,
+     "lon": 72.86,
+     "match": "exact"
+    },
+    "issue_type": "Pothole",
+    "summary": "Bhai Western Express Highway pe post office ke paas bahut bada khadda hai, roz koi na koi girta hai. Please jaldi theek karo",
+    "source": "id"
+   },
+   "match": {
+    "confidence": 1.0,
+    "basis": "id",
+    "alternatives": []
+   },
+   "work_order": null,
+   "flags": [],
+   "steps": [
+    {
+     "key": "complaint",
+     "title": "What did you report?",
+     "status": "done",
+     "headline": "Complaint BMC25-005606, received 2025-09-10 via MyBMC App",
+     "detail": "“Bhai Western Express Highway pe post office ke paas bahut bada khadda hai, roz koi na koi girta hai. Please jaldi theek karo” Status: Open.",
+     "links": []
+    },
+    {
+     "key": "issue",
+     "title": "What issue is this?",
+     "status": "done",
+     "headline": "Reported as pothole · Dahisar East, ward R/N",
+     "detail": "No other reports were joined to this one.",
+     "links": [
+      {
+       "label": "Ward R/N report",
+       "href": "/ward/r-n"
+      }
+     ]
+    },
+    {
+     "key": "work_order",
+     "title": "Was it fixed?",
+     "status": "pending",
+     "headline": "No work order yet",
+     "detail": "This complaint is still open in the records: no repair has been logged.",
+     "links": []
+    },
+    {
+     "key": "held",
+     "title": "Did the fix hold?",
+     "status": "skipped",
+     "headline": "Not applicable",
+     "detail": "There was no repair to check.",
+     "links": []
+    },
+    {
+     "key": "warranty",
+     "title": "Was the road under warranty?",
+     "status": "skipped",
+     "headline": "Not applicable",
+     "detail": "There was no repair to check.",
+     "links": []
+    },
+    {
+     "key": "action",
+     "title": "What can you do?",
+     "status": "pending",
+     "headline": "Ask for the records",
+     "detail": "You can ask the ward office for the records with the RTI request below.",
+     "links": []
+    }
+   ],
+   "answer": {
+    "text": "Aapki complaint BMC25-005606 (Dahisar East, ward R/N mein pothole) 10 September 2025 ko mili thi aur abhi bhi Open hai. Abhi tak is complaint par kaam poora hone ki koi jaankari nahi hai, aur koi duplicate report isse joda nahi gaya hai. Aap is page par diye gaye evidence page mein complaint ki sthiti dekh sakte hain. Zyada jaankari chahiye to isi page par RTI request bhi bana sakte hain.",
+    "language": "hi-en",
+    "source": "claude"
+   },
+   "rti": {
+    "en": "(Demo draft: the data in this app is synthetic. Replace with real records before use.)\n\nTo,\nThe Public Information Officer,\nMunicipal Corporation of Greater Mumbai, Ward R/N office\n\nSubject: Information under the Right to Information Act, 2005, about complaint BMC25-005606\n\nSir / Madam,\n\nI request the following information about complaint BMC25-005606 (Pothole, Dahisar East, Ward R/N), registered on 2025-09-10. Current status in your records: Open.\n\n1. The action taken so far on this complaint, with dates.\n2. The expected date of repair and the name of the officer responsible.\n\nThis is a request for records, not an accusation.\n\nDate: ____________\nName and address of applicant: ____________",
+    "mr": "(डेमो मसुदा: या अ‍ॅपमधील डेटा काल्पनिक आहे. वापरण्यापूर्वी खरी कागदपत्रे लावा.)\n\nप्रति,\nजन माहिती अधिकारी,\nबृहन्मुंबई महानगरपालिका, वॉर्ड R/N कार्यालय\n\nविषय: माहिती अधिकार अधिनियम, 2005 अन्वये तक्रार क्रमांक BMC25-005606 बाबत माहिती\n\nमहोदय / महोदया,\n\nमी 2025-09-10 रोजी नोंदवलेल्या तक्रार क्रमांक BMC25-005606 (Pothole, Dahisar East, वॉर्ड R/N) बाबत पुढील माहिती मागत आहे. तुमच्या नोंदीनुसार सध्याची स्थिती: Open.\n\n1. या तक्रारीवर आतापर्यंत केलेली कार्यवाही, तारखांसह.\n2. दुरुस्तीची अपेक्षित तारीख आणि जबाबदार अधिकाऱ्याचे नाव.\n\nही कागदपत्रांची मागणी आहे, कोणावरही आरोप नाही.\n\nदिनांक: ____________\nअर्जदाराचे नाव आणि पत्ता: ____________"
+   }
+  }
+ },
+ "t:madanpura मध्ये पाणी साचले आहे गाड्या अडकल्या आहेत पंप पाठवा": {
+  "input_hash": "51c0b4c2577595f4",
+  "response": {
+   "outcome": "fixed_held",
+   "input_kind": "text",
+   "complaint": {
+    "complaint_id": "BMC25-000022",
+    "received_at": "2025-06-01 19:53",
+    "channel": "MyBMC App",
+    "language": "mr",
+    "text": "Madanpura मध्ये पाणी साचले आहे, गाड्या अडकल्या आहेत. पंप पाठवा.",
+    "locality_text": "Madanpura",
+    "ward_code": "E",
+    "category_reported": "Choked drain / nullah overflow",
+    "status": "Resolved",
+    "upvotes": 29,
+    "photo_description": "",
+    "resolved_at": "2025-06-07 19:26",
+    "score": null
+   },
+   "duplicates": [
+    {
+     "complaint_id": "BMC25-000023",
+     "received_at": "2025-06-01 10:33",
+     "channel": "1916 Helpline",
+     "language": "en",
+     "text": "Complainant states choked drain / nullah overflow at Madanpura, near railway station on Bellasis Road. Repeat caller.",
+     "locality_text": "Madanpura",
+     "ward_code": "E",
+     "category_reported": "Broken paver blocks",
+     "status": "Resolved",
+     "upvotes": 0,
+     "photo_description": "",
+     "resolved_at": "2025-06-07 19:26",
+     "score": null
+    },
+    {
+     "complaint_id": "BMC25-000021",
+     "received_at": "2025-06-02 17:53",
+     "channel": "1916 Helpline",
+     "language": "en",
+     "text": "Citizen informs choked drain / nullah overflow at Madanpura, near signal on Bellasis Road. Requests urgent action.",
+     "locality_text": "Madanpura",
+     "ward_code": "E",
+     "category_reported": "Choked drain / nullah overflow",
+     "status": "Closed - Duplicate",
+     "upvotes": 0,
+     "photo_description": "",
+     "resolved_at": "2025-06-07 19:26",
+     "score": null
+    }
+   ],
+   "extraction": {
+    "language": "mr",
+    "locality": "Madanpura",
+    "geocoded": {
+     "locality": "Madanpura",
+     "ward_code": "E",
+     "ward_slug": "e",
+     "ward_name": "Byculla, Agripada, Mumbai Central",
+     "lat": 18.976497,
+     "lon": 72.827946,
+     "match": "exact"
+    },
+    "issue_type": "Choked drain / nullah overflow",
+    "summary": "Madanpura मध्ये पाणी साचले आहे, गाड्या अडकल्या आहेत. पंप पाठवा.",
+    "source": "text-match"
+   },
+   "match": {
+    "confidence": 1.0,
+    "basis": "text-match",
+    "alternatives": []
+   },
+   "work_order": {
+    "work_order_id": "WO25-00008",
+    "work_type": "Choked drain / nullah overflow",
+    "repair_method": "Desilting and garbage removal",
+    "contractor_id": "CT04",
+    "contractor_name": "Western Coast Asphalt Co (synthetic)",
+    "assigned_at": "2025-06-02 00:13",
+    "completed_at": "2025-06-07 19:26",
+    "cost_inr": 88502.0,
+    "expected_inr": 70000.0,
+    "cost_ratio": 1.26,
+    "within_normal_range": true,
+    "sla_hours": 48.0,
+    "actual_hours": 152.9,
+    "sla_met": "N",
+    "reopened_within_30d": false,
+    "road_id": "RD0055",
+    "road_name": "Bellasis Road",
+    "under_dlp": false
+   },
+   "flags": [
+    {
+     "flag_id": "F0648",
+     "rule": "SLA_BREACH",
+     "tier": "review",
+     "severity": "medium",
+     "reason": "Completed in 153 h against a 48 h target (3.2× the target). Rain delays or access issues may explain it.",
+     "amount_inr": 0.0
+    }
+   ],
+   "steps": [
+    {
+     "key": "complaint",
+     "title": "What did you report?",
+     "status": "done",
+     "headline": "Complaint BMC25-000022, received 2025-06-01 via MyBMC App",
+     "detail": "“Madanpura मध्ये पाणी साचले आहे, गाड्या अडकल्या आहेत. पंप पाठवा.” Status: Resolved.",
+     "links": []
+    },
+    {
+     "key": "issue",
+     "title": "What issue is this?",
+     "status": "done",
+     "headline": "Choked drain / nullah overflow · Madanpura, ward E",
+     "detail": "2 other reports of the same problem were joined to the same repair.",
+     "links": [
+      {
+       "label": "Ward E report",
+       "href": "/ward/e"
+      }
+     ]
+    },
+    {
+     "key": "work_order",
+     "title": "Was it fixed?",
+     "status": "done",
+     "headline": "Yes: work order WO25-00008, Desilting and garbage removal, by Western Coast Asphalt Co (synthetic)",
+     "detail": "Finished 2025-06-07. Billed ₹88,502 against about ₹70,000 expected from the rate card (1.3×). Target time was 48 h, it took 153 h (target missed).",
+     "links": [
+      {
+       "label": "Contractor Western Coast Asphalt Co",
+       "href": "/contractor/CT04"
+      }
+     ]
+    },
+    {
+     "key": "held",
+     "title": "Did the fix hold?",
+     "status": "done",
+     "headline": "Yes: it held for 30 days",
+     "detail": "No reopening was recorded in the 30 days after the repair.",
+     "links": []
+    },
+    {
+     "key": "warranty",
+     "title": "Was the road under warranty?",
+     "status": "done",
+     "headline": "No",
+     "detail": "The road was not under its original contractor's warranty, so paying for the repair is normal.",
+     "links": []
+    },
+    {
+     "key": "action",
+     "title": "What can you do?",
+     "status": "pending",
+     "headline": "Ask for the records",
+     "detail": "This repair is flagged as worth checking; open the evidence, or send the RTI request below.",
+     "links": [
+      {
+       "label": "See the evidence",
+       "href": "/flag/F0648"
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "text": "तुमची तक्रार (BMC25-000022) मदनपुरा येथील तुंबलेल्या नाल्याबद्दल होती. ती सोडवली गेली आणि दुरुस्ती टिकून आहे, 30 दिवसांत ती पुन्हा उघडली गेली नाही. हे काम Western Coast Asphalt Co (synthetic) यांनी केले; खर्च ₹88,502 आला, तर अपेक्षित दर ₹70,000 आहे (1.3×), म्हणजे सामान्य मर्यादेत आहे. काम 48 तासांच्या लक्ष्याऐवजी 153 तासांत झाले, हे तपासण्यासारखे आहे; पावसामुळे किंवा प्रवेशाच्या अडचणीमुळे उशीर झाला असू शकतो. अधिक तपशीलासाठी या पानावरील पुरावा पृष्ठ पाहा, तसेच हवे असल्यास RTI विनंती करू शकता.",
+    "language": "mr",
+    "source": "claude"
+   },
+   "rti": {
+    "en": "(Demo draft: the data in this app is synthetic. Replace with real records before use.)\n\nTo,\nThe Public Information Officer,\nMunicipal Corporation of Greater Mumbai, Ward E office\n\nSubject: Information under the Right to Information Act, 2005, about complaint BMC25-000022\n\nSir / Madam,\n\nI request the following information about complaint BMC25-000022 (Choked drain / nullah overflow, Madanpura, Ward E), registered on 2025-06-01. Current status in your records: Resolved. The amount billed was ₹88,502.\n\n1. Copies of the work order, estimate, measurement book and bill for work order WO25-00008.\n2. The name and designation of the officer who certified that the work was completed.\n\nThis is a request for records, not an accusation.\n\nDate: ____________\nName and address of applicant: ____________",
+    "mr": "(डेमो मसुदा: या अ‍ॅपमधील डेटा काल्पनिक आहे. वापरण्यापूर्वी खरी कागदपत्रे लावा.)\n\nप्रति,\nजन माहिती अधिकारी,\nबृहन्मुंबई महानगरपालिका, वॉर्ड E कार्यालय\n\nविषय: माहिती अधिकार अधिनियम, 2005 अन्वये तक्रार क्रमांक BMC25-000022 बाबत माहिती\n\nमहोदय / महोदया,\n\nमी 2025-06-01 रोजी नोंदवलेल्या तक्रार क्रमांक BMC25-000022 (Choked drain / nullah overflow, Madanpura, वॉर्ड E) बाबत पुढील माहिती मागत आहे. तुमच्या नोंदीनुसार सध्याची स्थिती: Resolved. बिलाची रक्कम ₹88,502 होती.\n\n1. कामाचा आदेश WO25-00008 साठी कामाचा आदेश, अंदाजपत्रक, मोजमाप पुस्तिका आणि बिलाच्या प्रती.\n2. काम पूर्ण झाल्याचे प्रमाणित करणाऱ्या अधिकाऱ्याचे नाव आणि पदनाम.\n\nही कागदपत्रांची मागणी आहे, कोणावरही आरोप नाही.\n\nदिनांक: ____________\nअर्जदाराचे नाव आणि पत्ता: ____________"
+   }
+  }
+ },
+ "t:mulund west station road pe itna paani hai ki bus band hai bmc kab aayegi": {
+  "input_hash": "b369f6e08dfaf575",
+  "response": {
+   "outcome": "fixed_held",
+   "input_kind": "text",
+   "complaint": {
+    "complaint_id": "BMC25-000024",
+    "received_at": "2025-06-01 12:35",
+    "channel": "MyBMC App",
+    "language": "hi-en",
+    "text": "Mulund West station road pe itna paani hai ki bus band hai. BMC kab aayegi?",
+    "locality_text": "Mulund West",
+    "ward_code": "T",
+    "category_reported": "Pothole",
+    "status": "Resolved",
+    "upvotes": 31,
+    "photo_description": "Close-up of a crater filled with muddy water, broken asphalt edges",
+    "resolved_at": "2025-06-14 16:43",
+    "score": null
+   },
+   "duplicates": [],
+   "extraction": {
+    "language": "hi-en",
+    "locality": "Mulund West",
+    "geocoded": {
+     "locality": "Mulund West",
+     "ward_code": "T",
+     "ward_slug": "t",
+     "ward_name": "Mulund",
+     "lat": 19.172,
+     "lon": 72.953,
+     "match": "exact"
+    },
+    "issue_type": "Pothole",
+    "summary": "Mulund West station road pe itna paani hai ki bus band hai. BMC kab aayegi?",
+    "source": "text-match"
+   },
+   "match": {
+    "confidence": 1.0,
+    "basis": "text-match",
+    "alternatives": []
+   },
+   "work_order": {
+    "work_order_id": "WO25-00009",
+    "work_type": "Pothole",
+    "repair_method": "Cold mix patch",
+    "contractor_id": "CT03",
+    "contractor_name": "Mahalaxmi Civil Contractors (synthetic)",
+    "assigned_at": "2025-06-13 10:29",
+    "completed_at": "2025-06-14 16:43",
+    "cost_inr": 15081.0,
+    "expected_inr": 15840.0,
+    "cost_ratio": 0.95,
+    "within_normal_range": true,
+    "sla_hours": 72.0,
+    "actual_hours": 316.1,
+    "sla_met": "N",
+    "reopened_within_30d": false,
+    "road_id": "RD0281",
+    "road_name": "LBS Marg",
+    "under_dlp": false
+   },
+   "flags": [
+    {
+     "flag_id": "F0670",
+     "rule": "SLA_BREACH",
+     "tier": "review",
+     "severity": "medium",
+     "reason": "Completed in 316 h against a 72 h target (4.4× the target). Rain delays or access issues may explain it.",
+     "amount_inr": 0.0
+    }
+   ],
+   "steps": [
+    {
+     "key": "complaint",
+     "title": "What did you report?",
+     "status": "done",
+     "headline": "Complaint BMC25-000024, received 2025-06-01 via MyBMC App",
+     "detail": "“Mulund West station road pe itna paani hai ki bus band hai. BMC kab aayegi?” Status: Resolved.",
+     "links": []
+    },
+    {
+     "key": "issue",
+     "title": "What issue is this?",
+     "status": "done",
+     "headline": "Pothole · Mulund West, ward T",
+     "detail": "No other reports were joined to this one.",
+     "links": [
+      {
+       "label": "Ward T report",
+       "href": "/ward/t"
+      }
+     ]
+    },
+    {
+     "key": "work_order",
+     "title": "Was it fixed?",
+     "status": "done",
+     "headline": "Yes: work order WO25-00009, Cold mix patch, by Mahalaxmi Civil Contractors (synthetic)",
+     "detail": "Finished 2025-06-14. Billed ₹15,081 against about ₹15,840 expected from the rate card (0.9×). Target time was 72 h, it took 316 h (target missed).",
+     "links": [
+      {
+       "label": "Contractor Mahalaxmi Civil Contractors",
+       "href": "/contractor/CT03"
+      }
+     ]
+    },
+    {
+     "key": "held",
+     "title": "Did the fix hold?",
+     "status": "done",
+     "headline": "Yes: it held for 30 days",
+     "detail": "No reopening was recorded in the 30 days after the repair.",
+     "links": []
+    },
+    {
+     "key": "warranty",
+     "title": "Was the road under warranty?",
+     "status": "done",
+     "headline": "No",
+     "detail": "The road was not under its original contractor's warranty, so paying for the repair is normal.",
+     "links": []
+    },
+    {
+     "key": "action",
+     "title": "What can you do?",
+     "status": "pending",
+     "headline": "Ask for the records",
+     "detail": "This repair is flagged as worth checking; open the evidence, or send the RTI request below.",
+     "links": [
+      {
+       "label": "See the evidence",
+       "href": "/flag/F0670"
+      }
+     ]
+    }
+   ],
+   "answer": {
+    "text": "Aapki shikayat BMC25-000024 (Mulund West ka pothole) fix ho chuki hai aur repair ab tak tika hua hai, 30 din mein dobara nahi khula. Kaam Mahalaxmi Civil Contractors (synthetic) ne Cold mix patch se 2025-06-14 ko poora kiya. Bill ₹15,081 raha, jabki rate card ke hisaab se ₹15,840 expected tha (0.9×), yaani normal range mein hai. Target 72 ghante ka tha, lekin kaam mein 316 ghante lage (4.4× target), ye worth checking hai, haalaki baarish ya access ki dikkat ho sakti hai. Aap is page par evidence page dekh sakte hain aur chahein to RTI request bhi kar sakte hain.",
+    "language": "hi-en",
+    "source": "claude"
+   },
+   "rti": {
+    "en": "(Demo draft: the data in this app is synthetic. Replace with real records before use.)\n\nTo,\nThe Public Information Officer,\nMunicipal Corporation of Greater Mumbai, Ward T office\n\nSubject: Information under the Right to Information Act, 2005, about complaint BMC25-000024\n\nSir / Madam,\n\nI request the following information about complaint BMC25-000024 (Pothole, Mulund West, Ward T), registered on 2025-06-01. Current status in your records: Resolved. The amount billed was ₹15,081.\n\n1. Copies of the work order, estimate, measurement book and bill for work order WO25-00009.\n2. The name and designation of the officer who certified that the work was completed.\n\nThis is a request for records, not an accusation.\n\nDate: ____________\nName and address of applicant: ____________",
+    "mr": "(डेमो मसुदा: या अ‍ॅपमधील डेटा काल्पनिक आहे. वापरण्यापूर्वी खरी कागदपत्रे लावा.)\n\nप्रति,\nजन माहिती अधिकारी,\nबृहन्मुंबई महानगरपालिका, वॉर्ड T कार्यालय\n\nविषय: माहिती अधिकार अधिनियम, 2005 अन्वये तक्रार क्रमांक BMC25-000024 बाबत माहिती\n\nमहोदय / महोदया,\n\nमी 2025-06-01 रोजी नोंदवलेल्या तक्रार क्रमांक BMC25-000024 (Pothole, Mulund West, वॉर्ड T) बाबत पुढील माहिती मागत आहे. तुमच्या नोंदीनुसार सध्याची स्थिती: Resolved. बिलाची रक्कम ₹15,081 होती.\n\n1. कामाचा आदेश WO25-00009 साठी कामाचा आदेश, अंदाजपत्रक, मोजमाप पुस्तिका आणि बिलाच्या प्रती.\n2. काम पूर्ण झाल्याचे प्रमाणित करणाऱ्या अधिकाऱ्याचे नाव आणि पदनाम.\n\nही कागदपत्रांची मागणी आहे, कोणावरही आरोप नाही.\n\nदिनांक: ____________\nअर्जदाराचे नाव आणि पत्ता: ____________"
+   }
+  }
+ }
+}
