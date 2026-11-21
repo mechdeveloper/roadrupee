@@ -79,13 +79,16 @@ def test_cost_comes_from_the_rate_card(pre):
     for p in pre.plans.values():
         for it in p["items"]:
             m = it["recommended_method"]
+            if it["_warranty"]:  # the original contractor owes it: ₹0 to the city, standard cost stated in words
+                assert it["estimated_cost_inr"] == 0 and it["cost_basis"].startswith("₹0 to the city")
+                continue
             if m["unit"] == "per job":
                 assert it["area_sqm_estimate"] is None and it["estimated_cost_inr"] == m["rate_inr"]
             else:
                 assert abs(it["estimated_cost_inr"] - m["rate_inr"] * it["area_sqm_estimate"]) <= m["rate_inr"] * 0.06  # area rounded to 0.1
 
 
-def test_budget_fit_is_greedy_and_overspent_wards_fund_nothing(pre):
+def test_budget_fit_is_greedy_and_overspent_wards_fund_only_warranty_repairs(pre):
     over = 0
     for p in pre.plans.values():
         left = max(p["remaining_inr"], 0.0)
@@ -99,7 +102,7 @@ def test_budget_fit_is_greedy_and_overspent_wards_fund_nothing(pre):
         assert funded <= max(p["remaining_inr"], 0.0) + 0.01
         if p["remaining_inr"] < 0:
             over += 1
-            assert not any(i["within_budget"] for i in p["items"])
+            assert all(i["_warranty"] for i in p["items"] if i["within_budget"])
     assert over >= 5  # the dataset has overspent wards (A, E, R/S, R/C, L, M/W)
 
 
@@ -148,3 +151,12 @@ def test_api_slug_forms_and_city(client):
     scores = [r["item"]["risk_score"] for r in city["items"]]
     assert len(scores) == 8 and scores == sorted(scores, reverse=True)
     assert all("_issue" not in r["item"] for r in city["items"])
+
+
+def test_warranty_repairs_cost_the_city_nothing(pre):
+    roads = pre.data.roads.set_index("road_id")
+    w = [i for p in pre.plans.values() for i in p["items"] if i["_warranty"]]
+    assert w, "the dataset has DLP roads with open surface defects"
+    for it in w:
+        assert roads.loc[it["road_id"], "under_dlp"] == "Y" and it["_issue"] in planner.DLP_AUDIT_WORK_TYPES
+        assert it["estimated_cost_inr"] == 0 and it["within_budget"]
